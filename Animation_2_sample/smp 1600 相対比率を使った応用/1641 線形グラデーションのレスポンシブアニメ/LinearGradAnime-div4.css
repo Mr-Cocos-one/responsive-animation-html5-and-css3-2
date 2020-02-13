@@ -1,0 +1,38 @@
+/* LinearGradAnime-div4.css */
+
+/*****************************************************************************
+* 線形グラデーション４（縦縞移動）
+******************************************************************************/
+#div4 {
+  top: 200px; left: 20px;
+  width: 250px; height: 120px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+}
+#div4 span {
+  top: 0px; left: 0px;
+  width: 500px; height: 120px;
+  
+  background: repeating-linear-gradient( to right, #F00, #FF0 8.3%, #0F0 16.6%,
+                                         #0FF 24.9%, #00F 33.2%, #F0F 41.5%,
+                                         #F00 50% );
+  background: -webkit-repeating-linear-gradient( left, #F00, #FF0 8.3%, #0F0 16.6%,
+                                                 #0FF 24.9%, #00F 33.2%, #F0F 41.5%,
+                                                 #F00 50% );
+  position: absolute;
+  
+  animation: grad4Anime1 4s linear 0s infinite normal;
+  -webkit-animation: grad4Anime1 4s linear 0s infinite normal;
+}
+
+/* grad4Anime1 *************************************************/
+@keyframes grad4Anime1 {
+  from { }
+  to { left: -250px; }
+}
+@-webkit-keyframes grad4Anime1 {
+  from { }
+  to { left: -250px; }
+}
+

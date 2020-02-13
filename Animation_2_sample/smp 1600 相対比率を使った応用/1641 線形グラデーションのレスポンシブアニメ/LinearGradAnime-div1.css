@@ -1,0 +1,52 @@
+/* LinearGradAnime-div1.css */
+
+/*****************************************************************************
+* 四角形　線形グラデーション１
+******************************************************************************/
+#div1 {
+  top: 20px; left: 20px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+}
+#div1 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  background: linear-gradient( to right, red, yellow );
+  background: -webkit-linear-gradient( left, red, yellow );
+  opacity: 1.0;
+  position: absolute;
+  
+  animation: grad1Anime1 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad1Anime1 3s ease-in-out 0s infinite alternate;
+}
+#div1 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  background: linear-gradient( to left, red, yellow );
+  background: -webkit-linear-gradient( right, red, yellow );
+  opacity: 0.0;
+  position: absolute;
+  
+  animation: grad1Anime2 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad1Anime2 3s ease-in-out 0s infinite alternate;
+}
+/* grad1Anime1 *************************************************/
+@keyframes grad1Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad1Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+/* grad1Anime2 *************************************************/
+@keyframes grad1Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes grad1Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+

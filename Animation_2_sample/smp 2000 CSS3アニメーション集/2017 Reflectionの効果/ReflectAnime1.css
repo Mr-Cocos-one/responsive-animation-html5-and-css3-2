@@ -1,0 +1,122 @@
+/* ReflectAnime1.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+/*******************************************************************************
+ * div                                                                         *
+ ******************************************************************************/
+#wrap {
+  top: 180px; left: 210px;
+  position: absolute;
+}
+
+#wrap > div {
+  top: 0px; left: 0px;
+  position: absolute;
+}
+
+#wrap > div:nth-child(1) {
+  animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+}
+@keyframes ref1Anime {
+  from { }
+  to { top: -60px; }
+}
+@-webkit-keyframes ref1Anime {
+  from { }
+  to { top: -60px; }
+}
+
+#wrap > div:nth-child(2) {
+  animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+  -webkit-animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+}
+@keyframes ref2Anime {
+  from { }
+  to { left: 60px; }
+}
+@-webkit-keyframes ref2Anime {
+  from { }
+  to { left: 60px; }
+}
+
+#wrap > div:nth-child(3) {
+  animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+  -webkit-animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+}
+@keyframes ref3Anime {
+  from { }
+  to { top: 60px; }
+}
+@-webkit-keyframes ref3Anime {
+  from { }
+  to { top: 60px; }
+}
+
+#wrap > div:nth-child(4) {
+  animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+  -webkit-animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+}
+@keyframes ref4Anime {
+  from { }
+  to { left: -60px; }
+}
+@-webkit-keyframes ref4Anime {
+  from { }
+  to { left: -60px; }
+}
+
+#wrap > div:nth-child(5) {
+  
+}
+
+/*******************************************************************************
+ * image                                                                       *
+ ******************************************************************************/
+#wrap > div img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border-radius: 20px;
+  position: absolute;
+}
+#wrap > div:nth-child(1) img {
+  box-reflect: above 2px radial-gradient(circle at 50% 150%, transparent,
+                                               transparent 60%, white);
+  -webkit-box-reflect: above 2px -webkit-radial-gradient(50% 150%, circle,
+                                               transparent, transparent 60%, white);
+}
+#wrap > div:nth-child(2) img {
+  box-reflect: right 2px radial-gradient(circle at -50% 50%, transparent,
+                                               transparent 60%, white);
+  -webkit-box-reflect: right 2px -webkit-radial-gradient(-50% 50%, circle,
+                                               transparent, transparent 60%, white);
+}
+#wrap > div:nth-child(3) img {
+  box-reflect: below 2px radial-gradient(circle at 50% -50%, transparent,
+                                               transparent 60%, white);
+  -webkit-box-reflect: below 2px -webkit-radial-gradient(50% -50%, circle,
+                                               transparent, transparent 60%, white);
+}
+#wrap > div:nth-child(4) img {
+  box-reflect: left 2px radial-gradient(circle at 150% 50%, transparent,
+                                               transparent 60%, white);
+  -webkit-box-reflect: left 2px -webkit-radial-gradient(150% 50%, circle,
+                                               transparent, transparent 60%, white);
+}
+
+/*******************************************************************************
+ * span                                                                        *
+ ******************************************************************************/
+#wrap > div span {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border-radius: 20px;
+  background-color: #000000;
+  position: absolute;
+}
+

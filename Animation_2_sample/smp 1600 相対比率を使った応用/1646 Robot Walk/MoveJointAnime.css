@@ -1,0 +1,59 @@
+/* MoveJointAnime.css */
+
+#stage {
+  margin: 0px;
+  width: 400px; height: 400px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#upper {
+  top: 200px; left: 185px;
+  width: 20px; height: 80px;
+  background-color: pink;
+  position: absolute;
+  
+  transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  
+  animation: upperAnime 10s linear 0s infinite normal;
+  -webkit-animation: upperAnime 10s linear 0s infinite normal;
+}
+@keyframes upperAnime {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes upperAnime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+
+#under {
+  top: 90px; left: 0px;
+  width: 20px; height: 80px;
+  background-color: yellowgreen;
+  position: absolute;
+  
+  transform-origin:  50% 0%;
+  -webkit-transform-origin: 50% 0%;
+        
+  animation: underAnime 1s linear 0s infinite alternate;
+  -webkit-animation: underAnime 1s linear 0s infinite alternate;
+}
+@keyframes underAnime {
+  0% { transform: rotateZ(-45deg); }
+  100% { transform: rotateZ(45deg); }
+}
+@-webkit-keyframes underAnime {
+  0% { -webkit-transform: rotateZ(-45deg); }
+  100% { -webkit-transform: rotateZ(45deg); }
+}
+
+#joint {
+  top: 75px; left: -5px;
+  width: 30px; height: 30px;
+  background-color: orange;
+  border-radius: 15px;
+  position: absolute;
+}

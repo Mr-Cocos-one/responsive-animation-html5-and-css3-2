@@ -1,0 +1,157 @@
+/* NaviMenu13.css */
+
+#menu-box {
+  margin: 10px 0px 10px 87px;
+  /* margin: 10px 0px 10px 7px; */
+  width: 603px; height: 201px;
+  background-color: #000000;
+  position: relative;
+}
+
+/* メニューボード *****************************************************************/
+#menu-box>div {                   /* メニューボード */
+  top: 0px; left: 0px;
+  width: 603px; height: 201px;
+  border: 1px solid #9999FF;
+  background-color: #99CCFF;
+  /* background-colorにbackground-imageでグラデーションをかぶせる */
+  background-image: linear-gradient( to right bottom, turquoise, aqua, lightseagreen );
+  background-image: -webkit-linear-gradient( left top, turquoise, aqua, lightseagreen );
+  background-position: 50px 0px;
+  background-size: 20px 20px;
+  background-clip: border-box;
+  background-repeat: repeat;
+  
+  text-align: center;
+  font-size: 76px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #3333FF;
+  text-shadow: 2px 2px 2px #333333;
+  line-height: 180px;
+  cursor: pointer;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transform: perspective(500px) rotateX(0deg);
+  -webkit-transform: perspective(500px) rotateX(0deg);
+  
+  transition: 2.0s ease-in-out;
+  -webkit-transition: 2.0s ease-in-out;
+}
+#menu-box:hover>div {             /* menu-boxのhover時に表裏反転する */
+  transform: perspective(500px) rotateX(180deg);
+  -webkit-transform: perspective(500px) rotateX(180deg);
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {                    /* 大メニューのul */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  top: 0px; left: 0px;
+  width: 603px; height: 201px;
+  border-right: 1px solid #999999;
+  list-style-type: none;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transform: perspective(500px) rotateX(-180deg);
+  -webkit-transform: perspective(500px) rotateX(-180deg);
+  
+  transition: 2.0s ease-in-out;
+  -webkit-transition: 2.0s ease-in-out;
+}
+#menu-box:hover>ul {             /* menu-boxのhover時に表裏反転する */
+  transform: perspective(500px) rotateX(0deg);
+  -webkit-transform: perspective(500px) rotateX(0deg);
+}
+
+#menu-box>ul>li {                 /* 大メニューのli */
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box ul ul {                    /* 小メニューのul */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 200px; height: 200px;
+  border: 1px solid #999999;
+  border-right: none;
+  background-color: #EEEEEE;
+  list-style-type: none;
+  float: left;
+}
+
+#menu-box ul ul li {              /* 小メニュー */
+  width: 200px; height: 30px;
+}
+
+#menu-box ul ul li a {            /* 小メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 10px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 30px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+}
+
+#menu-box ul ul li a:hover {      /* 小メニューのhover時に背景色とテキストの色を変える */
+  background-color: #FF9999;
+  color: #FFFFFF;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 920px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#sidebar_L {
+  width: 150px;
+  float: left;
+  margin: 0px;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner_L {
+  width: 150px;
+  height: 350px;
+  margin: 0px;
+}
+#content {
+  width: 610px;
+  float: left;
+  margin: 0px;
+}
+#content_inner {
+  width: 610px;
+  margin: 0px;
+}
+#sidebar_R {
+  width: 150px;
+  float: right;
+  margin: 0px;
+  border-left: solid 1px #AAAAAA;
+}
+#side_inner_R {
+  width: 150px;
+  height: 350px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

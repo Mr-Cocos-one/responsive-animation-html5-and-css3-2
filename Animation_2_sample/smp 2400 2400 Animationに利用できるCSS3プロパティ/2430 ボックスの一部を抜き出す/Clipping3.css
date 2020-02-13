@@ -1,0 +1,91 @@
+/* Clipping3.css */
+#stage {
+  width: 700px;
+  height: 550px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+#image1 {
+  top: 20px; left: 15px;
+  position: absolute;
+}
+
+#image1 > img:nth-child(1) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 128px, 95px, 5px); position: absolute;
+}
+#image1 > img:nth-child(2) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 261px, 95px, 138px); position: absolute;
+}
+#image1 > img:nth-child(3) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 394px, 95px, 271px); position: absolute;
+}
+#image1 > img:nth-child(4) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 128px, 195px, 5px); position: absolute;
+}
+#image1 > img:nth-child(5) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 261px, 195px, 138px); position: absolute;
+}
+#image1 > img:nth-child(6) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 394px, 195px, 271px); position: absolute;
+}
+#image1 > img:nth-child(7) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 128px, 295px, 5px); position: absolute;
+}
+#image1 > img:nth-child(8) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 261px, 295px, 138px); position: absolute;
+}
+#image1 > img:nth-child(9) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 394px, 295px, 271px); position: absolute;
+}
+
+#image2 {
+  top: 220px; left: 280px;
+  position: absolute;
+}
+
+#image2 > img:nth-child(1) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 128px, 95px, 5px); position: absolute;
+}
+#image2 > img:nth-child(2) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 261px, 95px, 138px); position: absolute;
+}
+#image2 > img:nth-child(3) {
+  width: 400px; height: 300px;
+  clip:rect(5px, 394px, 95px, 271px); position: absolute;
+}
+#image2 > img:nth-child(4) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 128px, 195px, 5px); position: absolute;
+}
+#image2 > img:nth-child(5) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 261px, 195px, 138px); position: absolute;
+}
+#image2 > img:nth-child(6) {
+  width: 400px; height: 300px;
+  clip:rect(105px, 394px, 195px, 271px); position: absolute;
+}
+#image2 > img:nth-child(7) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 128px, 295px, 5px); position: absolute;
+}
+#image2 > img:nth-child(8) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 261px, 295px, 138px); position: absolute;
+}
+#image2 > img:nth-child(9) {
+  width: 400px; height: 300px;
+  clip:rect(205px, 394px, 295px, 271px); position: absolute;
+}

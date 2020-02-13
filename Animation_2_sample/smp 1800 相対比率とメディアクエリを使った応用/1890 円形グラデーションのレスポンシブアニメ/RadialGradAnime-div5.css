@@ -1,0 +1,79 @@
+/* RadialGradAnime-div5.css */
+
+/*****************************************************************************
+* 四角形　円形グラデーション５
+******************************************************************************/
+#div5 {
+  top: 350px; left: 30px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+}
+
+#div5 > span:nth-child(1) {
+  top: -50px; left: -175px;
+  width: 500px; height: 250px;
+  background: repeating-radial-gradient( red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-repeating-radial-gradient( red, blue 10px, yellow 20px,
+                                                 red 30px);
+  position: absolute;
+  opacity: 1.0;
+  
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  
+  animation: grad5Anime1 10s linear 0s infinite normal,
+             grad5AnimeR 30s linear 0s infinite normal;
+  -webkit-animation: grad5Anime1 10s linear 0s infinite normal,
+                     grad5AnimeR 30s linear 0s infinite normal;
+}
+#div5 > span:nth-child(2) {
+  top: -50px; left: -175px;
+  width: 500px; height: 250px;
+  background: repeating-radial-gradient( cyan, orange 10px, green 20px, cyan 30px);
+  background: -webkit-repeating-radial-gradient( cyan, orange 10px, green 20px,
+                                                 cyan 30px);
+  position: absolute;
+  opacity: 0.0;
+  
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  
+  animation: grad5Anime2 10s linear 0s infinite normal,
+             grad5AnimeR 30s linear 0s infinite normal;
+  -webkit-animation: grad5Anime2 10s linear 0s infinite normal,
+                     grad5AnimeR 30s linear 0s infinite normal;
+}
+/* grad5AnimeR **************************************/
+@keyframes grad5AnimeR {
+  from { }
+  to { transform: rotateZ(315deg); }
+}
+@-webkit-keyframes grad5AnimeR {
+  from { }
+  to { -webkit-transform: rotateZ(315deg); }
+}
+/* grad5Anime1 **************************************/
+@keyframes grad5Anime1 {
+  from { }
+  50% { opacity: 0.0; }
+  to { }
+}
+@-webkit-keyframes grad5Anime1 {
+  from { }
+  50% { opacity: 0.0; }
+  to { }
+}
+/* grad5Anime2 **************************************/
+@keyframes grad5Anime2 {
+  from { }
+  50% { opacity: 1.0; }
+  to { }
+}
+@-webkit-keyframes grad5Anime2 {
+  from { }
+  50% { opacity: 1.0; }
+  to { }
+}
+

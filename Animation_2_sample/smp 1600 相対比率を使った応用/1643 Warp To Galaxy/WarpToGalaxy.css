@@ -1,0 +1,349 @@
+/* WarpToGalaxy.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#universe {
+  top: -150px; left: -100px;
+  width: 800px; height: 800px;
+  /* border-radius: 50%; */
+  position: absolute;
+}
+#universe span {
+  top: 0px; left: 0px;
+  width: 800px; height: 800px;
+  /* border-radius: 50%; */
+  position: absolute;
+  opacity: 0.0;
+}
+#universe  > span:nth-child(1) {
+  background: radial-gradient( farthest-corner, #000000 0%, #990099 20%, #990000 40%, #646400 60%, #006400 80%, #000099 100% );
+  background: -webkit-radial-gradient( farthest-corner, #000000 0%, #990099 20%, #990000 40%, #646400 60%, #006400 80%, #000099 100% );
+  
+  animation: back2Anime1 6s linear 0s infinite normal;
+  -webkit-animation: back2Anime1 6s linear 0s infinite normal;
+}
+#universe  > span:nth-child(2) {
+  background: radial-gradient( farthest-corner, #000000 0%, #000099 20%, #990099 40%, #990000 60%, #646400 80%, #006400 100% );
+  background: -webkit-radial-gradient( farthest-corner, #000000 0%, #000099 20%, #990099 40%, #990000 60%, #646400 80%, #006400 100% );
+  
+  animation: back2Anime2 6s linear 0s infinite normal;
+  -webkit-animation: back2Anime2 6s linear 0s infinite normal;
+}
+#universe  > span:nth-child(3) {
+  background: radial-gradient( farthest-corner, #000000 0%, #006400 20%, #000099 40%, #990099 60%, #990000 80%, #646400 100% );
+  background: -webkit-radial-gradient( farthest-corner, #000000 0%, #006400 20%, #000099 40%, #990099 60%, #990000 80%, #646400 100% );
+  
+  animation: back2Anime3 6s linear 0s infinite normal;
+  -webkit-animation: back2Anime3 6s linear 0s infinite normal;
+}
+#universe  > span:nth-child(4) {
+  background: radial-gradient( farthest-corner, #000000 0%, #646400 20%, #006400 40%, #000099 60%, #990099 80%, #990000 100% );
+  background: -webkit-radial-gradient( farthest-corner, #000000 0%, #646400 20%, #006400 40%, #000099 60%, #990099 80%, #990000 100% );
+  
+  animation: back2Anime4 6s linear 0s infinite normal;
+  -webkit-animation: back2Anime4 6s linear 0s infinite normal;
+}
+#universe  > span:nth-child(5) {
+  background: radial-gradient( farthest-corner, #000000 0%, #990000 20%, #646400 40%, #006400 60%, #000099 80%, #990099 100% );
+  background: -webkit-radial-gradient( farthest-corner, #000000 0%, #990000 20%, #646400 40%, #006400 60%, #000099 80%, #990099 100% );
+  
+  animation: back2Anime5 6s linear 0s infinite normal;
+  -webkit-animation: back2Anime5 6s linear 0s infinite normal;
+}
+/* back2Anime1 **********************************************************/
+@keyframes back2Anime1 {
+  from { opacity: 0.2; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.0; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.2; }
+}
+@-webkit-keyframes back2Anime1 {
+  from { opacity: 0.2; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.0; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.2; }
+}
+/* back2Anime2 **********************************************************/
+@keyframes back2Anime2 {
+  from { opacity: 0.0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.2; }
+  60% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes back2Anime2 {
+  from { opacity: 0.0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.2; }
+  60% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* back2Anime3 **********************************************************/
+@keyframes back2Anime3 {
+  from { opacity: 0.0; }
+  20% { opacity: 0.0; }
+  40% { opacity: 0.2; }
+  60% { opacity: 0.2; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes back2Anime3 {
+  from { opacity: 0.0; }
+  20% { opacity: 0.0; }
+  40% { opacity: 0.2; }
+  60% { opacity: 0.2; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* back2Anime4 **********************************************************/
+@keyframes back2Anime4 {
+  from { opacity: 0.0; }
+  40% { opacity: 0.0; }
+  60% { opacity: 0.2; }
+  80% { opacity: 0.2; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes back2Anime4 {
+  from { opacity: 0.0; }
+  40% { opacity: 0.0; }
+  60% { opacity: 0.2; }
+  80% { opacity: 0.2; }
+  to { opacity: 0.0; }
+}
+/* back2Anime5 **********************************************************/
+@keyframes back2Anime5 {
+  from { opacity: 0.2; }
+  20% { opacity: 0.0; }
+  60% { opacity: 0.0; }
+  80% { opacity: 0.2; }
+  to { opacity: 0.2; }
+}
+@-webkit-keyframes back2Anime5 {
+  from { opacity: 0.2; }
+  20% { opacity: 0.0; }
+  60% { opacity: 0.0; }
+  80% { opacity: 0.2; }
+  to { opacity: 0.2; }
+}
+
+/******************************************************/
+#dotGroup1 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+}
+
+#dot01 {
+  top: -10px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot02 {
+  top: -120px; left: 250px;
+  width: 20px; height: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot03 {
+  top: -10px; left: 400px;
+  width: 5px; height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot04 {
+  top: 20px; left: 600px;
+  width: 15px; height: 15px;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot05 {
+  top: 220px; left: 600px;
+  width: 5px; height: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot06 {
+  top: 600px; left: 800px;
+  width: 25px; height: 25px;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot07 {
+  top: 500px; left: 500px;
+  width: 10px; height: 10px;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot08 {
+  top: 700px; left: 100px;
+  width: 15px; height: 15px;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot09 {
+  top: 500px; left: 100px;
+  width: 5px; height: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot10 {
+  top: 450px; left: -20px;
+  width: 10px; height: 10px;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot11 {
+  top: 250px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot12 {
+  top: 80px; left: -130px;
+  width: 15px; height: 15px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/******************************************************/
+#dotGroup2 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+  
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+#dot13 {
+  top: -10px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot14 {
+  top: -120px; left: 250px;
+  width: 20px; height: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot15 {
+  top: -10px; left: 400px;
+  width: 5px; height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot16 {
+  top: 20px; left: 600px;
+  width: 15px; height: 15px;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot17 {
+  top: 220px; left: 600px;
+  width: 5px; height: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot18 {
+  top: 600px; left: 800px;
+  width: 25px; height: 25px;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot19 {
+  top: 500px; left: 500px;
+  width: 10px; height: 10px;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot20 {
+  top: 700px; left: 100px;
+  width: 15px; height: 15px;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot21 {
+  top: 500px; left: 100px;
+  width: 5px; height: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot22 {
+  top: 450px; left: -20px;
+  width: 10px; height: 10px;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot23 {
+  top: 250px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot24 {
+  top: 80px; left: -130px;
+  width: 15px; height: 15px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/* クラスを使用して、複数の点を一緒に動かす。***************************/
+.dots1 {
+  animation: dotsAnime 3s ease-in 0s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 0s infinite normal;
+}
+
+.dots2 {
+  animation: dotsAnime 3s ease-in 1s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 1s infinite normal;
+}
+
+.dots3 {
+  animation: dotsAnime 3s ease-in 2s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 2s infinite normal;
+}
+
+@keyframes dotsAnime {
+  0% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.0; }
+  1% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.8; }
+  100% { }
+}
+@-webkit-keyframes dotsAnime {
+  0% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.0; }
+  1% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.8; }
+  100% { }
+}
+

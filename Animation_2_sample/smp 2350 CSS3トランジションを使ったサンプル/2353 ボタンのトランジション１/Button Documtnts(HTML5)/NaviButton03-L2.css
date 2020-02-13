@@ -1,0 +1,105 @@
+/* NaviButton03-L2.css */
+
+#menu-box {
+  margin: 10px;
+  /* width: 606px; height: 54px; */
+  width: 576px; height: 54px;       /* widthはulの幅+ボーダーの幅、heightはulの高さ+ボーダーの幅 */
+  position: relative;
+}
+
+#menu-box ul {
+  margin: 0px; padding: 0px;        /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 573px; height: 50px;       /* widthは（liの幅+ボーダーの幅）* 3、heightはliの高さ */
+  border: 2px solid #666666;
+  border-right: 1px solid #666666;
+  list-style-type: none;
+}
+
+#menu-box li {                      /* ボタンの四角形 */
+  /* width: 200px; height: 50px; */
+  width: 190px; height: 50px;
+  border-right: 1px solid #666666;
+  float: left;
+  background-color: lightgray;      /* グラデーションの機能がない場合の背景色 */
+  
+  /* 金属風のグラデーションをつける  */
+  background-image: repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%,
+                                               rgba( 255, 255, 255, 0.7 ) 8% ),
+                    repeating-linear-gradient( darkslategray 10%, darkslategray 20%,
+                                               lightslategray 20%, lightslategray 30% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%,
+                                                       rgba( 255, 255, 255, 0.7 ) 8% ),
+                    -webkit-repeating-linear-gradient( darkslategray 10%, darkslategray 20%,
+                                                       lightslategray 20%, lightslategray 30% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  /* 輝きと影をつける  */
+  box-shadow: 2px 4px 8px rgba(255, 255, 255, 1) inset, -1px -1px 8px rgba(0, 0, 0, 1) inset,
+              -1px -1px 1px rgba(0, 0, 0, 1) inset;
+}
+#menu-box li:hover {                /* ボタンhover時にボタンが押し込まれたような影をつける。 */
+  background-color: darkgray;       /* グラデーションの機能がない場合の背景色 */
+  box-shadow:  1px 1px 8px rgba(0, 0, 0, 0.8) inset, -1px 1px 2px rgba(0, 0, 0, 0.6) inset,
+               -1px -1px 2px rgba(0, 0, 0, 0.4) inset, 1px -1px 2px rgba(0, 0, 0, 0.6) inset,
+               3px 5px 8px rgba(255, 255, 255, 1) inset,  -2px -2px 8px rgba(0, 0, 0, 1) inset;
+  background-position: 2px 2px;
+}
+
+#menu-box li a {                    /* ボタンのテキスト */
+  text-decoration: none;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #3333FF;
+  /* text-shadowを利用して、へこんだ文字のように見せる */
+  text-shadow: -2px -2px 1px #666666, -2px -1px 1px #666666, -1px -2px 1px #666666,
+               1px 1px 2px #EEEEEE, 1px 1px 3px #FFFFFF;
+  line-height: 50px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden;
+  outline: none;
+}
+#menu-box li:hover a {                /* ボタンhover時にボタンが押し込まれたようにテキストをズラす。 */
+  transform: translate(1px, 1px);
+  -webkit-transform: translate(1px, 1px);
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 590px;
+  margin: 0px;
+  float: left;
+}
+
+#content_inner {
+  width: 590px;
+  margin: 0px;
+}
+#sidebar {
+  width: 200px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 200px;
+  height: 300px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

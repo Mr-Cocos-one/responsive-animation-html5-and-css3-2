@@ -1,0 +1,120 @@
+/* Clip-trans-origin.css */
+/**************************************************************************
+* 〔クリップ領域のtransform-originの求め方〕
+*    ●X軸方向の位置
+*       （ クリップ領域のright － クリップ領域のleft ） ／ ２ 
+*        ＋ クリップ領域のright － ボーダー幅
+*
+*    ●Y軸方向の位置
+*       （ クリップ領域のbottom － クリップ領域のtop ） ／ ２ 
+*        ＋ クリップ領域のtop － ボーダー幅
+*
+*   パディングが指定されている場合も、この求め方でＯＫ。
+*
+*   この位置がクリップ領域の中心の位置になるので、transform-originを
+*   変えたい場合には、この位置を基にすると考え易い。
+**************************************************************************/
+
+#stage {
+  width: 700px; height: 540px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+#origin-point {
+  /* left: 123px; top: 98px; */
+  /* left: 463px; top: 98px; */
+  /* left: 183px; top: 378px; */
+  left: 413px; top: 343px;
+  border: 2px solid pink;
+  position: absolute;
+}
+
+#back1 {
+  top: 20px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+#clipping1 {
+  top: 20px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 200px, 150px, 10px);
+  
+  transform-origin: 103px 78px;
+  -webkit-transform-origin: 103px 78px;
+  
+  transform: skewX( -10deg );
+  -webkit-transform: skewX( -10deg );
+}
+
+#back2 {
+  top: 20px; left: 360px;
+  width: 280px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  padding: 20px;
+  position: absolute;
+}
+#clipping2 {
+  top: 20px; left: 360px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  padding: 20px;
+  background-color: yellow;
+  position: absolute;
+  clip:rect(10px, 200px, 150px, 10px);
+  
+  transform-origin: 103px 78px;
+  -webkit-transform-origin: 103px 78px;
+  
+  transform: rotateZ( -30deg );
+  -webkit-transform: rotateZ( -30deg );
+}
+
+#back3 {
+  top: 300px; left: 20px;
+  width: 320px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+#clipping3 {
+  top: 300px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 320px, 150px, 10px);
+  
+  transform-origin: 163px 78px;
+  -webkit-transform-origin: 163px 78px;
+  
+  transform: scale( 0.8, 0.8 );
+  -webkit-transform: scale( 0.8, 0.8 );
+}
+
+#back4 {
+  top: 300px; left: 360px;
+  width: 140px; height: 105px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+
+#clipping4 {
+  top: 300px; left: 360px;
+  width: 140px; height: 105px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 100px, 80px, 10px);
+  
+  transform-origin: 53px 43px;
+  -webkit-transform-origin: 53px 43px;
+  
+  transform: translate( 150px, 120px );
+  -webkit-transform: translate( 150px, 120px );
+}
+

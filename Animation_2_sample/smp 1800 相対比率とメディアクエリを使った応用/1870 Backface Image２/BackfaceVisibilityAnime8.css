@@ -1,0 +1,177 @@
+/* BackfaceVisibilityAnime8.css */
+
+/**************************************************************************
+ * backface-visibility Animation 8                                        *
+ **************************************************************************/
+#stage {
+  margin: 30px 0px 0px 50px;
+  width: 480px; height: 510px;
+  border: solid 1px black;
+  position: relative;
+}
+
+#stage #wrapper {
+  top: 100px; left: 50px;
+  width: 380px; height: 310px;
+  background-color: lightgray;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+#rect1-back {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  animation: BackFaceAnimeB 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeB 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeB {
+  from { }
+  to { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes BackFaceAnimeB {
+  from { }
+  to { -webkit-transform: rotateY(-360deg); }
+}
+#rect1-back-clip1 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 50px 310px 0px);
+}
+#rect1-back-clip2 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 330px 50px 50px);
+}
+#rect1-back-clip3 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 380px 310px 330px);
+}
+#rect1-back-clip4 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(260px 330px 310px 50px);
+}
+
+#rect2-back {
+  top: 50px; left: 50px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  animation: BackFaceAnimeB2 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeB2 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeB2 {
+  from { }
+  to { transform: rotateY(720deg); }
+}
+@-webkit-keyframes BackFaceAnimeB2 {
+  from { }
+  to { -webkit-transform: rotateY(720deg); }
+}
+
+#rect2-back img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#rect1-front {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  animation: BackFaceAnimeF 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeF 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeF {
+  from { }
+  to { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes BackFaceAnimeF {
+  from { }
+  to { -webkit-transform: rotateY(-360deg); }
+}
+
+#rect1-front-clip1 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 50px 310px 0px);
+}
+#rect1-front-clip2 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 330px 50px 50px);
+}
+#rect1-front-clip3 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(0px 380px 310px 330px);
+}
+#rect1-front-clip4 {
+  top: 0px; left: 0px;
+  width: 380px; height: 310px;
+  position: absolute;
+  
+  clip: rect(260px 330px 310px 50px);
+}
+
+#rect2-front {
+  top: 50px; left: 50px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  animation: BackFaceAnimeF2 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeF2 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeF2 {
+  from { }
+  to { transform: rotateY(720deg); }
+}
+@-webkit-keyframes BackFaceAnimeF2 {
+  from { }
+  to { -webkit-transform: rotateY(720deg); }
+}
+
+#rect2-front img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+

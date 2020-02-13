@@ -1,0 +1,99 @@
+/* ClipTransition.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #CCCCCC;
+  text-align: center;
+  color: #CCCCCC;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+  
+  border-radius: 10px;
+}
+.font28GothicB {
+  font: bold 28px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+}
+#button:hover {
+  background-color: #EEEEEE;
+  color: #999999;
+}
+
+#image1 {
+  top: 80px; left: -220px;
+  position: absolute;
+}
+
+#image1 > img:nth-child(1) {
+  top: 0px; left: 0px;     /* Chrome‚ÆFirefox‚Ítop‚Æleft‚ª•K—vBSafari‚Í–³‚­‚Ä‚à‰ÂB */
+  width: 280px; height: 210px;
+  position: absolute;
+  clip: rect(0px, 140px, 105px, 0px);
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#button:hover #image1 > img:nth-child(1) {
+  opacity: 0.3;
+}
+
+#image1 > img:nth-child(2) {
+  top: 0px; left: 0px;     /* Chrome‚ÆFirefox‚Ítop‚Æleft‚ª•K—vBSafari‚Í–³‚­‚Ä‚à‰ÂB */
+  width: 280px; height: 210px;
+  position: absolute;
+  clip: rect(0px, 280px, 105px, 140px);
+  
+  transform-origin: 210px 52px;
+  -webkit-transform-origin: 210px 52px;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#button:hover #image1 > img:nth-child(2) {
+  transform: translate(180px, 0px) skew(-50deg, -30deg);
+  -webkit-transform: translate(180px, 0px) skew(-50deg, -30deg);
+}
+
+#image1 > img:nth-child(3) {
+  top: 0px; left: 0px;     /* Chrome‚ÆFirefox‚Ítop‚Æleft‚ª•K—vBSafari‚Í–³‚­‚Ä‚à‰ÂB */
+  width: 280px; height: 210px;
+  position: absolute;
+  clip: rect(105px, 140px, 210px, 0px);
+  
+  transform-origin: 70px 157px;
+  -webkit-transform-origin: 70px 157px;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#button:hover #image1 > img:nth-child(3) {
+  transform: translate(0px, 160px) rotateZ(720deg);
+  -webkit-transform: translate(0px, 160px) rotateZ(720deg);
+}
+
+#image1 > img:nth-child(4) {
+  top: 0px; left: 0px;     /* Chrome‚ÆFirefox‚Ítop‚Æleft‚ª•K—vBSafari‚Í–³‚­‚Ä‚à‰ÂB */
+  width: 280px; height: 210px;
+  position: absolute;
+  clip: rect(105px, 280px, 210px, 140px);
+  
+  transform-origin: 140px 105px;
+  -webkit-transform-origin: 140px 105px;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#button:hover #image1 > img:nth-child(4) {
+  transform: translate(120px, 50px) scale(2.0, 2.0);
+  -webkit-transform: translate(120px, 50px) scale(2.0, 2.0);
+}
+

@@ -1,0 +1,185 @@
+/* RadialGradAnime-div4.css */
+
+/*****************************************************************************
+* 円形グラデーション４（全体移動）
+******************************************************************************/
+#div4 {
+  top: 200px; left: 30px;
+  width: 530px; height: 120px;
+  border: solid 2px #FFF;
+  border-radius: 20px;
+  background-color: #FFF;
+  position: absolute;
+}
+
+#div4 span {
+  top: 0px; left: 0px;
+  width: 530px; height: 120px;
+  border-radius: 18px;
+  position: absolute;
+  opacity: 0.0;
+}
+
+#div4 > span:nth-child(1) {
+  background: radial-gradient(circle at 50% 50%, #F0F, #00F, #0FF, #0F0,
+                              #FF0, #F00 );
+  background: -webkit-radial-gradient(50% 50%, circle, #F0F, #00F, #0FF,
+                                      #0F0, #FF0, #F00 );
+  animation: grad4Anime1 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime1 10s linear 0s infinite normal;
+}
+#div4 > span:nth-child(2) {
+  background: radial-gradient(circle at 50% 50%, #F00, #F0F, #00F, #0FF,
+                              #0F0, #FF0);
+  background: -webkit-radial-gradient(50% 50%, circle, #F00, #F0F, #00F,
+                                      #0FF, #0F0, #FF0);
+  animation: grad4Anime2 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime2 10s linear 0s infinite normal;
+}
+#div4 > span:nth-child(3) {
+  background: radial-gradient(circle at 50% 50%, #FF0, #F00, #F0F, #00F,
+                              #0FF, #0F0 );
+  background: -webkit-radial-gradient(50% 50%, circle, #FF0, #F00, #F0F,
+                                      #00F, #0FF, #0F0 );
+  animation: grad4Anime3 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime3 10s linear 0s infinite normal;
+}
+#div4 > span:nth-child(4) {
+  background: radial-gradient(circle at 50% 50%, #0F0, #FF0, #F00, #F0F,
+                              #00F, #0FF );
+  background: -webkit-radial-gradient(50% 50%, circle, #0F0, #FF0, #F00,
+                                      #F0F, #00F, #0FF );
+  animation: grad4Anime4 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime4 10s linear 0s infinite normal;
+}
+#div4 > span:nth-child(5) {
+  background: radial-gradient(circle at 50% 50%, #0FF, #0F0, #FF0, #F00,
+                              #F0F, #00F );
+  background: -webkit-radial-gradient(50% 50%, circle, #0FF, #0F0, #FF0,
+                                      #F00, #F0F, #00F );
+  animation: grad4Anime5 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime5 10s linear 0s infinite normal;
+}
+#div4 > span:nth-child(6) {
+  background: radial-gradient(circle at 50% 50%, #00F, #0FF, #0F0, #FF0,
+                              #F00, #F0F );
+  background: -webkit-radial-gradient(50% 50%, circle, #00F, #0FF, #0F0,
+                                      #FF0, #F00, #F0F );
+  animation: grad4Anime6 10s linear 0s infinite normal;
+  -webkit-animation: grad4Anime6 10s linear 0s infinite normal;
+}
+/* grad4Anime1 **************************************/
+@keyframes grad4Anime1 {
+  from { opacity: 1.0; }
+  17% { opacity: 1.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes grad4Anime1 {
+  from { opacity: 1.0; }
+  17% { opacity: 1.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 1.0; }
+}
+/* grad4Anime2 **************************************/
+@keyframes grad4Anime2 {
+  from { opacity: 0.0; }
+  17% { opacity: 1.0; }
+  34% { opacity: 1.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad4Anime2 {
+  from { opacity: 0.0; }
+  17% { opacity: 1.0; }
+  34% { opacity: 1.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* grad4Anime3 **************************************/
+@keyframes grad4Anime3 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 1.0; }
+  51% { opacity: 1.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad4Anime3 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 1.0; }
+  51% { opacity: 1.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* grad4Anime4 **************************************/
+@keyframes grad4Anime4 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 1.0; }
+  68% { opacity: 1.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad4Anime4 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 1.0; }
+  68% { opacity: 1.0; }
+  84% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* grad4Anime5 **************************************/
+@keyframes grad4Anime5 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 1.0; }
+  84% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad4Anime5 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 1.0; }
+  84% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+/* grad4Anime6 **************************************/
+@keyframes grad4Anime6 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad4Anime6 {
+  from { opacity: 0.0; }
+  17% { opacity: 0.0; }
+  34% { opacity: 0.0; }
+  51% { opacity: 0.0; }
+  68% { opacity: 0.0; }
+  84% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+

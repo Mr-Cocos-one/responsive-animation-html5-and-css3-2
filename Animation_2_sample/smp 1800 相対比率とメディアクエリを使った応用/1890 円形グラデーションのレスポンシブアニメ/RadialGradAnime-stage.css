@@ -1,0 +1,8 @@
+/* RadialGradAnime-stage.css */
+
+#stage {
+  width: 600px; height: 530px;
+  background-color: black;
+  position: relative;
+}
+

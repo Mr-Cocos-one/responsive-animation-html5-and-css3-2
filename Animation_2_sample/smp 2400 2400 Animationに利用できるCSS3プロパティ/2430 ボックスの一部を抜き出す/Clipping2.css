@@ -1,0 +1,97 @@
+/* Clipping2.css */
+
+#stage {
+  width: 700px; height: 540px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#back1 {
+  top: 20px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+#clipping1 {
+  top: 20px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 200px, 150px, 10px);
+  
+  transform-origin: 103px 78px;
+  -webkit-transform-origin: 103px 78px;
+  
+  transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+}
+
+#back2 {
+  top: 20px; left: 360px;
+  width: 280px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  padding: 20px;
+  position: absolute;
+}
+#clipping2 {
+  top: 20px; left: 360px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  padding: 20px;
+  background-color: yellow;
+  position: absolute;
+  clip:rect(10px, 200px, 150px, 10px);
+  
+  transform-origin: 103px 78px;
+  -webkit-transform-origin: 103px 78px;
+  
+  transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+}
+
+#back3 {
+  top: 300px; left: 20px;
+  width: 320px; height: 210px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+#clipping3 {
+  top: 300px; left: 20px;
+  width: 280px; height: 210px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 320px, 150px, 10px);
+  
+  transform-origin: 163px 78px;
+  -webkit-transform-origin: 163px 78px;
+  
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+}
+
+#back4 {
+  top: 300px; left: 360px;
+  width: 140px; height: 105px;
+  border: solid 2px #FF0000;
+  background-color: #0000FF;
+  position: absolute;
+}
+
+#clipping4 {
+  top: 300px; left: 360px;
+  width: 140px; height: 105px;
+  border: solid 2px #00FF00;
+  position: absolute;
+  clip:rect(10px, 100px, 80px, 10px);
+  
+  transform-origin: 53px 43px;
+  -webkit-transform-origin: 53px 43px;
+  
+  transform: translate(150px, 120px);
+  -webkit-transform: translate(150px, 120px);
+}
+

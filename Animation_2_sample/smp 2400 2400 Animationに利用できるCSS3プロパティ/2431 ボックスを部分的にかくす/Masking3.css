@@ -1,0 +1,135 @@
+/* Masking3.css */
+
+#stage {
+  width: 700px; height: 800px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#image1 {
+  position: absolute;
+  top: 30px; left: 30px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: border-box;
+  mask-origin: border-box;
+  mask-position: 0% 0%;
+  mask-repeat: repeat;
+  mask-size: auto;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: border-box;
+  -webkit-mask-origin: border-box;
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: auto;
+}
+
+#image2 {
+  position: absolute;
+  top: 30px; left: 360px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: border-box;
+  mask-origin: border-box;
+  mask-position: 0% 0%;
+  mask-repeat: repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: border-box;
+  -webkit-mask-origin: border-box;
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+#image3 {
+  position: absolute;
+  top: 290px; left: 30px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: content-box;
+  mask-origin: content-box;
+  mask-position: 0% 0%;
+  mask-repeat: repeat;
+  mask-size: auto;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: content-box;
+  -webkit-mask-origin: content-box;
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: auto;
+}
+
+#image4 {
+  position: absolute;
+  top: 290px; left: 360px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: content-box;
+  mask-origin: content-box;
+  mask-position: 0% 0%;
+  mask-repeat: repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: content-box;
+  -webkit-mask-origin: content-box;
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+#image5 {
+  position: absolute;
+  top: 550px; left: 30px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: content-box;
+  mask-origin: content-box;
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: content-box;
+  -webkit-mask-origin: content-box;
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+#image6 {
+  position: absolute;
+  top: 550px; left: 360px;
+  width: 240px; height: 165px;
+  border: 30px solid forestgreen;
+  
+  mask-image: url(images/SquareMask3.png);
+  mask-clip: border-box;
+  mask-origin: border-box;
+  mask-position: 30% 30%;
+  mask-repeat: repeat;
+  mask-size: 50px 50px;
+  
+  -webkit-mask-image: url(images/SquareMask3.png);
+  -webkit-mask-clip: border-box;
+  -webkit-mask-origin: border-box;
+  -webkit-mask-position: 30% 30%;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: 50px 50px;
+}
+

@@ -1,0 +1,126 @@
+/* NaviMenu04D.css */
+#menu-box {
+  margin: 10px 0px 10px 10px;
+  width: 202px; height: 154px;
+  position: relative;
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 202px; height: 153px;
+  border-top: 1px solid #999999;
+  list-style-type: none;
+}
+
+#menu-box>ul>li {
+  width: 200px; height: 50px;       /* 大メニューの幅と高さ */
+  border: 1px solid #999999;
+  border-top: none;
+  background-color: #99CCFF;
+  overflow: hidden;                 /* この大メニューの overflow: hidden;の指定で以下の全ての要素が overflow しなくなる。 */
+  
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+}
+#menu-box>ul>li:nth-child(1):hover {     /* 大メニュー１のhover時に大メニュー１の高さを変える。 */
+  height: 140px;                         /* （小メニューのheight × 小メニュー数 ＋ 大メニューのheight） */
+}
+#menu-box>ul>li:nth-child(2):hover {     /* 大メニュー２のhover時に大メニュー２の高さを変える。 */
+  height: 170px;
+}
+#menu-box>ul>li:nth-child(3):hover {     /* 大メニュー３のhover時に大メニュー３の高さを変える。 */
+  height: 200px;
+}
+
+#menu-box>ul>li h1 {                /* 大メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 10px;
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #3333FF;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 50px;
+  display: block;
+  cursor: pointer;
+  
+  /* background-colorにbackground-imageで白のグラデーションをかぶせる */
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0.0 ) 0%, rgba( 255, 255, 255, 0.6 ) 50%,
+                                     rgba( 255, 255, 255, 0.6 ) 50%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.0 ) 0%, rgba( 255, 255, 255, 0.6 ) 50%,
+                                             rgba( 255, 255, 255, 0.6 ) 50%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box ul ul {                    /* 小メニューのul */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 200px;
+  background-color: #EEEEEE;
+  list-style-type: none;
+}
+
+#menu-box ul li ul li {             /* 小メニュー */
+  width: 200px; height: 30px;
+}
+
+#menu-box ul li ul li a {           /* 小メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 10px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 30px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+}
+
+#menu-box ul li ul li a:hover {     /* 小メニューのhover時に背景色とテキストの色を変える */
+  background-color: #FF9999;
+  color: #FFFFFF;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 570px;
+  margin: 0px;
+  float: left;
+}
+#content_inner {
+  width: 570px;
+  margin: 0px;
+}
+#sidebar {
+  width: 220px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 220px;
+  height: 150px;
+  margin: 0px;
+  /* border-top: solid 1px #AAAAAA; */
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

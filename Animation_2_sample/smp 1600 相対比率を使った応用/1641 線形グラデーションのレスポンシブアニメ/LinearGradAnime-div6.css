@@ -1,0 +1,33 @@
+/* LinearGradAnime-div6.css */
+
+/*****************************************************************************
+* 線形グラデーション６  リピーティングリニア（縦縞移動）
+******************************************************************************/
+#div6 {
+  top: 350px; left: 20px;
+  width: 250px; height: 120px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+}
+#div6 span {
+  top: 0px; left: 0px;
+  width: 500px; height: 120px;
+  
+  background: repeating-linear-gradient( 135deg, red 0%, #00FF00 2.5%, blue 5% );
+  background: -webkit-repeating-linear-gradient( -45deg, red 0%, #00FF00 2.5%, blue 5% );
+  position: absolute;
+  
+  animation: grad6Anime1 6s linear 0s infinite normal;
+  -webkit-animation: grad6Anime1 6s linear 0s infinite normal;
+}
+/* grad6Anime1 *************************************************/
+@keyframes grad6Anime1 {
+  from { }
+  to { left: -250px; }
+}
+@-webkit-keyframes grad6Anime1 {
+  from { }
+  to { left: -250px; }
+}
+

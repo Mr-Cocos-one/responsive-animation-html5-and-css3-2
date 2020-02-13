@@ -1,0 +1,80 @@
+/* MovingTextsAnime.css */
+
+#stage {
+  width: 700px; height: 500px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+#div1 {
+  top: 30px; left: 150px;
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #6699FF;
+  font: bold 72px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  position: absolute;
+  
+  animation: TextAnime1 10s linear 0s infinite alternate;
+  -webkit-animation: TextAnime1 10s linear 0s infinite alternate;
+}
+@keyframes TextAnime1 {
+  0% { transform: perspective(300px) rotateX(0deg); }
+  100% { transform: perspective(300px) rotateX(360deg); }
+}
+@-webkit-keyframes TextAnime1 {
+  0% { -webkit-transform: perspective(300px) rotateX(0deg); }
+  100% { -webkit-transform: perspective(300px) rotateX(360deg); }
+}
+
+#div2 {
+  top: 220px; left: 140px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  color: #00FF99;
+  font: bold 68px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  position: absolute;
+  
+  animation: TextAnime2 5s linear 0s infinite normal;
+  -webkit-animation: TextAnime2 5s linear 0s infinite normal;
+}
+@keyframes TextAnime2 {
+  0% { transform: rotateZ(0deg); }
+  25% { transform: rotateZ(30deg); }
+  50% { transform: rotateZ(0deg); }
+  75% { transform: rotateZ(-30deg); }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes TextAnime2 {
+  0% { -webkit-transform: rotateZ(0deg); }
+  25% { -webkit-transform: rotateZ(30deg); }
+  50% { -webkit-transform: rotateZ(0deg); }
+  75% { -webkit-transform: rotateZ(-30deg); }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+
+#div3 {
+  top: 400px; left: 100px;
+  /* border: 1px solid green; */
+  text-align: center;
+  color: #FF9900;
+  font: bold 64px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  position: absolute;
+  
+  animation: TextAnime3 10s linear 0s infinite normal;
+  -webkit-animation: TextAnime3 10s linear 0s infinite normal;
+}
+@keyframes TextAnime3 {
+  0% { transform: skewX(0deg); }
+  25% { transform: skewX(60deg); }
+  50% { transform: skewX(0deg); }
+  75% { transform: skewX(-60deg); }
+  100% { transform: skewX(0deg); }
+}
+@-webkit-keyframes TextAnime3 {
+  0% { -webkit-transform: skewX(0deg); }
+  25% { -webkit-transform: skewX(60deg); }
+  50% { -webkit-transform: skewX(0deg); }
+  75% { -webkit-transform: skewX(-60deg); }
+  100% { -webkit-transform: skewX(0deg); }
+}
+

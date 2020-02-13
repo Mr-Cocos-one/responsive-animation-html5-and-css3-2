@@ -1,0 +1,152 @@
+/* Gravity1.css */
+
+#stage {
+  width: 700px; height: 500px;
+  position: relative;
+}
+/* 背景 ***************************************************/
+#backUpper {
+  top: 0px; left: 0px;
+  width: 700px; height: 425px;
+  background-color: #000000;
+  position: absolute;
+}
+#backBottom {
+  top: 425px; left: 0px;
+  width: 700px; height: 75px;
+  background-color: #666666;
+  position: absolute;
+}
+/* ボール（４つ） ****************************************/
+.ball {
+  top: 0px; left: 0px;
+  width: 50px; height: 50px;
+  background-color: #CCECF4;
+  border: solid 2px #7FCFE2;
+  border-radius: 50%;
+  position: absolute;
+}
+#ball1 {
+  z-index: 4;
+  opacity: 1.0;
+}
+#ball2 {
+  z-index: 3;
+  opacity: 0.8;
+}
+#ball3 {
+  z-index: 2;
+  opacity: 0.6;
+}
+#ball4 {
+  z-index: 1;
+  opacity: 0.4;
+}
+/*************************************************************************
+ * 横移動ボックス                                                        *
+ *************************************************************************/
+.boxX {
+  top: 0px; left: 0px;
+  width: 50px; height: 425px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+#boxX1 {
+  animation: moveXAnime 4s linear 0s infinite alternate;
+  -webkit-animation: moveXAnime 4s linear 0s infinite alternate;
+}
+#boxX2 {
+  animation: moveXAnime 4s linear 0.05s infinite alternate;
+  -webkit-animation: moveXAnime 4s linear 0.05s infinite alternate;
+}
+#boxX3 {
+  animation: moveXAnime 4s linear 0.13s infinite alternate;
+  -webkit-animation: moveXAnime 4s linear 0.13s infinite alternate;
+}
+#boxX4 {
+  animation: moveXAnime 4s linear 0.23s infinite alternate;
+  -webkit-animation: moveXAnime 4s linear 0.23s infinite alternate;
+}
+
+@keyframes moveXAnime {
+  0% { left 0px; }
+  100% { left: 650px; }
+}
+@-webkit-keyframes moveXAnime {
+  0% { left 0px; }
+  100% { left: 650px; }
+}
+
+/*************************************************************************
+ * 縦移動ボックス                                                        *
+ *************************************************************************/
+.boxY {
+  top: 50px; left: 0px;
+  width: 50px; height: 50px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+#boxY1 {
+  animation: moveYAnime 4s linear 0s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0s infinite alternate;
+}
+#boxY2 {
+  animation: moveYAnime 4s linear 0.05s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.05s infinite alternate;
+}
+#boxY3 {
+  animation: moveYAnime 4s linear 0.13s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.13s infinite alternate;
+}
+#boxY4 {
+  animation: moveYAnime 4s linear 0.23s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.23s infinite alternate;
+}
+
+@keyframes moveYAnime {
+  0% { top: 50px; }
+  5% { top: 63px; }
+  10% { top: 102px; }
+  15% { top: 167px; }
+  20% { top: 258px; }
+  25% { top: 375px; }
+  30% { top: 258px; }
+  35% { top: 167px; }
+  40% { top: 102px; }
+  45% { top: 63px; }
+  50% { top: 50px; }
+  55% { top: 63px; }
+  60% { top: 102px; }
+  65% { top: 167px; }
+  70% { top: 258px; }
+  75% { top: 375px; }
+  80% { top: 258px; }
+  85% { top: 167px; }
+  90% { top: 102px; }
+  95% { top: 63px; }
+  100% { top: 50px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { top: 50px; }
+  5% { top: 63px; }
+  10% { top: 102px; }
+  15% { top: 167px; }
+  20% { top: 258px; }
+  25% { top: 375px; }
+  30% { top: 258px; }
+  35% { top: 167px; }
+  40% { top: 102px; }
+  45% { top: 63px; }
+  50% { top: 50px; }
+  55% { top: 63px; }
+  60% { top: 102px; }
+  65% { top: 167px; }
+  70% { top: 258px; }
+  75% { top: 375px; }
+  80% { top: 258px; }
+  85% { top: 167px; }
+  90% { top: 102px; }
+  95% { top: 63px; }
+  100% { top: 50px; }
+}
+

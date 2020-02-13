@@ -1,0 +1,130 @@
+/* RadialGradAnime-div7.css */
+
+/*****************************************************************************
+* 四角形　円形グラデーション７
+******************************************************************************/
+#div7 {
+  top: 350px; left: 410px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  background-color: seagreen;
+  position: absolute;
+  overflow: hidden;
+}
+
+#div7 span {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  position: absolute;
+  opacity: 0.0;
+  
+  background-size: 0px 0px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+#div7 > span:nth-child(1) {
+  background-image: repeating-radial-gradient(circle at left top, blue 10%, yellow 20%);
+  background-image: -webkit-repeating-radial-gradient(left top, blue 10%, yellow 20%);
+  background-position: 0px 0px;
+  
+  animation: grad7Anime1 12s linear 0s infinite alternate;
+  -webkit-animation: grad7Anime1 12s linear 0s infinite alternate;
+}
+#div7 > span:nth-child(2) {
+  background-image: repeating-radial-gradient(circle at right top, blue 10%, yellow 20%);
+  background-image: -webkit-repeating-radial-gradient(right top, blue 10%, yellow 20%);
+  background-position: 150px 0px;
+  
+  animation: grad7Anime2 12s linear 0s infinite alternate;
+  -webkit-animation: grad7Anime2 12s linear 0s infinite alternate;
+}
+#div7 > span:nth-child(3) {
+  background-image: repeating-radial-gradient(circle at right bottom, blue 10%,
+                                              yellow 20%);
+  background-image: -webkit-repeating-radial-gradient(right bottom, blue 10%,
+                                                      yellow 20%);
+  background-position: 150px 150px;
+  
+  animation: grad7Anime3 12s linear 0s infinite alternate;
+  -webkit-animation: grad7Anime3 12s linear 0s infinite alternate;
+}
+#div7 > span:nth-child(4) {
+  background-image: repeating-radial-gradient(circle at left bottom, blue 10%,
+                                              yellow 20%);
+  background-image: -webkit-repeating-radial-gradient(left bottom, blue 10%,
+                                                      yellow 20%);
+  background-position: 0px 150px;
+  
+  animation: grad7Anime4 12s linear 0s infinite alternate;
+  -webkit-animation: grad7Anime4 12s linear 0s infinite alternate;
+}
+/* grad7Anime1 **************************************/
+@keyframes grad7Anime1 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 1.0; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+@-webkit-keyframes grad7Anime1 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 1.0; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+/* grad7Anime2 **************************************/
+@keyframes grad7Anime2 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.8 }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+@-webkit-keyframes grad7Anime2 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.8 }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+/* grad7Anime3 **************************************/
+@keyframes grad7Anime3 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.6; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+@-webkit-keyframes grad7Anime3 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.6; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+/* grad7Anime4 **************************************/
+@keyframes grad7Anime4 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.4; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+@-webkit-keyframes grad7Anime4 {
+  from { }
+  50% { background-position: 0px 0px;
+        background-size: 150px 150px;
+        background-color: blue; opacity: 0.4; }
+  to { background-position: 75px 75px;
+       background-size: 0px 0px; opacity: 0.0; }
+}
+

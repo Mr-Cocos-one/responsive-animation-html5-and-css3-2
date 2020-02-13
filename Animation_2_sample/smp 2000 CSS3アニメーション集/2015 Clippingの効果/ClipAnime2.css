@@ -1,0 +1,44 @@
+/* ClipAnimation2.css */
+
+#stage {
+  width: 460px; height: 360px;
+  background-color: #999999;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#blackWall {
+  top: 30px; left: 30px;
+  width: 400px; height: 300px;
+  background-color: black;
+  position: absolute;
+}
+/* clip ÇÃílÅi top, right, bottom, left Åj */
+#image1 {
+  top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  
+  clip:rect(0px, 100px, 100px, 0px);
+  position: absolute;
+  
+  animation: clipAnime 10s linear 0s infinite alternate;
+  -webkit-animation: clipAnime 10s linear 0s infinite alternate;
+}
+
+@keyframes clipAnime {
+  from { }
+  20% { clip:rect(0px, 400px, 100px, 300px); }
+  40% { clip:rect(200px, 400px, 300px, 300px); }
+  60% { clip:rect(200px, 100px, 300px, 0px); }
+  80% {  clip:rect(0px, 400px, 100px, 300px); }
+  to { clip:rect(0px, 100px, 100px, 0px); }
+}
+@-webkit-keyframes clipAnime {
+  from { }
+  20% { clip:rect(0px, 400px, 100px, 300px); }
+  40% { clip:rect(200px, 400px, 300px, 300px); }
+  60% { clip:rect(200px, 100px, 300px, 0px); }
+  80% {  clip:rect(0px, 400px, 100px, 300px); }
+  to { clip:rect(0px, 100px, 100px, 0px); }
+}
+

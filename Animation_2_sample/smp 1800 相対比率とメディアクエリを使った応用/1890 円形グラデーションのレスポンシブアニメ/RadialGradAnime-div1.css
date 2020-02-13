@@ -1,0 +1,55 @@
+/* RadialGradAnime-div1.css */
+
+/*****************************************************************************
+* 四角形　円形グラデーション１
+******************************************************************************/
+#div1 {
+  top: 20px; left: 30px;
+  width: 150px; height: 150px;
+  position: absolute;
+}
+#div1 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  border-radius: 20px;
+  background: radial-gradient(red, yellow);
+  background: -webkit-radial-gradient(red, yellow);
+  opacity: 1.0;
+  position: absolute;
+  
+  animation: grad1Anime1 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad1Anime1 3s ease-in-out 0s infinite alternate;
+}
+#div1 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  border-radius: 20px;
+  background: radial-gradient(yellow, red);
+  background: -webkit-radial-gradient(yellow, red);
+  opacity: 0.0;
+  position: absolute;
+  
+  animation: grad1Anime2 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad1Anime2 3s ease-in-out 0s infinite alternate;
+}
+/* grad1Anime1 **************************************/
+@keyframes grad1Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad1Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+/* grad1Anime2 **************************************/
+@keyframes grad1Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes grad1Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+

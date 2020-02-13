@@ -1,0 +1,722 @@
+/* RobotWalkAnime.css */
+
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 620px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  margin: 0%;
+  //width: 620px; //height: 500px;
+  width: 100%;
+  padding-top: 80.6%;
+  border: solid 1px #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+#stage-Upper {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 620px; //height: 370px;
+  width: 100%; height: 74%;
+  background-image: linear-gradient( to bottom, #0099FF, #99CCFF );
+  background-image: -webkit-linear-gradient( top, #0099FF, #99CCFF );
+  position: absolute;
+}
+#stage-Bottom {
+  //top: 370px; //left: 0px;
+  top: 74%; left: 0%;
+  //width: 620px; //height: 130px;
+  width: 100%; height: 26%;
+  background-image: linear-gradient( to bottom, #999999 20%, #DDDDDD );
+  background-image: -webkit-linear-gradient( top, #999999 20%, #DDDDDD );
+  position: absolute;
+}
+/* Robot ****************************************************************/
+#Robot {
+  //top: 105px; //left: 100px;
+  top: 21%; left: 16.1%;
+  //width: 65px; //height: 360px;  /* head 65px + body 120px + R-leg 175px */
+  width: 10.5%; height: 72%;
+  position: absolute;
+  
+  animation: RobotAnime1 10s linear 0s infinite normal,
+             RobotAnime2 2s linear 0s infinite normal;
+  -webkit-animation: RobotAnime1 10s linear 0s infinite normal,
+                     RobotAnime2 2s linear 0s infinite normal;
+}
+@keyframes RobotAnime1 {
+  //0% { left: -180px; animation-timing-function: ease-in-out; }
+  //20% { left: 0px; animation-timing-function: ease-in-out; }
+  //40% { left: 180px; animation-timing-function: ease-in-out; }
+  //60% { left: 360px; animation-timing-function: ease-in-out; }
+  //80% { left: 540px; animation-timing-function: ease-in-out; }
+  //100% { left: 720px; animation-timing-function: ease-in-out; }
+  0% { left: -29.0%; animation-timing-function: ease-in-out; }
+  20% { left: 0%; animation-timing-function: ease-in-out; }
+  40% { left: 29.0%; animation-timing-function: ease-in-out; }
+  60% { left: 58.1%; animation-timing-function: ease-in-out; }
+  80% { left: 87.1%; animation-timing-function: ease-in-out; }
+  100% { left: 116.1%; animation-timing-function: ease-in-out; }
+}
+@-webkit-keyframes RobotAnime1 {
+  0% { left: -29.0%; -webkit-animation-timing-function: ease-in-out; }
+  20% { left: 0%; -webkit-animation-timing-function: ease-in-out; }
+  40% { left: 29.0%; -webkit-animation-timing-function: ease-in-out; }
+  60% { left: 58.1%; -webkit-animation-timing-function: ease-in-out; }
+  80% { left: 87.1%; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 116.1%; -webkit-animation-timing-function: ease-in-out; }
+}
+@keyframes RobotAnime2 {
+  //0% { top: 105px; }
+  //25% { top: 105px; animation-timing-function: ease-in-out; }
+  //50% { top: 98px; animation-timing-function: ease-in-out; }
+  //75% { top: 105px; }
+  //100% { top: 105px; }
+  0% { top: 21%; }
+  25% { top: 21%; animation-timing-function: ease-in-out; }
+  50% { top: 19.6%; animation-timing-function: ease-in-out; }
+  75% { top:  21%; }
+  100% { top:  21%; }
+}
+@-webkit-keyframes RobotAnime2 {
+  0% { top: 21%; }
+  25% { top: 21%; -webkit-animation-timing-function: ease-in-out; }
+  50% { top: 19.6%; -webkit-animation-timing-function: ease-in-out; }
+  75% { top:  21%; }
+  100% { top:  21%; }
+}
+
+/* Head ***************************************************************/
+#Head {
+  //top: 0px; //left: -7px;
+  top: 0%; left: -10.8%;
+  //width: 65px; //height: 65px;
+  width: 100%; height: 18.1%;
+  position: absolute;
+}
+
+#Face {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 65px; //height: 55px;
+  width: 100%; height: 84.6%;
+  position: absolute;
+}
+#Face img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#Neck {
+  //top: 50px; //left: 22px;
+  top: 76.9%; left: 33.8%;
+  //width: 30px; //height: 15px;
+  width: 46.2%; height: 23.1%;
+  position: absolute;
+}
+#Neck img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* Body ***************************************************************/
+#Body {
+  //top: 60px; //left: 5px;
+  top: 16.7%; left: 7.7%;
+  //width: 60px; //height: 120px;
+  width: 92.3%; height: 33.3%;
+  position: absolute;
+}
+/* Bust ******************************************************/
+#Bust {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 60px; //height: 80px;
+  width: 100%; height: 66.7%;
+  position: absolute;
+}
+#Bust img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* Hips *****************************************************/
+#Hips {
+  //top: 70px; //left: -2px;
+  top: 58.3%; left: -3.3%;
+  //width: 58px; //height: 50px;
+  width: 96.7%; height:41.7%;
+  position: absolute;
+}
+#Hips img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* R-Arm *****************************************************/
+#R-Arm {
+  //top: 3px; //left: 10px;
+  top: 2.5%; left: 16.7%;
+  //width: 25px; //height: 153px;
+  width: 41.7%; height: 127.5%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(40deg);
+  -webkit-transform: rotateZ(40deg);
+  
+  animation: R-ArmAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: R-ArmAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes R-ArmAnime {
+  0% { transform: rotateZ(40deg); }
+  100% { transform: rotateZ(-40deg); }
+}
+@-webkit-keyframes R-ArmAnime {
+  0% { -webkit-transform: rotateZ(40deg); }
+  100% { -webkit-transform: rotateZ(-40deg); }
+}
+
+#R-UpperArm {
+  //top: 5px; //left: 0px;
+  top: 3.3%; left: 0%;
+  //width: 25px; //height: 65px;
+  width: 100%; height: 42.5%;
+  position: absolute;
+}
+#R-UpperArm img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-LowerArm {
+  //top: 60px; //left: 0px;
+  top: 39.2%; left: 0%;
+  //width: 25px; //height: 93px;
+  width: 100%; height: 60.8%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+  
+  animation: R-LowerArmAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: R-LowerArmAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes R-LowerArmAnime {
+  0% { transform: rotateZ(-5deg); }
+  100% { transform: rotateZ(-30deg); }
+}
+@-webkit-keyframes R-LowerArmAnime {
+  0% { -webkit-transform: rotateZ(-5deg); }
+  100% { -webkit-transform: rotateZ(-30deg); }
+}
+
+#R-ForeArm {
+  //top: 0px; //left: 0px;  /* base = R-LowerArm */
+  top: 0%; left: 0%;
+  //width: 25px; //height: 60px;
+  width: 100%; height: 64.5%;
+  position: absolute;
+}
+#R-ForeArm img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#R-Hand {
+  //top: 55px; //left: -1px;  /* base = R-LowerArm */
+  top: 59.1%; left: -4%;
+  //width: 28px; //height: 38px;
+  width: 112%; height: 40.9%;
+  position: absolute;
+}
+#R-Hand img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Shoulder {
+  //top: 5px; //left: 8px;  /* base = Body */
+  top: 4.1%; left: 13.3%;
+  //width: 30px; //height: 25px;
+  width: 50%; height: 20.8%;
+  position: absolute;
+}
+#R-Shoulder img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Elbow {
+  //top: 55px; //left: 0px;  /* base = R-Arm */
+  top: 35.9%; left: 0%;
+  //width: 25px; //height: 25px;
+  width: 100%; height: 16.3%;
+  position: absolute;
+}
+#R-Elbow img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* L-Arm *****************************************************/
+#L-Arm {
+  //top: 3px; //left: 10px;
+  top: 2.5%; left: 16.7%;
+  //width: 25px; //height: 153px;
+  width: 41.7%; height: 127.5%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(-40deg);
+  -webkit-transform: rotateZ(-40deg);
+  
+  animation: L-ArmAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: L-ArmAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes L-ArmAnime {
+  0% { transform: rotateZ(-40deg); }
+  100% { transform: rotateZ(40deg); }
+}
+@-webkit-keyframes L-ArmAnime {
+  0% { -webkit-transform: rotateZ(-40deg); }
+  100% { -webkit-transform: rotateZ(40deg); }
+}
+
+#L-UpperArm {
+  //top: 5px; //left: 0px;
+  top: 3.3%; left: 0%;
+  //width: 25px; //height: 65px;
+  width: 100%; height: 42.5%;
+  position: absolute;
+}
+#L-UpperArm img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-LowerArm {
+  //top: 60px; //left: 0px;
+  top: 39.2%; left: 0%;
+  //width: 25px; //height: 93px;
+  width: 100%; height: 60.8%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+  
+  animation: L-LowerArmAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: L-LowerArmAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes L-LowerArmAnime {
+  0% { transform: rotateZ(-30deg); }
+  100% { transform: rotateZ(-5deg); }
+}
+@-webkit-keyframes L-LowerArmAnime {
+  0% { -webkit-transform: rotateZ(-30deg); }
+  100% { -webkit-transform: rotateZ(-5deg); }
+}
+
+#L-ForeArm {
+  //top: 0px; //left: 0px;  /* base = L-LowerArm */
+  top: 0%; left: 0%;
+  //width: 25px; //height: 60px;
+  width: 100%; height: 64.5%;
+  position: absolute;
+}
+#L-ForeArm img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#L-Hand {
+  //top: 55px; //left: -1px;  /* base = L-LowerArm */
+  top: 59.1%; left: -4%;
+  //width: 28px; //height: 38px;
+  width: 112%; height: 40.9%;
+  position: absolute;
+}
+#L-Hand img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Shoulder {
+  //top: 5px; //left: 8px;  /* base = Body */
+  top: 4.1%; left: 13.3%;
+  //width: 30px; //height: 25px;
+  width: 50%; height: 20.8%;
+  position: absolute;
+}
+#L-Shoulder img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Elbow {
+  //top: 55px; //left: 0px;  /* base = L-Arm */
+  top: 35.9%; left: 0%;
+  //width: 25px; //height: 25px;
+  width: 100%; height: 16.3%;
+  position: absolute;
+}
+#L-Elbow img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* Legs ****************************************************************/
+/* R-Leg *****************************************************/
+#R-Leg {
+  //top: 93px; //left: 15px;
+  top: 77.5%; left: 25%;
+  //width: 30px; //height: 175px;
+  width: 50%; height: 145.8%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(-40deg);
+  -webkit-transform: rotateZ(-40deg);
+  
+  animation: R-LegAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: R-LegAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes R-LegAnime {
+  0% { transform: rotateZ(-40deg); }
+  100% { transform: rotateZ(30deg); }
+}
+@-webkit-keyframes R-LegAnime {
+  0% { -webkit-transform: rotateZ(-40deg); }
+  100% { -webkit-transform: rotateZ(30deg); }
+}
+
+#R-UpperLeg {
+  //top: 10px; //left: 0px;
+  top: 5.7%; left: 0%;
+  //width: 30px; //height: 80px;
+  width: 100%; height:45.7%;
+  position: absolute;
+}
+#R-UpperLeg img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-LowerLeg {
+  //top: 80px; //left: 0px;
+  top: 45.7%; left: 0%;
+  //width: 30px; //height: 95px;
+  width: 100%; height: 54.3%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  
+  animation: R-LowerLegAnime 4s ease-in-out 0s infinite normal;
+  -webkit-animation: R-LowerLegAnime 4s ease-in-out 0s infinite normal;
+}
+@keyframes R-LowerLegAnime {
+  0% { transform: rotateZ(10deg); }
+  25% { transform: rotateZ(0deg); }
+  50% { transform: rotateZ(10deg); }
+  80% { transform: rotateZ(90deg); }
+  100% { transform: rotateZ(10deg); }
+}
+@-webkit-keyframes R-LowerLegAnime {
+  0% { -webkit-transform: rotateZ(10deg); }
+  25% { -webkit-transform: rotateZ(0deg); }
+  50% { -webkit-transform: rotateZ(10deg); }
+  80% { -webkit-transform: rotateZ(90deg); }
+  100% { -webkit-transform: rotateZ(10deg); }
+}
+
+#R-Shin {
+  //top: 0px; //left: 0px;  /* base = R-LowerLeg */
+  top: 0%; left: 0%;
+  //width: 30px; //height: 75px;
+  width: 100%; height: 78.9%;
+  position: absolute;
+}
+#R-Shin img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Ankle {
+  //top: 65px; //left: 0px;  /* base = R-LowerLeg */
+  top: 68.4%; left: 0%;
+  //width: 30px; //height: 20px;
+  width: 100%; height: 21.1%;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  
+  animation: R-AnkleAnime 4s linear 0s infinite normal;
+  -webkit-animation: R-AnkleAnime 4s linear 0s infinite normal;
+}
+@keyframes R-AnkleAnime {
+  0% { transform: rotateZ(0deg); }
+  15% { transform: rotateZ(25deg); }
+  35% { transform: rotateZ(-20deg); }
+  50% { transform: rotateZ(-15deg); }
+  65% { transform: rotateZ(10deg); }
+  75% { transform: rotateZ(0deg); }
+  90% { transform: rotateZ(-20deg); }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes R-AnkleAnime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  15% { -webkit-transform: rotateZ(25deg); }
+  35% { -webkit-transform: rotateZ(-20deg); }
+  50% { -webkit-transform: rotateZ(-15deg); }
+  65% { -webkit-transform: rotateZ(10deg); }
+  75% { -webkit-transform: rotateZ(0deg); }
+  90% { -webkit-transform: rotateZ(-20deg); }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+#R-Ankle img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Foot {
+  //top: 10px; //left: -5px;  /* base = R-Ankle */
+  top: 50%; left: -16.7%;
+  //width: 60px; //height: 20px;
+  width: 200%; height: 100%;
+  position: absolute;
+}
+#R-Foot img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Knee {
+  //top: 75px; //left: 0px;  /* base = R-Leg */
+  top: 42.9%; left: 0%;
+  //width: 30px; //height: 30px;
+  width: 100%; height: 17.1%;
+  position: absolute;
+}
+#R-Knee img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#R-Groin {
+  //top: 93px; //left: 8px;  /* base = Body */
+  top: 77.5%; left: 13.3%;
+  //width: 40px; //height: 30px;
+  width: 66.7%; height: 25%;
+  position: absolute;
+}
+#R-Groin img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* L-Leg *****************************************************/
+#L-Leg {
+  //top: 93px; //left: 15px;
+  top: 77.5%; left: 25%;
+  //width: 30px; //height: 175px;
+  width: 50%; height: 145.8%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  -transform: rotateZ(30deg);
+  -webkit-transform: rotateZ(30deg);
+  
+  animation: L-LegAnime 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: L-LegAnime 2s ease-in-out 0s infinite alternate;
+}
+@keyframes L-LegAnime {
+  0% { transform: rotateZ(30deg); }
+  100% { transform: rotateZ(-40deg); }
+}
+@-webkit-keyframes L-LegAnime {
+  0% { -webkit-transform: rotateZ(30deg); }
+  100% { -webkit-transform: rotateZ(-40deg); }
+}
+
+#L-UpperLeg {
+  //top: 10px; //left: 0px;
+  top: 5.7%; left: 0%;
+  //width: 30px; //height: 80px;
+  width: 100%; height:45.7%;
+  position: absolute;
+}
+#L-UpperLeg img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-LowerLeg {
+  //top: 80px; //left: 0px;
+  top: 45.7%; left: 0%;
+  //width: 30px; //height: 95px;
+  width: 100%; height: 54.3%;
+  position: absolute;
+  
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  
+  animation: L-LowerLegAnime 4s ease-in-out 0s infinite normal;
+  -webkit-animation: L-LowerLegAnime 4s ease-in-out 0s infinite normal;
+}
+@keyframes L-LowerLegAnime {
+  0% { transform: rotateZ(10deg); }
+  30% { transform: rotateZ(90deg); }
+  50% { transform: rotateZ(10deg); }
+  75% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(10deg); }
+}
+@-webkit-keyframes L-LowerLegAnime {
+  0% { -webkit-transform: rotateZ(10deg); }
+  30% { -webkit-transform: rotateZ(90deg); }
+  50% { -webkit-transform: rotateZ(10deg); }
+  75% { -webkit-transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(10deg); }
+}
+
+#L-Shin {
+  //top: 0px; //left: 0px;  /* base = L-LowerLeg */
+  top: 0%; left: 0%;
+  //width: 30px; //height: 75px;
+  width: 100%; height: 78.9%;
+  position: absolute;
+}
+#L-Shin img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Ankle {
+  //top: 65px; //left: 0px;  /* base = L-LowerLeg */
+  top: 68.4%; left: 0%;
+  //width: 30px; //height: 20px;
+  width: 100%; height: 21.1%;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  transform: rotateZ(-15deg);
+  -webkit-transform: rotateZ(-15deg);
+  
+  animation: L-AnkleAnime 4s linear 0s infinite normal;
+  -webkit-animation: L-AnkleAnime 4s linear 0s infinite normal;
+}
+@keyframes L-AnkleAnime {
+  0% { transform: rotateZ(-15deg); }
+  15% { transform: rotateZ(10deg); }
+  25% { transform: rotateZ(0deg); }
+  40% { transform: rotateZ(-20deg); }
+  50% { transform: rotateZ(0deg); }
+  65% { transform: rotateZ(25deg); }
+  85% { transform: rotateZ(-20deg); }
+  100% { transform: rotateZ(-15deg); }
+}
+@-webkit-keyframes L-AnkleAnime {
+  0% { -webkit-transform: rotateZ(-15deg); }
+  15% { -webkit-transform: rotateZ(10deg); }
+  25% { -webkit-transform: rotateZ(0deg); }
+  40% { -webkit-transform: rotateZ(-20deg); }
+  50% { -webkit-transform: rotateZ(0deg); }
+  65% { -webkit-transform: rotateZ(25deg); }
+  85% { -webkit-transform: rotateZ(-20deg); }
+  100% { -webkit-transform: rotateZ(-15deg); }
+}
+#L-Ankle img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Foot {
+  //top: 10px; //left: -5px;  /* base = L-Ankle */
+  top: 50%; left: -16.7%;
+  //width: 60px; //height: 20px;
+  width: 200%; height: 100%;
+  position: absolute;
+}
+#L-Foot img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Knee {
+  //top: 75px; //left: 0px;  /* base = L-Leg */
+  top: 42.9%; left: 0%;
+  //width: 30px; //height: 30px;
+  width: 100%; height: 17.1%;
+  position: absolute;
+}
+#L-Knee img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#L-Groin {
+  //top: 93px; //left: 8px;  /* base = Body */
+  top: 77.5%; left: 13.3%;
+  //width: 40px; //height: 30px;
+  width: 66.7%; height: 25%;
+  position: absolute;
+}
+#L-Groin img {
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+

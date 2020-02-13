@@ -1,0 +1,228 @@
+/* RM-WarpRects.css */
+
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  //max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 500px;
+  width: 100%;
+  padding-top: 83.3%;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+/******************************************************/
+#rectGroup {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 500px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  animation: groupAnime 60s linear 0s infinite normal;
+  -webkit-animation: groupAnime 60s linear 0s infinite normal;
+}
+@keyframes groupAnime {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes groupAnime {
+  0% { transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+
+.rect {
+  //top: -50px; //left: -50px;
+  top: -10%; left: -8.3%;
+  //width: 700px; //height: 600px;
+  width: 116.7%; height: 120%;
+  //border-width: 15px;
+  border-width: 23px;
+  border-style: solid;
+  //border-radius: 50px;
+  border-radius: 75px;
+  position: absolute;
+  opacity: 0.0;
+}
+
+@keyframes rectAnime {
+  //0% { top: 250px; left: 300px; width: 0px; height: 0px; 
+  //     border-width: 0px; border-radius: 0px; opacity: 0.0; }
+  //1% { top: 250px; left: 300px; width: 0px; height: 0px; 
+  //     border-width: 0px; border-radius: 0px; opacity: 1.0; }
+  //100% { }
+  0% { top: 50%; left: 50%; width: 0%; height: 0%; 
+       border-width: 0px; border-radius: 0px; opacity: 0.0; }
+  1% { top: 50%; left: 50%; width: 0%; height: 0%; 
+       border-width: 0px; border-radius: 0px; opacity: 1.0; }
+  100% { }
+}
+@-webkit-keyframes rectAnime {
+  0% { top: 50%; left: 50%; width: 0%; height: 0%; 
+       border-width: 0px; border-radius: 0px; opacity: 0.0; }
+  1% { top: 50%; left: 50%; width: 0%; height: 0%; 
+       border-width: 0px; border-radius: 0px; opacity: 1.0; }
+  100% { }
+}
+
+#rect01 {
+  border-color: red;
+  animation: rectAnime 6s ease-in 0s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 0s infinite normal;
+}
+#rect02 {
+  border-color: blue;
+  animation: rectAnime 6s ease-in 0.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 0.25s infinite normal;
+}
+#rect03 {
+  border-color: gray;
+  animation: rectAnime 6s ease-in 0.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 0.5s infinite normal;
+}
+#rect04 {
+  border-color: pink;
+  animation: rectAnime 6s ease-in 0.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 0.75s infinite normal;
+}
+#rect05 {
+  border-color: orange;
+  animation: rectAnime 6s ease-in 1.0s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 1.0s infinite normal;
+}
+#rect06 {
+  border-color: darkviolet;
+  animation: rectAnime 6s ease-in 1.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 1.25s infinite normal;
+}
+#rect07 {
+  border-color: sandybrown;
+  animation: rectAnime 6s ease-in 1.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 1.5s infinite normal;
+}
+#rect08 {
+  border-color: green;
+  animation: rectAnime 6s ease-in 1.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 1.75s infinite normal;
+}
+#rect09 {
+  border-color: yellow;
+  animation: rectAnime 6s ease-in 2s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 2s infinite normal;
+}
+#rect10 {
+  border-color: cyan;
+  animation: rectAnime 6s ease-in 2.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 2.25s infinite normal;
+}
+#rect11 {
+  border-color: magenta;
+  animation: rectAnime 6s ease-in 2.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 2.5s infinite normal;
+}
+#rect12 {
+  border-color: lightgreen;
+  animation: rectAnime 6s ease-in 2.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 2.75s infinite normal;
+}
+
+#rect13 {
+  border-color: red;
+  animation: rectAnime 6s ease-in 3s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 3s infinite normal;
+}
+#rect14 {
+  border-color: blue;
+  animation: rectAnime 6s ease-in 3.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 3.25s infinite normal;
+}
+#rect15 {
+  border-color: gray;
+  animation: rectAnime 6s ease-in 3.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 3.5s infinite normal;
+}
+#rect16 {
+  border-color: pink;
+  animation: rectAnime 6s ease-in 3.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 3.75s infinite normal;
+}
+#rect17 {
+  border-color: orange;
+  animation: rectAnime 6s ease-in 4s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 4s infinite normal;
+}
+#rect18 {
+  border-color: darkviolet;
+  animation: rectAnime 6s ease-in 4.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 4.25s infinite normal;
+}
+#rect19 {
+  border-color: sandybrown;
+  animation: rectAnime 6s ease-in 4.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 4.5s infinite normal;
+}
+#rect20 {
+  border-color: green;
+  animation: rectAnime 6s ease-in 4.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 4.75s infinite normal;
+}
+#rect21 {
+  border-color: yellow;
+  animation: rectAnime 6s ease-in 5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 5s infinite normal;
+}
+#rect22 {
+  border-color: cyan;
+  animation: rectAnime 6s ease-in 5.25s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 5.25s infinite normal;
+}
+#rect23 {
+  border-color: magenta;
+  animation: rectAnime 6s ease-in 5.5s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 5.5s infinite normal;
+}
+#rect24 {
+  border-color: lightgreen;
+  animation: rectAnime 6s ease-in 5.75s infinite normal;
+  -webkit-animation: rectAnime 6s ease-in 5.75s infinite normal;
+}
+
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage-wrap {
+    max-width: 600px;
+  }
+  
+  .rect {
+    border-width: 15px;
+    border-radius: 50px;
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage-wrap {
+    max-width: 300px;
+  }
+  
+  .rect {
+    border-width: 8px;
+    border-radius: 25px;
+  }
+}
+

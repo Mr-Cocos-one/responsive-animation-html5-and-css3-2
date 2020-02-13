@@ -1,0 +1,157 @@
+/* RotateCubeDice.css */
+
+#stage {
+  width: 500px; height: 500px;
+  background-color: black;
+  position: relative;
+  
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  
+  perspective-origin: 50% 5%;
+  -webkit-perspective-origin: 50% 5%;
+}
+
+#cube {
+  top: 150px; left: 150px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  transform-origin: 100px 100px;
+  -webkit-transform-origin: 100px 100px;
+  
+  animation: goRoundAnime 30s linear 0s infinite normal;
+  -webkit-animation: goRoundAnime 30s linear 0s infinite normal;
+}
+
+@keyframes goRoundAnime {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(720deg) rotateY(-360deg); }
+}
+@-webkit-keyframes goRoundAnime {
+  0% { -webkit-transform: rotateX(0deg) rotateY(0deg); }
+  100% { -webkit-transform: rotateX(720deg) rotateY(-360deg); }
+}
+
+#cube div {
+  top: 0px; left: 0px;
+  width: 198px; height: 198px;
+  border: solid 1px gray;
+  background-color: #FFFFDD;
+  position: absolute;
+}
+
+#num1 span {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+}
+#num2 span, #num3 span, #num4 span, #num5 span, #num6 span {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+
+/* Number 3 *********************************************************/
+#cube #num3 {
+  transform: rotateY(-0deg) translateZ(100px);
+  -webkit-transform: rotateY(-0deg) translateZ(100px);
+}
+#cube #num3 > span:nth-child(1) {
+  top: 30px; left: 30px;
+}
+#cube #num3 > span:nth-child(2) {
+  top: 80px; left: 80px;
+}
+#cube #num3 > span:nth-child(3) {
+  top: 130px; left: 130px;
+}
+
+/* Number 2 *********************************************************/
+#cube #num2 {
+  transform: rotateY(-90deg) translateZ(100px);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+#cube #num2 > span:nth-child(1) {
+  top: 40px; left: 40px;
+}
+#cube #num2 > span:nth-child(2) {
+  top: 120px; left: 120px;
+}
+
+/* Number 4 *********************************************************/
+#cube #num4 {
+  transform: rotateY(-180deg) translateZ(100px);
+  -webkit-transform: rotateY(-180deg) translateZ(100px);
+}
+#cube #num4 > span:nth-child(1) {
+  top: 30px; left: 30px;
+}
+#cube #num4 > span:nth-child(2) {
+  top: 30px; left: 130px;
+}
+#cube #num4 > span:nth-child(3) {
+  top: 130px; left: 30px;
+}
+#cube #num4 > span:nth-child(4) {
+  top: 130px; left: 130px;
+}
+
+/* Number 5 *********************************************************/
+#cube #num5 {
+  transform: rotateY(-270deg) translateZ(100px);
+  -webkit-transform: rotateY(-270deg) translateZ(100px);
+}
+#cube #num5 > span:nth-child(1) {
+  top: 30px; left: 30px;
+}
+#cube #num5 > span:nth-child(2) {
+  top: 30px; left: 130px;
+}
+#cube #num5 > span:nth-child(3) {
+  top: 80px; left: 80px;
+}
+#cube #num5 > span:nth-child(4) {
+  top: 130px; left: 30px;
+}
+#cube #num5 > span:nth-child(5) {
+  top: 130px; left: 130px;
+}
+
+/* Number 1 *********************************************************/
+#cube #num1 {
+  transform: rotateX(90deg) translateZ(100px);
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+#cube #num1 > span:nth-child(1) {
+  top: 60px; left: 60px;
+}
+
+/* Number 6 *********************************************************/
+#cube #num6 {
+  transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+  -webkit-transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+}
+#cube #num6 > span:nth-child(1) {
+  top: 30px; left: 30px;
+}
+#cube #num6 > span:nth-child(2) {
+  top: 30px; left: 80px;
+}
+#cube #num6 > span:nth-child(3) {
+  top: 30px; left: 130px;
+}
+#cube #num6 > span:nth-child(4) {
+  top: 130px; left: 30px;
+}
+#cube #num6 > span:nth-child(5) {
+  top: 130px; left: 80px;
+}
+#cube #num6 > span:nth-child(6) {
+  top: 130px; left: 130px;
+}
+

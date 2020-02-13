@@ -1,0 +1,75 @@
+/* Masking1.css */
+
+#stage {
+  width: 740px; height: 550px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#image1 {
+  position: absolute;
+  top: 20px; left: 20px;
+  width: 400px; height: 300px;
+  
+  mask-image: url(images/CharMask.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  
+  -webkit-mask-image: url(images/CharMask.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: auto;
+}
+
+#image2 {
+  position: absolute;
+  top: 40px; left: 420px;
+  width: 300px; height: 225px;
+  
+  mask-image: url(images/StarMask2.png);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/StarMask2.png);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+#image3 {
+  position: absolute;
+  top: 320px; left: 80px;
+  width: 250px; height: 225px;
+  
+  mask-image: radial-gradient(circle closest-side, rgba(0,0,0,1) 50%,
+                                               rgba(0,0,0,0) 100%);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: -webkit-radial-gradient(circle closest-side, rgba(0,0,0,1) 50%,
+                                               rgba(0,0,0,0) 100%);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+#image4 {
+  position: absolute;
+  top: 300px; left: 420px;
+  width: 300px; height: 225px;
+  
+  mask-image: linear-gradient(to bottom, transparent, black);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: -webkit-linear-gradient(top, transparent, black);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+

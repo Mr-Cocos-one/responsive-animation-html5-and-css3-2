@@ -1,0 +1,181 @@
+/* NaviMenu12.css */
+
+#menu-box {
+  margin: 10px 0px 20px 2px; padding: 0px 0px 5px 0px;
+  width: 223px;                            /* height は自動計算されます */
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background-color: #CCCCCC;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+  position: relative;
+  /* 背景をメタリックな感じにする */
+  background-image: repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%, rgba( 255, 255, 255, 0.7 ) 5% ),
+                    repeating-linear-gradient( darkslategray 5%, darkslategray 12%,
+                                                       lightslategray 18%, lightslategray 25% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%, rgba( 255, 255, 255, 0.7 ) 8% ),
+                    -webkit-repeating-linear-gradient( darkslategray 10%, darkslategray 20%,
+                                                       lightslategray 20%, lightslategray 30% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 220px;
+  list-style-type: none;
+}
+
+#menu-box>ul>li {
+  margin: 0px 0px 0px 5px; padding: 5px 0px 0px 0px;
+  width: 215px;                      /* 大メニューの幅 （高さは自動計算） */
+}
+
+#menu-box>ul>li>a {                  /* 大メニューのテキスト */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  text-decoration: none;
+  width: 210px; height: 30px;
+  border: 1px solid #666666;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(153,153,153,0.8);
+  line-height: 33px;
+  display: block;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4) inset;
+}
+#menu-box>ul>li#menuList1>a {         /* 大メニュー（タグ１）の指定 */
+  background-color: #6699FF;
+}
+#menu-box>ul>li#menuList2>a {         /* 大メニュー（タグ２）の指定 */
+  background-color: #FF9966;
+}
+#menu-box>ul>li#menuList3>a {         /* 大メニュー（タグ３）の指定 */
+  background-color: #66FF99;
+}
+#menu-box>ul>li:hover>a {            /* 大メニューのhover時にテキストの回りを白くする */
+  color: #FF0000;
+  text-shadow: 2px 2px 5px rgba(255,255,255,1.0),
+               -2px 2px 5px rgba(255,255,255,1.0),
+               2px -2px 5px rgba(255,255,255,1.0),
+               -2px -2px 5px rgba(255,255,255,1.0);
+}
+
+/* ダミーwrap  ********************************************************************/
+#menu-box>ul>div {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 210px;                      /* ダミーwrapの幅 （高さは自動計算） */
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box>ul ul {                    /* 小メニューのul */
+  margin: 3px 0px 0px 0px; padding: 5px 0px 5px 5px;     /* 小メニュー項目の回りにpaddingを入れる */
+  width: 205px;                      /* 小メニュー枠の幅 （高さは自動計算） */
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  list-style-type: none;
+}
+
+#menu-box>ul>li#menuList1>div>ul {       /* 小メニュー１の表示ボックス */
+  background-color: #DDEEFF;
+}
+#menu-box>ul>li#menuList2>div>ul {       /* 小メニュー２の表示ボックス */
+  background-color: #FFEEDD;
+}
+#menu-box>ul>li#menuList3>div>ul {       /* 小メニュー３の表示ボックス */
+  background-color: #DDFFEE;
+}
+
+#menu-box ul li ul li {               /* 小メニュー（黒いパネル） */
+  margin: 2px 0px 0px 0px; padding: 0px;
+  width: 200px; height: 20px;
+  border: none;
+  overflow: hidden;                   /* 小メニュー項目のテキストがoverflowした時に隠す。 */
+  /* 黒いパネルボード */
+  background-image: linear-gradient( #333333 0%, #333333 45%, #555555 50%,
+                                     #333333 55%, #333333 100% );
+  background-image: -webkit-linear-gradient( #333333 0%, #333333 45%, #555555 50%,
+                                             #333333 55%, #333333 100% );
+                                                       
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box>ul>li:hover ul li {        /* 大メニューのhover時に小メニューを回転させる */
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+#menu-box ul li ul li a {            /* 小メニューのテキスト */
+  margin: 0px 0px 0px 5px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: rgba( 255, 255, 255, 0 );
+  text-shadow: 1px 1px 1px rgba( 153, 153, 153, 0 );
+  line-height: 20px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box ul li:hover ul li a {     /* 大メニューのhover時に小メニューのテキストを表示させる */
+  color: rgba( 255, 255, 255, 1 );
+  text-shadow: 1px 1px 1px rgba( 153, 153, 153, 1 );
+}
+#menu-box ul li ul li a:hover {     /* 小メニューのhover時にテキストの色を変える */
+  color: rgba( 255, 0, 0, 1 );
+  text-shadow: 1px 1px 1px rgba( 255, 255, 255, 1 );
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 555px;
+  margin: 0px;
+  float: left;
+}
+#content_inner {
+  width: 555px;
+  margin: 0px;
+}
+#sidebar {
+  width: 235px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 235px;
+  height: 100px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  margin: 0px 0px 30px 0px;
+  border-top: solid 1px #AAAAAA;
+}
+

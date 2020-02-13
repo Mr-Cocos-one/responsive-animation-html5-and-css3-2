@@ -1,0 +1,221 @@
+/* RM-RadialGradAnime-final.css */
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage-wrap {
+    max-width: 600px;
+  }
+  
+  #div5 > span:nth-child(1) {
+    background: repeating-radial-gradient( red, blue 10px, yellow 20px, red 30px);
+    background: -webkit-repeating-radial-gradient( red, blue 10px, yellow 20px,
+                                                   red 30px);
+  }
+  #div5 > span:nth-child(2) {
+    background: repeating-radial-gradient( cyan, orange 10px, green 20px, cyan 30px);
+    background: -webkit-repeating-radial-gradient( cyan, orange 10px, green 20px,
+                                                   cyan 30px);
+  }
+  
+  #div7 > span:nth-child(1) {
+    background-position: 0px 0px;
+    animation: grad7Anime1-m 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime1-m 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(2) {
+    background-position: 150px 0px;
+    animation: grad7Anime2-m 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime2-m 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(3) {
+    background-position: 150px 150px;
+    animation: grad7Anime3-m 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime3-m 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(4) {
+    background-position: 0px 150px;
+    animation: grad7Anime4-m 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime4-m 12s linear 0s infinite alternate;
+  }
+  
+  @keyframes grad7Anime1-m {
+    from { }
+    50% { background-position:0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 1.0; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime1-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 1.0; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime2-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.8 }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime2-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.8 }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime3-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.6; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime3-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.6; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime4-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.4; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime4-m {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.4; }
+    to { background-position: 75px 75px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage-wrap {
+    max-width: 300px;
+  }
+  
+  #div5 > span:nth-child(1) {
+    background: repeating-radial-gradient( red, blue 5px, yellow 10px, red 15px);
+    background: -webkit-repeating-radial-gradient( red, blue 5px, yellow 10px,
+                                                   red 15px);
+  }
+  #div5 > span:nth-child(2) {
+    background: repeating-radial-gradient( cyan, orange 5px, green 10px, cyan 15px);
+    background: -webkit-repeating-radial-gradient( cyan, orange 5px, green 10px,
+                                                   cyan 15px);
+  }
+  
+  #div7 > span:nth-child(1) {
+    background-position: 0px 0px;
+    animation: grad7Anime1-s 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime1-s 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(2) {
+    background-position: 75px 0px;
+    animation: grad7Anime2-s 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime2-s 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(3) {
+    background-position: 75px 75px;
+    animation: grad7Anime3-s 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime3-s 12s linear 0s infinite alternate;
+  }
+  #div7 > span:nth-child(4) {
+    background-position: 0px 75px;
+    animation: grad7Anime4-s 12s linear 0s infinite alternate;
+    -webkit-animation: grad7Anime4-s 12s linear 0s infinite alternate;
+  }
+  
+  @keyframes grad7Anime1-s {
+    from { }
+    50% { background-position:0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 1.0; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime1-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 1.0; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime2-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.8 }
+    to { background-position:  38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime2-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.8 }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime3-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.6; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime3-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.6; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  
+  @keyframes grad7Anime4-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.4; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+  @-webkit-keyframes grad7Anime4-s {
+    from { }
+    50% { background-position: 0px 0px;
+          background-size: 100% 100%;
+          background-color: blue; opacity: 0.4; }
+    to { background-position: 38px 38px;
+         background-size: 0% 0%; opacity: 0.0; }
+  }
+}
+

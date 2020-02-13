@@ -1,0 +1,267 @@
+/* BorderImageTransition.css */
+
+#stage {
+  width: 700px; height: 300px;
+  border: solid 1px black;
+  text-align: center;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: black;
+  cursor: default;
+  position: relative;
+}
+
+/*************************************************************************/
+#div1 {
+  top: 30px; left: 20px;
+  position: absolute;
+}
+#div1 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  /* 個別プロパティで指定 *******/
+  border-image-source: url(images/BorderImage-source1.png);
+  border-image-slice: 20;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: round round;
+  
+  -webkit-border-image-source: url(images/BorderImage-source1.png);  
+  -webkit-border-image-slice: 20;
+  -webkit-border-image-width: 1;
+  -webkit-border-image-outset: 0;
+  -webkit-border-image-repeat: round round;
+  
+  -moz-border-image-source: url(images/BorderImage-source1.png);  
+  -moz-border-image-slice: 20;
+  -moz-border-image-width: 1;
+  -moz-border-image-outset: 0;
+  -moz-border-image-repeat: round round;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div1 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  /* ショートハンド指定 ＋ border-image-widthとborder-image-outsetの個別指定 *******/
+  border-image: url(images/BorderImage-source1.png) 20 stretch stretch;
+  border-image-width: 1;
+  border-image-outset: 0;
+  
+  -webkit-border-image: url(images/BorderImage-source1.png) 20 stretch stretch;
+  -webkit-border-image-width: 1;
+  -webkit-border-image-outset: 0;
+  
+  -moz-border-image: url(images/BorderImage-source1.png) 20 stretch stretch;
+  -moz-border-image-width: 1;
+  -moz-border-image-outset: 0;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div1 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div1:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div1:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+
+/*************************************************************************/
+#div2 {
+  top: 30px; left: 370px;
+  position: absolute;
+}
+#div2 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source6.png) 20 round round;
+  -webkit-border-image: url(images/BorderImage-source5.png) 20 round round;   /* Webkitには"fill"の機能なし（画像無条件表示）。 */
+  -moz-border-image: url(images/BorderImage-source6.png) 20 round round;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div2 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source6.png) 20 fill round round;
+  -webkit-border-image: url(images/BorderImage-source6.png) 20 round round;  /* Webkitには"fill"の機能なし（画像無条件表示）。 */
+  -moz-border-image: url(images/BorderImage-source6.png) 20 fill round round;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div2 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div2:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div2:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+
+/*************************************************************************/
+#div3 {
+  top: 160px; left: 20px;
+  position: absolute;
+}
+#div3 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source4.png) 20 fill round stretch;
+  -webkit-border-image: url(images/BorderImage-source4.png) 20 round stretch;   /* Webkitには"fill"の機能なし（画像無条件表示）。 */
+  -moz-border-image: url(images/BorderImage-source4.png) 20 fill round stretch;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div3 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source4.png) 20 fill stretch round;
+  -webkit-border-image: url(images/BorderImage-source4.png) 20 stretch round;  /* Webkitには"fill"の機能なし（画像無条件表示）。 */
+  -moz-border-image: url(images/BorderImage-source4.png) 20 fill stretch round;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div3 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div3:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div3:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+
+/*************************************************************************/
+#div4 {
+  top: 160px; left: 370px;
+  position: absolute;
+}
+#div4 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source3.png) 20 round round;
+  -webkit-border-image: url(images/BorderImage-source3.png) 20 round round;
+  -moz-border-image: url(images/BorderImage-source3.png) 20 round round;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+}
+#div4 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source2.png) 20 round round;
+  -webkit-border-image: url(images/BorderImage-source2.png) 20 round round;
+  -moz-border-image: url(images/BorderImage-source2.png) 20 round round;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+}
+#div4 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: url(images/BorderImage-source1.png) 20 round round;
+  -webkit-border-image: url(images/BorderImage-source1.png) 20 round round;
+  -moz-border-image: url(images/BorderImage-source1.png) 20 round round;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 1s linear 1s;
+  -webkit-transition: 1s linear 1s;
+}
+#div4 > span:nth-child(4) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div4:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div4:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+#div4:hover > span:nth-child(3) {
+  opacity: 1.0;
+}
+

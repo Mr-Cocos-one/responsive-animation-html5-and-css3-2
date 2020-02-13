@@ -1,0 +1,218 @@
+/* MaskAnimation.css */
+
+#stage {
+  width: 700px; height: 550px;
+  background-color: #000000;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+/*************************************************************************
+* slide pictures                                                         *
+*************************************************************************/
+#slide {
+  top: 20px; left: 20px;
+  position: absolute;
+}
+#slide img {
+  top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  position: absolute;
+  
+  mask-image: url(images/mask1.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/mask1.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+#slide img:nth-child(1) {
+  animation: slide1Anime 30s linear 0s infinite normal;
+  -webkit-animation: slide1Anime 30s linear 0s infinite normal;
+}
+#slide img:nth-child(2) {
+  animation: slide2Anime 30s linear 0s infinite normal;
+  -webkit-animation: slide2Anime 30s linear 0s infinite normal;
+}
+#slide img:nth-child(3) {
+  animation: slide3Anime 30s linear 0s infinite normal;
+  -webkit-animation: slide3Anime 30s linear 0s infinite normal;
+}
+#slide img:nth-child(4) {
+  animation: slide4Anime 30s linear 0s infinite normal;
+  -webkit-animation: slide4Anime 30s linear 0s infinite normal;
+}
+#slide img:nth-child(5) {
+  animation: slide5Anime 30s linear 0s infinite normal;
+  -webkit-animation: slide5Anime 30s linear 0s infinite normal;
+}
+/* slide1Anime **************************************/
+@keyframes slide1Anime {
+  from { opacity: 1.0; }
+  15% { opacity: 1.0; }
+  20% { opacity: 0.0; }
+  95% { opacity: 0.0; }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes slide1Anime {
+  from { opacity: 1.0; }
+  15% { opacity: 1.0; }
+  20% { opacity: 0.0; }
+  95% { opacity: 0.0; }
+  to { opacity: 1.0; }
+}
+/* slide2Anime **************************************/
+@keyframes slide2Anime {
+  from { opacity: 0.0; }
+  15% { opacity: 0.0; }
+  20% { opacity: 1.0; }
+  35% { opacity: 1.0; }
+  40% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes slide2Anime {
+  from { opacity: 0.0; }
+  15% { opacity: 0.0; }
+  20% { opacity: 1.0; }
+  35% { opacity: 1.0; }
+  40% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* slide3Anime **************************************/
+@keyframes slide3Anime {
+  from { opacity: 0.0; }
+  35% { opacity: 0.0; }
+  40% { opacity: 1.0; }
+  55% { opacity: 1.0; }
+  60% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes slide3Anime {
+  from { opacity: 0.0; }
+  35% { opacity: 0.0; }
+  40% { opacity: 1.0; }
+  55% { opacity: 1.0; }
+  60% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* slide4Anime **************************************/
+@keyframes slide4Anime {
+  from { opacity: 0.0; }
+  55% { opacity: 0.0; }
+  60% { opacity: 1.0; }
+  75% { opacity: 1.0; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes slide4Anime {
+  from { opacity: 0.0; }
+  55% { opacity: 0.0; }
+  60% { opacity: 1.0; }
+  75% { opacity: 1.0; }
+  80% { opacity: 0.0; }
+  to { opacity: 0.0; }
+}
+/* slide5Anime **************************************/
+@keyframes slide5Anime {
+  from { opacity: 0.0; }
+  75% { opacity: 0.0; }
+  80% { opacity: 1.0; }
+  95% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes slide5Anime {
+  from { opacity: 0.0; }
+  75% { opacity: 0.0; }
+  80% { opacity: 1.0; }
+  95% { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+/*************************************************************************
+* star motion                                                            *
+*************************************************************************/
+#star {
+  top: 320px; left: 10px;
+  width: 250px; height: 225px;
+  position: absolute;
+  
+  animation: star1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: star1Anime 5s ease-in-out 0s infinite alternate;
+}
+#star img {
+  top: 0px; left: 0px;
+  width: 250px; height: 225px;
+  position: absolute;
+  
+  mask-image: url(images/StarMask2.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/StarMask2.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  
+  animation: star2Anime 2s linear 0s infinite normal;
+  -webkit-animation: star2Anime 2s linear 0s infinite normal;
+}
+/* star1Anime **************************************/
+@keyframes star1Anime {
+  from { }
+  to { transform: translate(420px, -300px); }
+}
+@-webkit-keyframes star1Anime {
+  from { }
+  to { -webkit-transform: translate(420px, -300px); }
+}
+/* star2Anime **************************************/
+@keyframes star2Anime {
+  from { }
+  to { transform: rotateY(360deg); }
+}
+@-webkit-keyframes star2Anime {
+  from { }
+  to { -webkit-transform: rotateY(360deg); }
+}
+
+/*************************************************************************
+* spot light                                                             *
+*************************************************************************/
+#spot {
+  top: 330px; left: 450px;
+  width: 250px; height: 225px;
+  position: absolute;
+  
+  mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0,0,0,1) 40%,
+                               rgba(0,0,0,0) 90%);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: -webkit-radial-gradient(50% 50%, farthest-side,
+                               rgba(0,0,0,1) 40%, rgba(0,0,0,0) 90%);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  
+  animation: spotAnime 20s ease-in-out 0s infinite normal;
+  -webkit-animation: spotAnime 20s ease-in-out 0s infinite normal;
+}
+@keyframes spotAnime {
+  from { }
+  25% { transform: translateX(-450px); }
+  50% { transform: translateX(0px); }
+  75% { transform: translateY(-330px); }
+  to { transform: translateY(0px); }
+}
+@-webkit-keyframes spotAnime {
+  from { }
+  25% { -webkit-transform: translateX(-450px); }
+  50% { -webkit-transform: translateX(0px); }
+  75% { -webkit-transform: translateY(-330px); }
+  to { -webkit-transform: translateY(0px); }
+}
+

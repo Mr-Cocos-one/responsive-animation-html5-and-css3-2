@@ -1,0 +1,107 @@
+/* SpaceTripAnime.css */
+
+#stage {
+  margin: 0px;
+  width: 700px; height: 550px;
+  background: url("images/cosmos-5.png");
+  position: relative;
+  overflow: hidden;
+}
+
+#stage img {
+  width: 100%; height: 100%;
+}
+
+#earth {
+  top: 175px; left: 250px;
+  width: 200px; height: 200px;
+  position: absolute;
+  
+  animation: EarthAnime 120s linear 0s infinite normal;
+  -webkit-animation: EarthAnime 120s linear 0s infinite normal;
+}
+@keyframes EarthAnime {
+  0% { transform: rotateZ(0deg);}
+  100% { transform: rotateZ(360deg);}
+}
+@-webkit-keyframes EarthAnime {
+  0% { -webkit-transform: rotateZ(0deg);}
+  100% { -webkit-transform: rotateZ(360deg);}
+}
+
+#enterpriseVY {
+  top: 0px; left: 317px;
+  width: 64px; height: 275px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  
+  animation: EnterpriseVYAnime 10s linear 0s 4 normal;
+  -webkit-animation: EnterpriseVYAnime 10s linear 0s 4 normal;
+}
+@keyframes EnterpriseVYAnime {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes EnterpriseVYAnime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+
+#enterprise {
+  top: 130px; left: 0px;
+  width: 64px; height: 32px;
+  position: absolute;
+  
+  animation: EnterpriseAnime 20s ease-in 20s 1 normal;
+  -webkit-animation: EnterpriseAnime 20s ease-in 20s 1 normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes EnterpriseAnime {
+  0% { top: 130px; }
+  100% { top: -50px; }
+}
+@-webkit-keyframes EnterpriseAnime {
+  0% { top: 130px; }
+  100% { top: -50px; }
+}
+
+#ship {
+  top: 0px; left: 0px;
+  width: 64px; height: 32px;
+  position: absolute;
+}
+
+.flame {
+  width: 30px; height: 10px;
+  border-radius: 0px 20px 20px 0px / 0px 4px 4px 0px;
+  
+  background-image: linear-gradient(to left, #99FFFF, #FFFF00 30%, #FF9900 60%,
+                    #663300 90%, #000000);
+  background-image: -webkit-linear-gradient(right, #99FFFF, #FFFF00 30%, #FF9900 60%,
+                    #663300 90%, #000000);
+  position: absolute;
+  opacity: 0.0;
+  
+  animation: FlameAnime 0.1s linear 18s infinite alternate;
+  -webkit-animation: FlameAnime 0.1s linear 18s infinite alternate;
+}
+#flame1 {
+  top: -1px; left: -30px;
+}
+#flame2 {
+  top: 23px; left: -30px;
+}
+@keyframes FlameAnime {
+  0% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes FlameAnime {
+  0% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+

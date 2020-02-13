@@ -1,0 +1,127 @@
+/* NaviButton04.css */
+
+#menu-box {
+  margin: 10px 0px 10px 30px;
+  width: 729px; height: 54px;       /* widthはulの幅+ボーダーの幅、heightはulの高さ+ボーダーの幅 */
+  position: relative;
+}
+
+#menu-box #L-End {                  /* リンクボタンバーの左端 */
+  margin: 0px; padding: 0px;
+  width: 60px; height: 50px;
+  border: 2px solid #666666;
+  border-right: 1px solid #666666;
+  border-radius: 50% 0% 0% 50%;
+  background-color: #3CB371;
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                     rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                             rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  float: left;
+}
+#menu-box #R-End {                  /* リンクボタンバーの右端 */
+  margin: 0px; padding: 0px;
+  width: 60px; height: 50px;
+  border: 2px solid #666666;
+  border-left: none;
+  border-radius: 0% 50% 50% 0%;
+  background-color: #3CB371;
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                     rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                             rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  float: left;
+}
+
+#menu-box ul {
+  margin: 0px; padding: 0px;        /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 604px; height: 50px;       /* widthは（liの幅+ボーダーの幅）* 3、heightはliの高さ */
+  border: 2px solid #666666;
+  border-right: none;
+  border-left: none;
+  list-style-type: none;
+  float: left;
+}
+
+#menu-box li {                      /* ボタンの四角形 */
+  width: 150px; height: 50px;
+  background-color: #3CB371;
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                     rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.5 ) 0%, rgba( 255, 255, 255, 0.8 ) 50%,
+                                             rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  border-right: 1px solid #666666;
+  float: left;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box li:hover {                /* ボタンhover時にボタンの色を変える。 */
+  background-color: #008080;
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0.4 ) 0%, rgba( 255, 255, 255, 0.7 ) 50%,
+                                     rgba( 255, 255, 255, 0.3 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.4 ) 0%, rgba( 255, 255, 255, 0.7 ) 50%,
+                                             rgba( 255, 255, 255, 0.4 ) 70%, rgba( 255, 255, 255, 0.0 ) 100% );
+}
+
+#menu-box li a {                    /* ボタンのテキスト */
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 50px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden;
+  outline: none;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box li:hover a {              /* ボタンhover時にボタンのテキストの色を変える。 */
+  color: #FF0000;
+  text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#navibar {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 590px;
+  margin: 0px;
+  float: left;
+}
+#content_inner {
+  width: 590px;
+  margin: 0px;
+}
+#sidebar {
+  width: 200px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 200px;
+  height: 250px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

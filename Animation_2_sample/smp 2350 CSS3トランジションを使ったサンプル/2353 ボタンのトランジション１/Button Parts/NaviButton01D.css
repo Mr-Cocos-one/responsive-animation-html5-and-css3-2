@@ -1,0 +1,85 @@
+/* NaviButton01D.css */
+
+#menu-box {
+  margin: 10px;
+  width: 253px;                /* liの幅+ボーダーの幅 */
+                               /* （heightは、liの高さ+ボーダーの幅+margin）で自動的に計算される。 */
+  position: relative;
+}
+
+#menu-box ul {
+  margin: 0px; padding: 0px;        /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  list-style-type: none;
+}
+
+#menu-box li {                      /* ボタンの角丸四角形 */
+  margin: 0px 10px 0px 0px; padding: 10px 0px 0px 15px;
+  width: 50px; height: 200px;
+  background-color: #99FF99;
+  border: 4px solid #999999;
+  border-radius: 10px;
+  float: left;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box li:hover {                /* ボタンhover時にボタンの色を変えて、四角形の角を丸く変形する。 */
+  background-color: #FF99FF;
+  border-radius: 50px;
+}
+#menu-box>ul>li a span {            /* ボタンのテキスト１文字ごと縦に並べる */
+  margin: 0px; padding: 0px;
+  width: 30px; height: 32px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #3333FF;
+  text-shadow: 2px 2px 2px #666666;
+  float: left;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden;
+  outline: none;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 520px;
+  margin: 0px;
+  float: left;
+}
+
+#content_inner {
+  width: 520px;
+  margin: 0px;
+}
+#sidebar {
+  width: 270px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 270px;
+  height: 150px;
+  margin: 10px 0px 0px 0px;
+  float: left;
+  /* border-top: solid 1px #AAAAAA; */
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+
+

@@ -1,0 +1,523 @@
+/* SlidePhotoGallery.css */
+
+#stage {
+  width: 700px; height: 440px;
+  background-color: #000000;
+  position: relative;
+}
+
+#galleryTitle {
+  top: 150px; left: 0px; right: 0px;
+  margin-left: auto; margin-right: auto;
+  width: 400px; height: 70px;
+  background-color: rgba( 255, 255, 255, 0.4 );
+  border-radius: 35px;
+  position: absolute;
+  
+  text-align: center;
+  font: 50px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: rgba( 0, 0, 0, 1.0 );
+  text-shadow: 1px 1px 3px rgba( 0, 0, 0, 1.0 ), -1px -1px 3px rgba( 0, 0, 0, 1.0 ),
+              -1px 1px 3px rgba( 0, 0, 0, 1.0 ), 1px -1px 3px rgba( 0, 0, 0, 1.0 );
+  
+  box-shadow: 1px 1px 30px rgba( 255, 255, 255, 0.25 ), -1px -1px 30px rgba( 255, 255, 255, 0.25 ),
+              -1px 1px 30px rgba( 255, 255, 255, 0.25 ), 1px -1px 30px rgba( 255, 255, 255, 0.25 );
+}
+
+#carouselArea {
+  top: 0px; left: 2px;
+  width: 696px; height: 450px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.num1 {
+  top: 62px; left: 30px;
+  width: 15px; height: 10px;
+  position: absolute;
+  
+  text-align: center;
+  font: 10px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: lightgray;
+}
+
+.com1 {
+  top: 0px; left: -145px;
+  width: 135px; height: 40px;
+  position: absolute;
+  
+  text-align: center;
+  font: bold 24px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: lightgray;
+}
+.com2 {
+  top: 0px; left: 420px;
+  width: 120px; height: 300px;
+  position: absolute;
+  
+  text-align: left;
+  font: 14px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 130%;
+  color: lightgray;
+}
+
+#stage img {
+  width:100%; height:100%;
+}
+
+/**********************************************************************
+* slide1                                                              *
+**********************************************************************/
+#slide1 {
+  top: 360px; left: 0px;
+  width: 1044px; height: 100px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: slide1Anime 60s linear 0s infinite normal;
+  -webkit-animation: slide1Anime 60s linear 0s infinite normal;
+}
+@keyframes slide1Anime {
+  0% { }
+  100% { left: -1044px; }
+}
+@-webkit-keyframes slide1Anime {
+  0% { }
+  100% { left: -1044px; }
+}
+
+/**********************************************************************
+* slide2                                                              *
+**********************************************************************/
+#slide2 {
+  top: 360px; left: 1044px;
+  width: 1044px; height: 100px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: slide2Anime 60s linear 0s infinite normal;
+  -webkit-animation: slide2Anime 60s linear 0s infinite normal;
+}
+@keyframes slide2Anime {
+  0% { }
+  100% { left: 0px; }
+}
+@-webkit-keyframes slide2Anime {
+  0% { }
+  100% { left: 0px; }
+}
+
+/**********************************************************************
+* image-container                                                     *
+**********************************************************************/
+.image-container {
+  top: 0px;
+  position: absolute;
+}
+.cntnr01 {
+  left: 5px;
+}
+.cntnr02 {
+  left: 92px;
+}
+.cntnr03 {
+  left: 179px;
+}
+.cntnr04 {
+  left: 266px;
+}
+.cntnr05 {
+  left: 353px;
+}
+.cntnr06 {
+  left: 440px;
+}
+.cntnr07 {
+  left: 527px;
+}
+.cntnr08 {
+  left: 614px;
+}
+.cntnr09 {
+  left: 701px;
+}
+.cntnr10 {
+  left: 788px;
+}
+.cntnr11 {
+  left: 875px;
+}
+.cntnr12 {
+  left: 962px;
+}
+
+/* .imageA (carousel images ) **********************************/
+.imageA {
+  top: 0px; left: 0px;
+  width: 77px; height: 58px;
+  border: solid 1px gray;
+  position: absolute;
+}
+
+/* .imageB (expanded images) ***********************************/
+.imageB {
+  top: 80px;
+  width: 400px; height: 300px;
+  border: solid 10px white;
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: opacity 1s ease-in-out, top 0s;
+  -webkit-transition: opacity 1s ease-in-out, top 0s;
+}
+
+/**********************************************************************
+* when image-container (=imageA) is hovered --> change imageB         *
+**********************************************************************/
+.image-container:hover .imageB {
+  top: -340px;
+  opacity: 1.0;
+}
+
+/**********************************************************************
+* Slide1 backward (to keep static location of imageB)                 *
+**********************************************************************/
+#image11B {
+  left: 133px;
+  animation: image11Anime 60s linear 0s infinite normal;
+  -webkit-animation: image11Anime 60s linear 0s infinite normal;
+}
+@keyframes image11Anime {
+  0% { }
+  100% { left: 1177px; }
+}
+@-webkit-keyframes image11Anime {
+  0% { }
+  100% { left: 1177px; }
+}
+
+#image12B {
+  left: 46px;
+  animation: image12Anime 60s linear 0s infinite normal;
+  -webkit-animation: image12Anime 60s linear 0s infinite normal;
+}
+@keyframes image12Anime {
+  0% { }
+  100% { left: 1090px; }
+}
+@-webkit-keyframes image12Anime {
+  0% { }
+  100% { left: 1090px; }
+}
+
+#image13B {
+  left: -41px;
+  animation: image13Anime 60s linear 0s infinite normal;
+  -webkit-animation: image13Anime 60s linear 0s infinite normal;
+}
+@keyframes image13Anime {
+  0% { }
+  100% { left: 1003px; }
+}
+@-webkit-keyframes image13Anime {
+  0% { }
+  100% { left: 1003px; }
+}
+
+#image14B {
+  left: -128px;
+  animation: image14Anime 60s linear 0s infinite normal;
+  -webkit-animation: image14Anime 60s linear 0s infinite normal;
+}
+@keyframes image14Anime {
+  0% { }
+  100% { left: 916px; }
+}
+@-webkit-keyframes image14Anime {
+  0% { }
+  100% { left: 916px; }
+}
+
+#image15B {
+  left: -215px;
+  animation: image15Anime 60s linear 0s infinite normal;
+  -webkit-animation: image15Anime 60s linear 0s infinite normal;
+}
+@keyframes image15Anime {
+  0% { }
+  100% { left: 829px; }
+}
+@-webkit-keyframes image15Anime {
+  0% { }
+  100% { left: 829px; }
+}
+
+#image16B {
+  left: -302px;
+  animation: image16Anime 60s linear 0s infinite normal;
+  -webkit-animation: image16Anime 60s linear 0s infinite normal;
+}
+@keyframes image16Anime {
+  0% { }
+  100% { left: 742px; }
+}
+@-webkit-keyframes image16Anime {
+  0% { }
+  100% { left: 742px; }
+}
+
+#image17B {
+  left: -389px;
+  animation: image17Anime 60s linear 0s infinite normal;
+  -webkit-animation: image17Anime 60s linear 0s infinite normal;
+}
+@keyframes image17Anime {
+  0% { }
+  100% { left: 655px; }
+}
+@-webkit-keyframes image17Anime {
+  0% { }
+  100% { left: 655px; }
+}
+
+#image18B {
+  left: -476px;
+  animation: image18Anime 60s linear 0s infinite normal;
+  -webkit-animation: image18Anime 60s linear 0s infinite normal;
+}
+@keyframes image18Anime {
+  0% { }
+  100% { left: 568px; }
+}
+@-webkit-keyframes image18Anime {
+  0% { }
+  100% { left: 568px; }
+}
+
+#image19B {
+  left: -563px;
+  animation: image19Anime 60s linear 0s infinite normal;
+  -webkit-animation: image19Anime 60s linear 0s infinite normal;
+}
+@keyframes image19Anime {
+  0% { }
+  100% { left: 481px; }
+}
+@-webkit-keyframes image19Anime {
+  0% { }
+  100% { left: 481px; }
+}
+
+#image1AB {
+  left: -650px;
+  animation: image1AAnime 60s linear 0s infinite normal;
+  -webkit-animation: image1AAnime 60s linear 0s infinite normal;
+}
+@keyframes image1AAnime {
+  0% { }
+  100% { left: 394px; }
+}
+@-webkit-keyframes image1AAnime {
+  0% { }
+  100% { left: 394px; }
+}
+
+#image1BB {
+  left: -737px;
+  animation: image1BAnime 60s linear 0s infinite normal;
+  -webkit-animation: image1BAnime 60s linear 0s infinite normal;
+}
+@keyframes image1BAnime {
+  0% { }
+  100% { left: 307px; }
+}
+@-webkit-keyframes image1BAnime {
+  0% { }
+  100% { left: 307px; }
+}
+
+#image1CB {
+  left: -824px;
+  animation: image1CAnime 60s linear 0s infinite normal;
+  -webkit-animation: image1CAnime 60s linear 0s infinite normal;
+}
+@keyframes image1CAnime {
+  0% { }
+  100% { left: 220px; }
+}
+@-webkit-keyframes image1CAnime {
+  0% { }
+  100% { left: 220px; }
+}
+
+/**********************************************************************
+* Slide2 backward (to keep static location of imageB)                 *
+**********************************************************************/
+#image21B {
+  left: -911px;
+  animation: image21Anime 60s linear 0s infinite normal;
+  -webkit-animation: image21Anime 60s linear 0s infinite normal;
+}
+@keyframes image21Anime {
+  0% { }
+  100% { left: 133px; }
+}
+@-webkit-keyframes image21Anime {
+  0% { }
+  100% { left: 133px; }
+}
+
+#image22B {
+  left: -998px;
+  animation: image22Anime 60s linear 0s infinite normal;
+  -webkit-animation: image22Anime 60s linear 0s infinite normal;
+}
+@keyframes image22Anime {
+  0% { }
+  100% { left: 46px; }
+}
+@-webkit-keyframes image22Anime {
+  0% { }
+  100% { left: 46px; }
+}
+
+#image23B {
+  left: -1085px;
+  animation: image23Anime 60s linear 0s infinite normal;
+  -webkit-animation: image23Anime 60s linear 0s infinite normal;
+}
+@keyframes image23Anime {
+  0% { }
+  100% { left: -41px; }
+}
+@-webkit-keyframes image23Anime {
+  0% { }
+  100% { left: -41px; }
+}
+
+#image24B {
+  left: -1172px;
+  animation: image24Anime 60s linear 0s infinite normal;
+  -webkit-animation: image24Anime 60s linear 0s infinite normal;
+}
+@keyframes image24Anime {
+  0% { }
+  100% { left: -128px; }
+}
+@-webkit-keyframes image24Anime {
+  0% { }
+  100% { left: -128px; }
+}
+
+#image25B {
+  left: -1259px;
+  animation: image25Anime 60s linear 0s infinite normal;
+  -webkit-animation: image25Anime 60s linear 0s infinite normal;
+}
+@keyframes image25Anime {
+  0% { }
+  100% { left: -215px; }
+}
+@-webkit-keyframes image25Anime {
+  0% { }
+  100% { left: -215px; }
+}
+
+#image26B {
+  left: -1346px;
+  animation: image26Anime 60s linear 0s infinite normal;
+  -webkit-animation: image26Anime 60s linear 0s infinite normal;
+}
+@keyframes image26Anime {
+  0% { }
+  100% { left: -302px; }
+}
+@-webkit-keyframes image26Anime {
+  0% { }
+  100% { left: -302px; }
+}
+
+#image27B {
+  left: -1433px;
+  animation: image27Anime 60s linear 0s infinite normal;
+  -webkit-animation: image27Anime 60s linear 0s infinite normal;
+}
+@keyframes image27Anime {
+  0% { }
+  100% { left: -389px; }
+}
+@-webkit-keyframes image27Anime {
+  0% { }
+  100% { left: -389px; }
+}
+
+#image28B {
+  left: -1520px;
+  animation: image28Anime 60s linear 0s infinite normal;
+  -webkit-animation: image28Anime 60s linear 0s infinite normal;
+}
+@keyframes image28Anime {
+  0% { }
+  100% { left: -476px; }
+}
+@-webkit-keyframes image28Anime {
+  0% { }
+  100% { left: -476px; }
+}
+
+#image29B {
+  left: -1607px;
+  animation: image29Anime 60s linear 0s infinite normal;
+  -webkit-animation: image29Anime 60s linear 0s infinite normal;
+}
+@keyframes image29Anime {
+  0% { }
+  100% { left: -563px; }
+}
+@-webkit-keyframes image29Anime {
+  0% { }
+  100% { left: -563px; }
+}
+
+#image2AB {
+  left: -1694px;
+  animation: image2AAnime 60s linear 0s infinite normal;
+  -webkit-animation: image2AAnime 60s linear 0s infinite normal;
+}
+@keyframes image2AAnime {
+  0% { }
+  100% { left: -650px; }
+}
+@-webkit-keyframes image2AAnime {
+  0% { }
+  100% { left: -650px; }
+}
+
+#image2BB {
+  left: -1781px;
+  animation: image2BAnime 60s linear 0s infinite normal;
+  -webkit-animation: image2BAnime 60s linear 0s infinite normal;
+}
+@keyframes image2BAnime {
+  0% { }
+  100% { left: -737px; }
+}
+@-webkit-keyframes image2BAnime {
+  0% { }
+  100% { left: -737px; }
+}
+
+#image2CB {
+  left: -1868px;
+  animation: image2CAnime 60s linear 0s infinite normal;
+  -webkit-animation: image2CAnime 60s linear 0s infinite normal;
+}
+@keyframes image2CAnime {
+  0% { }
+  100% { left: -824px; }
+}
+@-webkit-keyframes image2CAnime {
+  0% { }
+  100% { left: -824px; }
+}
+

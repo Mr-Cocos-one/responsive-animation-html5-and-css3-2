@@ -1,0 +1,144 @@
+/* Gravity2.css */
+
+#stage {
+  width: 700px; height: 500px;
+  position: relative;
+}
+/* 背景 ***************************************************/
+#backUpper {
+  top: 0px; left: 0px;
+  width: 700px; height: 425px;
+  background-color: #000000;
+  position: absolute;
+}
+#backBottom {
+  top: 425px; left: 0px;
+  width: 700px; height: 75px;
+  background-color: #666666;
+  position: absolute;
+}
+/* ボール（４つ） ****************************************/
+.ball {
+  top: 0px; left: 0px;
+  width: 50px; height: 50px;
+  background-color: #CCECF4;
+  border: solid 2px #7FCFE2;
+  border-radius: 50%;
+  position: absolute;
+}
+#ball1 {
+  z-index: 4;
+  opacity: 1.0;
+}
+#ball2 {
+  z-index: 3;
+  opacity: 0.8;
+}
+#ball3 {
+  z-index: 2;
+  opacity: 0.6;
+}
+#ball4 {
+  z-index: 1;
+  opacity: 0.4;
+}
+/*************************************************************************
+ * 横移動ボックス                                                        *
+ *************************************************************************/
+.boxX {
+  top: 0px; left: 0px;
+  width: 50px; height: 425px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+
+#boxX1 {
+  animation: moveXAnime1 4s linear 0s infinite alternate,
+             moveXAnime2 4s linear 0s infinite alternate;
+  -webkit-animation: moveXAnime1 4s linear 0s infinite alternate,
+                     moveXAnime2 4s linear 0s infinite alternate;
+}
+#boxX2 {
+  animation: moveXAnime1 4s linear 0.05s infinite alternate,
+             moveXAnime2 4s linear 0.05s infinite alternate;
+  -webkit-animation: moveXAnime1 4s linear 0.05s infinite alternate,
+                     moveXAnime2 4s linear 0.05s infinite alternate;
+}
+#boxX3 {
+  animation: moveXAnime1 4s linear 0.13s infinite alternate,
+             moveXAnime2 4s linear 0.13s infinite alternate;
+  -webkit-animation: moveXAnime1 4s linear 0.13s infinite alternate,
+                     moveXAnime2 4s linear 0.13s infinite alternate;
+}
+#boxX4 {
+  animation: moveXAnime1 4s linear 0.23s infinite alternate,
+             moveXAnime2 4s linear 0.23s infinite alternate;
+  -webkit-animation: moveXAnime1 4s linear 0.23s infinite alternate,
+                     moveXAnime2 4s linear 0.23s infinite alternate;
+}
+
+@keyframes moveXAnime1 {
+  0% { left 0px; }
+  100% { left: 650px; }
+}
+@-webkit-keyframes moveXAnime1 {
+  0% { left 0px; }
+  100% { left: 650px; }
+}
+@keyframes moveXAnime2 {
+  0% { animation-timing-function: ease-out; }
+  25% { animation-timing-function: ease-in; }
+  50% { animation-timing-function: ease-out; }
+  75% { animation-timing-function: ease-in; }
+  100% { animation-timing-function: ease-out; }
+}
+@-webkit-keyframes moveXAnime2 {
+  0% { -webkit-animation-timing-function: ease-out; }
+  25% { -webkit-animation-timing-function: ease-in; }
+  50% { -webkit-animation-timing-function: ease-out; }
+  75% { -webkit-animation-timing-function: ease-in; }
+  100% { -webkit-animation-timing-function: ease-out; }
+}
+
+/*************************************************************************
+ * 縦移動ボックス                                                        *
+ *************************************************************************/
+.boxY {
+  top: 50px; left: 0px;
+  width: 50px; height: 50px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+
+#boxY1 {
+  animation: moveYAnime 4s linear 0s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0s infinite alternate;
+}
+#boxY2 {
+  animation: moveYAnime 4s linear 0.05s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.05s infinite alternate;
+}
+#boxY3 {
+  animation: moveYAnime 4s linear 0.13s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.13s infinite alternate;
+}
+#boxY4 {
+  animation: moveYAnime 4s linear 0.23s infinite alternate;
+  -webkit-animation: moveYAnime 4s linear 0.23s infinite alternate;
+}
+
+@keyframes moveYAnime {
+  0% { top: 50px; animation-timing-function: ease-in; }
+  25% { top: 375px; animation-timing-function: ease-out; }
+  50% { top: 50px; animation-timing-function: ease-in; }
+  75% { top: 375px; animation-timing-function: ease-out; }
+  100% { top: 50px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { top: 50px; -webkit-animation-timing-function: ease-in; }
+  25% { top: 375px; -webkit-animation-timing-function: ease-out; }
+  50% { top: 50px; -webkit-animation-timing-function: ease-in; }
+  75% { top: 375px; -webkit-animation-timing-function: ease-out; }
+  100% { top: 50px; }
+}
+

@@ -1,0 +1,70 @@
+/* Reflection.css for Safari, Chrome. ( Only for -webkit- browser. ) */
+
+#stage {
+  width: 750px; height: 550px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+/*********************************************************************/
+#textReflect1 {
+  position: absolute;
+  top: 20px; left: 20px;
+  background-color: skyblue;
+  text-align: center;
+  font: bold 32px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: red;
+  
+  -webkit-box-reflect: below;
+}
+
+/*********************************************************************/
+#textReflect2 {
+  position: absolute;
+  top: 100px; left: 20px;
+  background-color: lightgreen;
+  text-align: center;
+  font: bold 32px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: blue;
+  
+  -webkit-box-reflect: below 10px -webkit-linear-gradient(top, transparent, white);
+}
+
+/*********************************************************************/
+#simpleReflect {
+  position: absolute;
+  top: 190px; left: 20px;
+  width: 224px; height: 168px;
+  border-radius: 20px;
+  
+  -webkit-box-reflect: below 0px -webkit-linear-gradient(top, transparent, transparent 50%, white);
+}
+
+/*********************************************************************/
+#maskReflect {
+  position: absolute;
+  top: 190px; left: 260px;
+  width: 224px; height: 168px;
+  
+  -webkit-box-reflect: below 5px url(images/ReflectMask1.png);
+}
+
+/*********************************************************************/
+#innerReflect {
+  position: absolute;
+  top: 190px; left: 500px;
+  
+  -webkit-box-reflect: below 20px;
+}
+#innerReflect img {
+  width: 224px; height: 120px;
+  border-radius: 20px;
+  
+  -webkit-box-reflect: below 0px -webkit-linear-gradient(top, transparent, transparent 80%, white);
+}
+#innerReflect span {
+  font: bold 18px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: red;
+}
+

@@ -1,0 +1,21 @@
+/* RM-RadialGradAnime-stage.css */
+
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  //max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 530px;
+  width: 100%;
+  padding-top: 88.3%;
+  background-color: black;
+  position: relative;
+}
+

@@ -1,0 +1,65 @@
+/* RadialGradAnime-div2.css */
+
+/*****************************************************************************
+* 四角形　円形グラデーション２
+******************************************************************************/
+#div2 {
+  top: 20px; left: 220px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+}
+#div2 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  background: radial-gradient(circle at 50% 50%, #0066FF 10%, #33FF33 30%);
+  background: -webkit-radial-gradient(50% 50%, circle, #0066FF 10%, #33FF33 30%);
+  position: absolute;
+  opacity: 1.0;
+  
+  animation: grad2Anime1 10s linear 0s infinite normal;
+  -webkit-animation: grad2Anime1 10s linear 0s infinite normal;
+}
+#div2 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 150px; height: 150px;
+  background: radial-gradient(circle at 50% 50%, #33FF33 10%, #0066FF 30%);
+  background: -webkit-radial-gradient(50% 50%, circle, #33FF33 10%, #0066FF 30%);
+  position: absolute;
+  opacity: 0.0;
+  
+  animation: grad2Anime2 10s linear 0s infinite normal;
+  -webkit-animation: grad2Anime2 10s linear 0s infinite normal;
+}
+/* grad2Anime1 **************************************/
+@keyframes grad2Anime1 {
+  from { }
+  40% { opacity: 1.0; transform: scale(5.0, 5.0); }
+  60% { opacity: 0.0;  transform: scale(5.0, 5.0); }
+  90% { opacity: 0.0;  transform: scale(1.0, 1.0); }
+  100% { opacity: 1.0;  transform: scale(1.0, 1.0); }
+}
+@-webkit-keyframes grad2Anime1 {
+  from { }
+  40% { opacity: 1.0; -webkit-transform: scale(5.0, 5.0); }
+  60% { opacity: 0.0;  -webkit-transform: scale(5.0, 5.0); }
+  90% { opacity: 0.0;  -webkit-transform: scale(1.0, 1.0); }
+  100% { opacity: 1.0;  -webkit-transform: scale(1.0, 1.0); }
+}
+/* grad2Anime2 **************************************/
+@keyframes grad2Anime2 {
+  from { }
+  40% { opacity: 0.0; transform: scale(1.0, 1.0); }
+  60% { opacity: 1.0; transform: scale(1.0, 1.0); }
+  90% { opacity: 1.0;  transform: scale(5.0, 5.0); }
+  100% { opacity: 0.0;  transform: scale(5.0, 5.0); }
+}
+@-webkit-keyframes grad2Anime2 {
+  from { }
+  40% { opacity: 0.0; -webkit-transform: scale(1.0, 1.0); }
+  60% { opacity: 1.0; -webkit-transform: scale(1.0, 1.0); }
+  90% { opacity: 1.0;  -webkit-transform: scale(5.0, 5.0); }
+  100% { opacity: 0.0;  -webkit-transform: scale(5.0, 5.0); }
+}
+

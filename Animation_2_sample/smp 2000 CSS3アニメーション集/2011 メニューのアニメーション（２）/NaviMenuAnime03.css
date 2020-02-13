@@ -1,0 +1,527 @@
+/* NaviMenuAnime03.css */
+
+#menu-box {
+  margin: 10px 0px 10px 10px;
+  width: 494px; height: 302px;
+  position: relative;
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  height: 302px;                     /* 大メニューの高さ+ボーダーの幅 */
+  border-left: 1px solid #666666;
+  list-style-type: none;
+}
+
+#menu-box>ul>li {
+  width: 30px; height: 300px;        /* 大メニューの幅と高さ */
+  border: 1px solid #666666;
+  border-left: none;
+  float: left;
+  overflow: hidden;                  /* この大メニューの overflow: hidden;の指定で以下の全ての要素が overflow しなくなる。 */
+  
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+}
+#menu-box>ul>li:hover {              /* 大メニューのhover時に大メニューの幅を変える */
+  width: 430px;
+}
+
+#menu-box>ul>li h1 {                 /* 大メニューのスタイル */
+  margin: 0px; padding: 16px 0px 0px 0px;
+  width: 30px; height: 284px;
+  cursor: pointer;
+  background-color: #999999;
+  /* background-colorにbackground-imageで白のグラデーションをかぶせる */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.6) 50%,
+                                     rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.0) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.6) 50%,
+                                             rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.0) 100%);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#menu-box>ul>li h1 span {            /* 大メニューのテキスト１文字ごと縦に並べる */
+  margin: 0px; padding: 0px;
+  width: 30px; height: 26px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 1px #FFFFFF;
+  float: left;
+  
+  animation: 1s linear 0s infinite normal;
+  -webkit-animation: 1s linear 0s infinite normal;
+}
+@keyframes blinkAnime {
+  from { }
+  50% { color: #0000FF; text-shadow: 2px 2px 1px #CCCCFF; }
+  to { }
+}
+@-webkit-keyframes blinkAnime {
+  from { }
+  50% { color: #0000FF; text-shadow: 2px 2px 1px #CCCCFF; }
+  to { }
+}
+#menu-box>ul>li:hover h1 span {      /* 大メニューのhover時にブリンクするアニメーションの
+                                        アニメーション名をセットする。 */
+  animation-name: blinkAnime;
+  -webkit-animation-name: blinkAnime;
+}
+
+/***************************************************************************************
+ * メニューの背景画像ａｎｄアニメーション                                              *
+ ***************************************************************************************/
+#menu-box>ul>li>div {
+  margin: -300px 0px 0px 30px; padding: 0px;
+  width: 400px; height: 300px;
+  position: relative;
+  float: left;
+  overflow: hidden;    /* アニメーション画像がdivの範囲を超えてh1の範囲にはみ出る
+                          ため隠す。 */
+}
+
+/* 緑の並木とトンボ ************************************************/
+#menu-box>ul>li:nth-child(1) div #greenLoad {
+  top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  position: absolute;
+}
+
+#menu-box>ul>li:nth-child(1) div #dragonFly-H {
+  top: 0px; left: 90px;
+  width: 0px; height: 0px;
+  /* border: solid 1px red; */  /* borderを生かすと、スライドするボックスが見えます */
+  position: absolute;
+  
+  animation: dragonFly-HAnime 45s linear 0s infinite alternate;
+  -webkit-animation: dragonFly-HAnime 45s linear 0s infinite alternate;
+}
+@keyframes dragonFly-HAnime {
+  from { }
+  25% { left: 310px; }
+  50% { left: 310px; }
+  75% { left: 90px; }
+  to { }
+}
+@-webkit-keyframes dragonFly-HAnime {
+  from { }
+  25% { left: 310px; }
+  50% { left: 310px; }
+  75% { left: 90px; }
+  to { }
+}
+
+#menu-box>ul>li:nth-child(1) div #dragonFly-V {
+  top: 80px; left: 0px;
+  width: 0px; height: 0px;
+  /* border: solid 1px blue; */  /* borderを生かすと、スライドするボックスが見えます */
+  position: absolute;
+  
+  animation: dragonFly-VAnime 20s linear 0s infinite alternate;
+  -webkit-animation: dragonFly-VAnime 20s linear 0s infinite alternate;
+}
+@keyframes dragonFly-VAnime {
+  from { }
+  25% { top: 80px; }
+  50% { top: 200px; }
+  75% { top: 200px; }
+  to { }
+}
+@-webkit-keyframes dragonFly-VAnime {
+  from { }
+  25% { top: 80px; }
+  50% { top: 200px; }
+  75% { top: 200px; }
+  to { }
+}
+
+#menu-box>ul>li:nth-child(1) div #circleBox {
+  top: 0px; left: 0px;
+  width: 0px; height: 0px;
+  /* border: solid 1px yellow; */    /* borderを生かすと、円運動の中心が見えます */
+  position: absolute;
+  
+  animation: circleAnime 6s linear 0s infinite normal;
+  -webkit-animation: circleAnime 6s linear 0s infinite normal;
+}
+@keyframes circleAnime {
+  0% { }
+  100% { transform: rotateZ(720deg); }
+}
+@-webkit-keyframes circleAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(720deg); }
+}
+
+#menu-box>ul>li:nth-child(1) div  #circleBox #dragonFly {
+  top: -70px; left: -15px;  /* topの値を変えることで、中心からの距離を変えられます */
+  width: 30px; height: 44px;
+  /* border: solid 1px red; */
+  border: none;
+  position: absolute;
+}
+
+/* 橋と桜と白い蝶 ************************************************/
+#menu-box>ul>li:nth-child(2) div #bridge {
+ top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  position: absolute;
+}
+
+#menu-box>ul>li:nth-child(2) div #butterFly-H {
+  top: 0px; left: 410px;
+  width: 0px; height: 0px;
+  position: absolute;
+  
+  animation: butterFly-HAnime 10s linear 0s infinite normal;
+  -webkit-animation: butterFly-HAnime 10s linear 0s infinite normal;
+}
+@keyframes butterFly-HAnime {
+  0% { left: 410px; }
+  100% { left: -50px; }
+}
+@-webkit-keyframes butterFly-HAnime {
+  0% { left: 410px; }
+  100% { left: -50px; }
+}
+
+#menu-box>ul>li:nth-child(2) div #butterFly-V {
+  top: 80px; left:0px;
+  width: 0px; height: 0px;
+  position: absolute;
+  
+  animation: butterFly-VAnime 8s linear 0s infinite normal;
+  -webkit-animation: butterFly-VAnime 8s linear 0s infinite normal;
+}
+@keyframes butterFly-VAnime {
+  0% { }
+  5% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  10% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  15% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  20% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  25% { transform: translateY(50px); animation-timing-function: ease-in-out; }
+  30% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  35% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  40% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  45% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  50% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  55% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  60% { transform: translateY(50px); animation-timing-function: ease-in-out; }
+  65% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  70% { transform: translateY(50px); animation-timing-function: ease-in-out; }
+  75% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  80% { transform: translateY(70px); animation-timing-function: ease-in-out; }
+  85% { transform: translateY(50px); animation-timing-function: ease-in-out; }
+  90% { transform: translateY(30px); animation-timing-function: ease-in-out; }
+  95% { transform: translateY(0px); animation-timing-function: ease-in-out; }
+  100% { transform: translateY(30px); }
+}
+@-webkit-keyframes butterFly-VAnime {
+  0% { }
+  5% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  10% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  15% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  20% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  25% { -webkit-transform: translateY(50px); -webkit-animation-timing-function: ease-in-out; }
+  30% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  35% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  40% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  45% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  50% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  55% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  60% { -webkit-transform: translateY(50px); -webkit-animation-timing-function: ease-in-out; }
+  65% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  70% { -webkit-transform: translateY(50px); -webkit-animation-timing-function: ease-in-out; }
+  75% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  80% { -webkit-transform: translateY(70px); -webkit-animation-timing-function: ease-in-out; }
+  85% { -webkit-transform: translateY(50px); -webkit-animation-timing-function: ease-in-out; }
+  90% { -webkit-transform: translateY(30px); -webkit-animation-timing-function: ease-in-out; }
+  95% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-in-out; }
+  100% { -webkit-transform: translateY(30px); }
+}
+
+#menu-box>ul>li:nth-child(2) div #butterFly {
+  top: 0px; left: 0px;
+  width: 48px; height: 30px;
+  position: absolute;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+}
+
+/* 小さな滝と魚のジャンプ *****************************************/
+#menu-box>ul>li:nth-child(3) div #waterFall {
+  top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  position: absolute;
+}
+
+#menu-box>ul>li:nth-child(3) div #fish-H {
+  top: 0px; left: -35px;
+  width: 0px; height: 0px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: fish-HAnime 20s linear 0s infinite normal;
+  -webkit-animation: fish-HAnime 20s linear 0s infinite normal;
+}
+@keyframes fish-HAnime {
+  0% { left: -35px; }
+  10% { left: -35px; }
+  12% { left: 100px; }
+  14% { left: 100px; }
+  16% { left: 100px; }
+  
+  30% { left: 300px; }
+  32% { left: 300px; }
+  34% { left: 300px; }
+  
+  50% { left: 250px; animation-timing-function: ease-in; }
+  52% { left: 150px; animation-timing-function: ease-out; }
+  54% { left: 50px; }
+  
+  70% { left: 70px; }
+  72% { left: 70px; }
+  74% { left: 70px; }
+  
+  90% { left: 220px; }
+  92% { left: 220px; }
+  94% { left: 220px; }
+  100% { left: -35px; }
+}
+@-webkit-keyframes fish-HAnime {
+  0% { left: -35px; }
+  10% { left: -35px; }
+  12% { left: 100px; }
+  14% { left: 100px; }
+  16% { left: 100px; }
+  
+  30% { left: 300px; }
+  32% { left: 300px; }
+  34% { left: 300px; }
+  
+  50% { left: 250px; -webkit-animation-timing-function: ease-in; }
+  52% { left: 150px; -webkit-animation-timing-function: ease-out; }
+  54% { left: 50px; }
+  
+  70% { left: 70px; }
+  72% { left: 70px; }
+  74% { left: 70px; }
+  
+  90% { left: 220px; }
+  92% { left: 220px; }
+  94% { left: 220px; }
+  100% { left: -35px; }
+}
+
+#menu-box>ul>li:nth-child(3) div #fish-V {
+  top: 200px; left: 0px;
+  width: 0px; height: 0px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: fish-VAnime 20s linear 0s infinite normal;
+  -webkit-animation: fish-VAnime 20s linear 0s infinite normal;
+}
+@keyframes fish-VAnime {
+  0% { top: 200px; }
+  10% { top: 200px; }
+  12% { top: 200px; animation-timing-function: ease-out; }
+  14% { top: 30px; animation-timing-function: ease-in; }
+  16% { top: 200px; }
+  
+  30% { top: 200px; animation-timing-function: ease-out; }
+  32% { top: 10px; animation-timing-function: ease-in; }
+  34% { top: 200px; }
+  
+  50% { top: 200px; animation-timing-function: ease-out; }
+  52% { top: 90px; animation-timing-function: ease-in; }
+  54% { top: 200px; }
+  
+  70% { top: 200px; animation-timing-function: ease-out; }
+  72% { top: 10px; animation-timing-function: ease-in; }
+  74% { top: 200px; }
+  
+  90% { top: 200px; animation-timing-function: ease-out; }
+  92% { top: 50px; animation-timing-function: ease-in; }
+  94% { top: 200px; }
+  100% { top: 200px; }
+}
+@-webkit-keyframes fish-VAnime {
+  0% { top: 200px; }
+  10% { top: 200px; }
+  12% { top: 200px; -webkit-animation-timing-function: ease-out; }
+  14% { top: 30px; -webkit-animation-timing-function: ease-in; }
+  16% { top: 200px; }
+  
+  30% { top: 200px; -webkit-animation-timing-function: ease-out; }
+  32% { top: 10px; -webkit-animation-timing-function: ease-in; }
+  34% { top: 200px; }
+  
+  50% { top: 200px; -webkit-animation-timing-function: ease-out; }
+  52% { top: 90px; -webkit-animation-timing-function: ease-in; }
+  54% { top: 200px; }
+  
+  70% { top: 200px; -webkit-animation-timing-function: ease-out; }
+  72% { top: 10px; -webkit-animation-timing-function: ease-in; }
+  74% { top: 200px; }
+  
+  90% { top: 200px; -webkit-animation-timing-function: ease-out; }
+  92% { top: 50px; -webkit-animation-timing-function: ease-in; }
+  94% { top: 200px; }
+  100% { top: 200px; }
+}
+
+#menu-box>ul>li:nth-child(3) div #fish {
+  top: 0px; left: 0px;
+  width: 30px; height: 60px;
+  position: absolute;
+  
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  
+  animation: fishAnime 20s linear 0s infinite normal;
+  -webkit-animation: fishAnime 20s linear 0s infinite normal;
+}
+@keyframes fishAnime {
+  0% { transform: rotateZ(0deg); }
+  12% { transform: rotateZ(0deg); animation-timing-function: ease-in; }
+  14% { transform: rotateZ(90deg); animation-timing-function: ease-out; }
+  16% { transform: rotateZ(180deg); }
+  18% { transform: rotateZ(0deg); }
+  
+  30% { transform: rotateZ(0deg); animation-timing-function: ease-in; }
+  32% { transform: rotateZ(90deg); animation-timing-function: ease-out; }
+  34% { transform: rotateZ(180deg); }
+  36% { transform: rotateZ(0deg); }
+  
+  48% { transform: rotateZ(0deg) scaleX(1); }
+  50% { transform: rotateZ(0deg) scaleX(-1); animation-timing-function: ease-in; }
+  52% { transform: rotateZ(-90deg) scaleX(-1); animation-timing-function: ease-out; }
+  54% { transform: rotateZ(-180deg) scaleX(-1); }
+  56% { transform: rotateZ(0deg) scaleX(1); }
+  
+  70% { transform: rotateZ(0deg); animation-timing-function: ease-in; }
+  72% { transform: rotateZ(90deg); animation-timing-function: ease-out; }
+  74% { transform: rotateZ(180deg); }
+  76% { transform: rotateZ(0deg); }
+  
+  90% { transform: rotateZ(0deg); animation-timing-function: ease-in; }
+  92% { transform: rotateZ(90deg); animation-timing-function: ease-out; }
+  94% { transform: rotateZ(180deg); }
+  96% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes fishAnime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  12% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in; }
+  14% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-out; }
+  16% { -webkit-transform: rotateZ(180deg); }
+  18% { -webkit-transform: rotateZ(0deg); }
+  
+  30% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in; }
+  32% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-out; }
+  34% { -webkit-transform: rotateZ(180deg); }
+  36% { -webkit-transform: rotateZ(0deg); }
+  
+  48% { -webkit-transform: rotateZ(0deg) scaleX(1); }
+  50% { -webkit-transform: rotateZ(0deg) scaleX(-1); -webkit-animation-timing-function: ease-in; }
+  52% { -webkit-transform: rotateZ(-90deg) scaleX(-1); -webkit-animation-timing-function: ease-out; }
+  54% { -webkit-transform: rotateZ(-180deg) scaleX(-1); }
+  56% { -webkit-transform: rotateZ(0deg) scaleX(1); }
+  
+  70% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in; }
+  72% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-out; }
+  74% { -webkit-transform: rotateZ(180deg); }
+  76% { -webkit-transform: rotateZ(0deg); }
+  
+  90% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in; }
+  92% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-out; }
+  94% { -webkit-transform: rotateZ(180deg); }
+  96% { -webkit-transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+
+#menu-box>ul>li:nth-child(3) div #clipView {
+  top: 0px; left: 0px;
+  width: 400px; height: 300px;
+  clip:rect(150px,400px,300px,0px);
+  position: absolute;
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box ul li ul {                    /* 小メニューのul */
+  margin: -300px 0px 0px 30px; padding: 0px;
+  width: 400px; height: 300px;
+  /* background-color: #EEEEEE; */
+  list-style-type: none;
+  position: relative;               /* ここは重要です。relativeでなければいけません。 */
+}
+
+#menu-box ul li ul li {             /* 小メニュー */
+  width: 400px; height: 30px;
+}
+
+#menu-box ul li ul li a {           /* 小メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 10px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #333333;
+  line-height: 30px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+}
+#menu-box ul li ul li a:hover {     /* 小メニューのhover時に背景色とテキストの色を変える */
+  background-color: #6699FF;
+}
+
+
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 570px;
+  margin: 0px;
+  float: left;
+}
+#content_inner {
+  width: 570px;
+  margin: 0px;
+}
+#sidebar {
+  width: 220px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 220px;
+  height: 150px;
+  margin: 0px;
+  /* border-top: solid 1px #AAAAAA; */
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

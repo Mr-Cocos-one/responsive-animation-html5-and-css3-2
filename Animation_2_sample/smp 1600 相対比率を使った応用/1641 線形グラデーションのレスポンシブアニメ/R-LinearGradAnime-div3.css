@@ -1,0 +1,64 @@
+/* R-LinearGradAnime-div3.css */
+
+/*****************************************************************************
+* 丸形　線形グラデーション３
+******************************************************************************/
+#div3 {
+  //top: 20px; //left: 400px;
+  top: 4%; left: 66.7%;
+  //width: 160px; //height: 160px;
+  width: 26.7%; height: 32%;
+  border: solid 2px #FFFFFF;
+  //border-radius: 84px;
+  border-radius: 52.5%;
+  position: absolute;
+}
+#div3 > span:nth-child(1) {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 160px; //height: 160px;
+  width: 100%; height: 100%;
+  //border-radius: 80px;
+  border-radius: 50%;
+  background: linear-gradient( to bottom, #00F, #AFF 50%, #FAF 50%, #F00 );
+  background: -webkit-linear-gradient( top, #00F, #AFF 50%, #FAF 50%, #F00 );
+  opacity: 1.0;
+  position: absolute;
+  
+  animation: grad3Anime1 4s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad3Anime1 4s ease-in-out 0s infinite alternate;
+}
+#div3 > span:nth-child(2) {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 160px; //height: 160px;
+  width: 100%; height: 100%;
+  //border-radius: 80px;
+  border-radius: 50%;
+  background: linear-gradient( to top, #00F, #AFF 50%, #FAF 50%, #F00 );
+  background: -webkit-linear-gradient( bottom, #00F, #AFF 50%, #FAF 50%, #F00 );
+  opacity: 0.0;
+  position: absolute;
+  
+  animation: grad3Anime2 4s ease-in-out 0s infinite alternate;
+  -webkit-animation: grad3Anime2 4s ease-in-out 0s infinite alternate;
+}
+/* grad3Anime1 *************************************************/
+@keyframes grad3Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes grad3Anime1 {
+  from { }
+  to { opacity: 0.0; }
+}
+/* grad3Anime2 *************************************************/
+@keyframes grad3Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes grad3Anime2 {
+  from { }
+  to { opacity: 1.0; }
+}
+

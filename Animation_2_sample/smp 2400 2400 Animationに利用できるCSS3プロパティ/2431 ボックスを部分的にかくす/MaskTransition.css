@@ -1,0 +1,101 @@
+/* MaskTransition.css */
+
+#stage {
+  width: 700px; height: 550px;
+  background-color: #000000;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 560px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+  
+  border-radius: 10px;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+
+#image1 {
+  position: absolute;
+  top: -10px; left: -540px;
+  width: 400px; height: 300px;
+  
+  mask-image: url(images/CharMask.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/CharMask.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  
+  opacity: 0.0;
+  
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+}
+#button:hover #image1 {
+  opacity: 1.0;
+}
+
+#image2 {
+  position: absolute;
+  top: 290px; left: -530px;
+  width: 250px; height: 225px;
+  border: solid 1px #000000;
+  
+  mask-image: radial-gradient( circle closest-side, rgba(0,0,0,1) 50%,
+                                               rgba(0,0,0,0) 100%);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: -webkit-radial-gradient( circle closest-side, rgba(0,0,0,1) 50%,
+                                               rgba(0,0,0,0) 100%);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+}
+#button:hover #image2 {
+  transform: translateX(400px);
+  -webkit-transform: translateX(400px);
+}
+
+#image3 {
+  position: absolute;
+  top: 290px; left: -130px;
+  width: 250px; height: 225px;
+  
+  mask-image: url(images/StarMask2.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  -webkit-mask-image: url(images/StarMask2.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+}
+#button:hover #image3 {
+  transform: translateY(-250px) scale(0.5, 0.5) rotateY(720deg);
+  -webkit-transform: translateY(-250px) scale(0.5, 0.5) rotateY(720deg);
+}
+

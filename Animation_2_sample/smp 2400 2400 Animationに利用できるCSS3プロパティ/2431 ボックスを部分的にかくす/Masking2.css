@@ -1,0 +1,64 @@
+/* Masking2.css */
+
+#stage {
+  width: 700px; height: 500px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#image1 {
+  position: absolute;
+  top: 20px; left: 20px;
+  width: 200px; height: 150px;
+  border: 50px solid green;
+  
+  mask-image: url(images/Mask-squre.png), url(images/StarMask3.png);
+  mask-repeat: no-repeat, repeat;
+  mask-size: 100% 100%, 50px 50px;
+  mask-origin: content-box border-box;
+  mask-composite: add;
+  
+  -webkit-mask-image: url(images/Mask-squre.png), url(images/StarMask3.png);
+  -webkit-mask-repeat: no-repeat, repeat;
+  -webkit-mask-size: 100% 100%, 50px 50px;
+  -ewbkit-mask-origin: content-box border-box;
+  -webkit-mask-composite: add;
+}
+
+#image2 {
+  position: absolute;
+  top: 40px; left: 380px;
+  width: 250px; height: 225px;
+  border-radius: 20px;
+  
+  mask-image: linear-gradient(to bottom right, transparent, transparent 15%,
+                          white 40%, white 60%, transparent 85%, transparent);
+  
+  -webkit-mask-image: -webkit-linear-gradient(top left, transparent, transparent 15%,
+                          white 40%, white 60%, transparent 85%, transparent);
+}
+
+#text1 {
+  position: absolute;
+  top: 280px; left: 30px;
+  width: 400px; height: 150px;
+  background-color: lightskyblue;
+  
+  mask-image: radial-gradient(rgba(0,0,0,1) 60%, rgba(0,0,0,0) 60%);
+  
+  -webkit-mask-image: -webkit-radial-gradient(rgba(0,0,0,1) 60%, rgba(0,0,0,0) 60%);
+}
+#text2 {
+  position: absolute;
+  top: 330px; left: 240px;
+  width: 400px; height: 150px;
+  background-color: lightpink;
+  
+  mask-image: radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.5) 50%,
+                          rgba(0,0,0,0) 60%);
+  
+  -webkit-mask-image: -webkit-radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.5) 50%,
+                          rgba(0,0,0,0) 60%);
+}
+

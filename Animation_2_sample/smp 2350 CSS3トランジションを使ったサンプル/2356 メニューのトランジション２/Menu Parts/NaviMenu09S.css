@@ -1,0 +1,167 @@
+/* NaviMenu09S.css */
+
+#menu-box {
+  margin: 10px 0px 10px 15px;
+  width: 402px; height: 250px;
+  position: relative;
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  height: 250px;
+  list-style-type: none;
+}
+
+#menu-box>ul>li {
+  margin: 0px; padding: 0px;
+  width: 132px; height: 35px;        /* 大メニューの幅と高さ */
+  border: 1px solid #999999;
+  border-radius: 20px 20px 0px 0px/20px 20px 0px 0px;
+  float: left;
+}
+#menu-box>ul>li#menuList1 {         /* 大メニュー（タブ１）の指定 */
+  background-color: #6699FF;
+  border-bottom-color: #6699FF;
+}
+#menu-box>ul>li#menuList2 {         /* 大メニュー（タブ２）の指定 */
+  background-color: #FF9966;
+  border-bottom-color: #FF9966;
+}
+#menu-box>ul>li#menuList3 {         /* 大メニュー（タブ３）の指定。右端のタブなので影をつける */
+  background-color: #66FF99;
+  border-bottom-color: #66FF99;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+#menu-box>ul>li>a {                 /* 大メニューのテキスト */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  text-decoration: none;
+  width: 132px; height: 35px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(153,153,153,0.8);
+  line-height: 35px;
+  display: block;
+}
+#menu-box>ul>li:hover>a {            /* 大メニューのhover時にテキストの回りを白くする */
+  color: #FF0000;
+  text-shadow: 5px 5px 10px rgba(255,255,255,1.0),
+               -5px 5px 10px rgba(255,255,255,1.0),
+               5px -5px 10px rgba(255,255,255,1.0),
+               -5px -5px 10px rgba(255,255,255,1.0);
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box>ul ul {                    /* 小メニューのul */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  top: 37px; left: 0px;              /* 小メニューのulを同じ位置に重ねるために必要 */
+  width: 398px; height: 200px;
+  overflow: hidden;                  /* この overflow: hidden;の指定で以下の全ての要素が overflow しなくなる。 */
+  position: absolute;                /* 小メニューのulを同じ位置に重ねるために必要 */
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+}
+
+#menu-box>ul>li#menuList1>ul {       /* 小メニュー１の表示ボックス */
+  border: 2px solid #6699FF;
+  background-color: #DDEEFF;
+  z-index: 3;                        /* 小メニュー１の表示ボックスを最前面に表示 */
+}
+#menu-box>ul>li#menuList2>ul {       /* 小メニュー２の表示ボックス */
+  border: 2px solid #FF9966;
+  background-color: #FFEEDD;
+  z-index: 2;                        /* 小メニュー２の表示ボックスを真ん中に表示 */
+}
+#menu-box>ul>li#menuList3>ul {       /* 小メニュー３の表示ボックス */
+  border: 2px solid #66FF99;
+  background-color: #DDFFEE;
+  z-index: 1;                        /* 小メニュー３の表示ボックスを最背面に表示 */
+}
+
+#menu-box>ul>li#menuList1:hover ul {  /* タブ１のhover時に小メニュー１を最前面にする */
+  z-index: 10;
+}
+#menu-box>ul>li#menuList2:hover ul {  /* タブ２のhover時に小メニュー２を最前面にする */
+  z-index: 10;
+}
+#menu-box>ul>li#menuList3:hover ul {  /* タブ３のhover時に小メニュー３を最前面にする */
+  z-index: 10;
+}
+
+#menu-box ul li ul li {               /* 小メニュー */
+  margin: 0px; padding: 0px;
+  width: 396px; height: 30px;
+  border: none;
+}
+
+#menu-box ul li ul li a {            /* 小メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 10px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 30px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+}
+#menu-box ul li ul li a:hover {     /* 小メニューのhover時に背景色とテキストの色を変える */
+  background-color: #FF9999;
+  color: #FFFFFF;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#sidebar_L {
+  width: 180px;
+  float: left;
+  margin: 0px;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner_L {
+  width: 180px;
+  height: 350px;
+  margin: 0px;
+}
+#content {
+  width: 430px;
+  float: left;
+  margin: 0px;
+}
+#content_inner {
+  width: 430px;
+  margin: 0px;
+}
+#sidebar_R {
+  width: 180px;
+  float: right;
+  margin: 0px;
+  border-left: solid 1px #AAAAAA;
+}
+#side_inner_R {
+  width: 180px;
+  height: 350px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

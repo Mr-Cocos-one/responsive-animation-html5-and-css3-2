@@ -1,0 +1,146 @@
+/* ReflectTransition.css */
+
+#stage {
+  width: 700px; height: 550px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+#button {
+  top: 20px; left: 297px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+  
+  border-radius: 10px;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+
+/*********************************************************************/
+#image1 {
+  position: absolute;
+  top: 70px; left: 180px;
+  width: 196px; height: 147px;
+  border-radius: 20px;
+  -webkit-box-reflect: below 2px
+                       -webkit-linear-gradient(top, transparent, transparent 60%, white);
+  
+  -webkit-transition: 3s ease-in-out;
+}
+
+#button:hover #image1 {
+  left: -280px;
+  -webkit-transform: rotateZ(-360deg);
+}
+  /* 注：Chromeは回転が終わって画像が水平に戻ると反射画像が消えてしまいます。
+         回転中は反射画像が表示されます。SafariはＯＫ。 */
+
+/*********************************************************************/
+#image2 {
+  position: absolute;
+  top: 290px; left: -290px;
+  width: 180px; height: 80px;
+  
+  -webkit-box-reflect: below 2px -webkit-linear-gradient(top, transparent,
+                       transparent 20%, white);
+  
+  -webkit-perspective-origin: 50% 50%;
+  
+  -webkit-transform-origin: right center;
+  -webkit-transform: perspective(500px) rotateY(60deg);
+  
+  -webkit-transition: 3s ease-in-out;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 150px; height: 80px;
+  position: absolute;
+  /* 注：Safariはspan要素だけでは初期画面で反射画像が表示されません。画像が含まれて
+     いると表示されるので、ダミーで透明な画像を指定しています。ChromeはＯＫ。 */
+}
+#image2 span {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 180px; height: 80px;
+  
+  text-align: center;
+  font: bold 82px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 80px;
+  background-color: skyblue;
+  color: red;
+  text-decoration: underline;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: orange;
+}
+
+#button:hover #image2 {
+  -webkit-transform: perspective(500px) rotateY(330deg);
+}
+
+/*********************************************************************/
+#image3 {
+  position: absolute;
+  top: 350px; left: 130px;
+  width: 280px; height: 50px;
+}
+#image3 > span:nth-child(1) {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 230px; height: 50px;
+  text-align: left;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 66px;
+  color: lightgray;
+  
+  -webkit-transition: 3s ease-in-out;
+}
+#image3 > span:nth-child(2) {
+  position: absolute;
+  top: 50px; left: 0px;
+  width: 230px; height: 50px;
+  text-align: left;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 60px;
+  color: lightgray;
+  
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  
+  -webkit-transition: 3s ease-in-out;
+}
+#image3 > span:nth-child(3) {
+  position: absolute;
+  top: 50px; left: 0px;
+  width: 220px; height: 50px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 30%,
+  rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1));
+
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  
+  -webkit-transition: 3s ease-in-out;
+}
+
+#button:hover #image3 > span:nth-child(1) {
+  top: -200px;
+}
+#button:hover #image3 > span:nth-child(2) {
+  top: 70px;
+  opacity: 0.1;
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.5, -4.5);
+}
+#button:hover #image3 > span:nth-child(3) {
+  top: 70px;
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.5, -4.5);
+}
+

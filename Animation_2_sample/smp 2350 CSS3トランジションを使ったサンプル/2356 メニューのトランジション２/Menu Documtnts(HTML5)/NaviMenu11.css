@@ -1,0 +1,213 @@
+/* NaviMenu11.css */
+
+#menu-box {
+  margin: 10px 0px 20px 15px;
+  width: 402px; height: 305px;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background-color: #CCCCCC;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+  position: relative;
+  
+  background-image: repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%, rgba( 255, 255, 255, 0.7 ) 8% ),
+                    repeating-linear-gradient( darkslategray 10%, darkslategray 20%,
+                                                       lightslategray 20%, lightslategray 30% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 255, 0.5 ) 2%, rgba( 255, 255, 255, 0.7 ) 8% ),
+                    -webkit-repeating-linear-gradient( darkslategray 10%, darkslategray 20%,
+                                                       lightslategray 20%, lightslategray 30% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/* 大メニュー ********************************************************************/
+#menu-box>ul {
+  margin: 10px 0px 0px 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  list-style-type: none;
+}
+
+#menu-box>ul>li {
+  width: 122px; height: 40px;        /* 大メニューの幅と高さ */
+  border: 1px solid #666666;
+  border-radius: 20px;
+  float: left;
+}
+#menu-box>ul>li#menuList1 {         /* 大メニュー（見出し１）の指定 */
+  margin: 0px 0px 0px 10px; padding: 0px;
+  background-color: #6699FF;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) inset;
+}
+#menu-box>ul>li#menuList2 {         /* 大メニュー（見出し２）の指定 */
+  margin: 0px 0px 0px 5px; padding: 0px;
+  background-color: #FF9966;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) inset;
+}
+#menu-box>ul>li#menuList3 {         /* 大メニュー（見出し３）の指定 */
+  margin: 0px 0px 0px 5px; padding: 0px;
+  background-color: #66FF99;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+#menu-box>ul>li>a {                 /* 大メニューのテキスト */
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  text-decoration: none;
+  width: 132px; height: 35px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(153,153,153,0.8);
+  line-height: 40px;
+  display: block;
+}
+#menu-box>ul>li:hover>a {            /* 大メニューのhover時にテキストの回りを白くする */
+  color: #FF0000;
+  text-shadow: 5px 5px 10px rgba(255,255,255,1.0),
+               -5px 5px 10px rgba(255,255,255,1.0),
+               5px -5px 10px rgba(255,255,255,1.0),
+               -5px -5px 10px rgba(255,255,255,1.0);
+}
+
+/* ダミーwrap  ********************************************************************/
+#menu-box>ul div {
+  margin: 0px; padding: 0px;         /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  top: 50px; left: 0px;              /* ３つのダミーwrapを同じ位置に重ねるために必要 */
+  width: 402px; height: 255px;
+  position: absolute;                /* ３つのダミーwrapを同じ位置に重ねるために必要 */
+}
+
+#menu-box>ul>li#menuList1>div {       /* ダミーwrap１を最前面に表示 */
+  z-index: 3;
+}
+#menu-box>ul>li#menuList2>div {       /* ダミーwrap２を真ん中に表示 */
+  z-index: 2;
+}
+#menu-box>ul>li#menuList3>div {       /* ダミーwrap３を最背面に表示 */
+  z-index: 1;
+}
+
+#menu-box>ul>li#menuList1:hover div {  /* 大メニュー（見出し１）のhover時にダミーwrap１を最前面にする */
+  z-index: 10;
+}
+#menu-box>ul>li#menuList2:hover div {  /* 大メニュー（見出し２）のhover時にダミーwrap２を最前面にする */
+  z-index: 10;
+}
+#menu-box>ul>li#menuList3:hover div {  /* 大メニュー（見出し３）のhover時にダミーwrap３を最前面にする */
+  z-index: 10;
+}
+
+/* 小メニュー ********************************************************************/
+#menu-box>ul ul {                    /* 小メニューのul */
+  margin: 12px 0px 0px 10px; padding: 10px 0px 0px 5px;     /* 小メニュー項目の回りにpaddingを入れる */
+  width: 373px; height: 220px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 10px;
+  border: 1px solid #666666;
+  list-style-type: none;
+}
+
+#menu-box>ul>li#menuList1>div>ul {       /* 小メニュー１の表示ボックス */
+  background-color: #DDEEFF;
+}
+#menu-box>ul>li#menuList2>div>ul {       /* 小メニュー２の表示ボックス */
+  background-color: #FFEEDD;
+}
+#menu-box>ul>li#menuList3>div>ul {       /* 小メニュー３の表示ボックス */
+  background-color: #DDFFEE;
+}
+
+#menu-box ul li ul li {               /* 小メニュー */
+  margin: 0px; padding: 0px;
+  width: 368px; height: 30px;
+  border: none;
+  overflow: hidden;                   /* 小メニュー項目のテキストがoverflowした時に隠す。 */
+}
+/* 小メニューの背景色に交互に濃淡を付ける。nth-child(2n+0)は偶数行、nth-child(2n+1)は奇数行。 */
+#menu-box>ul>li#menuList1 ul li:nth-child(2n+0) {
+  background-color: #DDEEFF;
+}
+#menu-box>ul>li#menuList1 ul li:nth-child(2n+1) {
+  background-color: #BBCCFF;
+}
+
+#menu-box>ul>li#menuList2 ul li:nth-child(2n+0) {
+  background-color: #FFEEDD;
+}
+#menu-box>ul>li#menuList2 ul li:nth-child(2n+1) {
+  background-color: #FFCCBB;
+}
+
+#menu-box>ul>li#menuList3 ul li:nth-child(2n+0) {
+  background-color: #DDFFEE;
+}
+#menu-box>ul>li#menuList3 ul li:nth-child(2n+1) {
+  background-color: #BBFFCC;
+}
+
+#menu-box ul li ul li a {            /* 小メニューのテキスト */
+  margin: 0px; padding: 0px 0px 0px 5px;
+  text-decoration: none;
+  text-align: left;
+  text-overflow: clip;               /* テキストのoverflow時は、カットする */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 30px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden; outline: none;
+}
+#menu-box ul li ul li a:hover {     /* 小メニューのhover時にテキストの色を変える */
+  color: #FF0000;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#sidebar_L {
+  width: 180px;
+  float: left;
+  margin: 0px;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner_L {
+  width: 180px;
+  height: 400px;
+  margin: 0px;
+}
+#content {
+  width: 430px;
+  float: left;
+  margin: 0px;
+}
+
+#content_inner {
+  width: 430px;
+  margin: 0px;
+}
+#sidebar_R {
+  width: 180px;
+  float: right;
+  margin: 0px;
+  border-left: solid 1px #AAAAAA;
+}
+#side_inner_R {
+  width: 180px;
+  height: 400px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

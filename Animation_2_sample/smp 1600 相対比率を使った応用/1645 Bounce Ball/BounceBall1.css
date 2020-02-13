@@ -1,0 +1,93 @@
+/* BounceBall1.css */
+
+#stage {
+  width: 200px; height: 500px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+#boxY {
+  top: 20px; left: 50px;
+  width: 80px; height: 80px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveYAnime 5s linear 0s infinite normal;
+  -webkit-animation: moveYAnime 5s linear 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* moveYAnime ***********************************************************************
+ *   100%のうち最後の5%はボールを静止させておくために使用し、0%～95%を５回バウンド
+ *   する時間として使用します。
+ *     1st bound --> time start  0%,   middle(bound bottom) 19%,   end 34.2%
+ *     2nd bound --> time start 34.2%, middle(bound bottom) 49.4%, end 60.8%
+ *     3rd bound --> time start 60.8%, middle(bound bottom) 72.2%, end 79.8%
+ *     4th bound --> time start 79.8%, middle(bound bottom) 87.4%, end 91.2%
+ *     5th bound --> time start 91.2%, middle(bound bottom) 95%,   end 95%
+ *     6th bound --> time start 95%,                               end 100%
+ ************************************************************************************/
+@keyframes moveYAnime {
+  0% { top: 20px; animation-timing-function: ease-in; }
+  
+  19% { top: 420px; animation-timing-function: ease-out; }
+  34.2% { top: 100px; animation-timing-function: ease-in; }
+  
+  49.4% { top: 420px; animation-timing-function: ease-out; }
+  60.8% { top: 220px; animation-timing-function: ease-in; }
+  
+  72.2% { top: 420px; animation-timing-function: ease-out; }
+  79.8% { top: 320px; animation-timing-function: ease-in; }
+  
+  87.4% { top: 420px; animation-timing-function: ease-out; }
+  91.2% { top: 390px; animation-timing-function: ease-in; }
+  
+  95% { top: 420px; }
+  100% { top: 420px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { top: 20px; -webkit-animation-timing-function: ease-in; }
+  
+  19% { top: 420px; -webkit-animation-timing-function: ease-out; }
+  34.2% { top: 100px; -webkit-animation-timing-function: ease-in; }
+  
+  49.4% { top: 420px; -webkit-animation-timing-function: ease-out; }
+  60.8% { top: 220px; -webkit-animation-timing-function: ease-in; }
+  
+  72.2% { top: 420px; -webkit-animation-timing-function: ease-out; }
+  79.8% { top: 320px; -webkit-animation-timing-function: ease-in; }
+  
+  87.4% { top: 420px; -webkit-animation-timing-function: ease-out; }
+  91.2% { top: 390px; -webkit-animation-timing-function: ease-in; }
+  
+  95% { top: 420px; }
+  100% { top: 420px; }
+}
+
+#boxY img {
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  position: absolute;
+  
+  /* ボールの回転はease-outにする（空気、地面との摩擦で回転速度が落ちる）。 */
+  animation: rotateAnime 5s ease-out 0s infinite normal;
+  -webkit-animation: rotateAnime 5s ease-out 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* rotateAnime *********************************************/
+@keyframes rotateAnime {
+  0% { }
+  95% { transform: rotateZ(720deg); }
+  100% { transform: rotateZ(720deg); }
+}
+@-webkit-keyframes rotateAnime {
+  0% { }
+  95% { -webkit-transform: rotateZ(720deg); }
+  100% { -webkit-transform: rotateZ(720deg); }
+}
+

@@ -1,0 +1,224 @@
+/* BounceBall3.css */
+
+#stage {
+  width: 700px; height: 500px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+#boxX {
+  top: 0px; left: 20px;
+  width: 80px; height: 500px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  /* 平行移動はease-outにする（空気、地面との摩擦で移動速度が落ちる）。 */
+  animation: moveXAnime 5s ease-out 0s infinite normal;
+  -webkit-animation: moveXAnime 5s ease-out 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* moveXAnime *********************************************/
+@keyframes moveXAnime {
+  0% { }
+  100% { left: 600px; }
+}
+@-webkit-keyframes moveXAnime {
+  0% { }
+  100% { left: 600px; }
+}
+
+#boxY {
+  top: 20px; left: 0px;
+  width: 80px; height: 80px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveYAnime 5s linear 0s infinite normal;
+  -webkit-animation: moveYAnime 5s linear 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* moveYAnime ***********************************************************************
+ *   100%のうち最後の5%はボールを静止させておくために使用し、0%～95%を５回バウンド
+ *   する時間として使用します。
+ *     1st bound --> time start  0%,   middle(bound bottom) 19%,   end 34.2%
+ *     2nd bound --> time start 34.2%, middle(bound bottom) 49.4%, end 60.8%
+ *     3rd bound --> time start 60.8%, middle(bound bottom) 72.2%, end 79.8%
+ *     4th bound --> time start 79.8%, middle(bound bottom) 87.4%, end 91.2%
+ *     5th bound --> time start 91.2%, middle(bound bottom) 95%,   end 95%
+ *     6th bound --> time start 95%,                               end 100%
+ ************************************************************************************/
+@keyframes moveYAnime {
+  0% { top: 20px; animation-timing-function: ease-in; }
+  
+  18.0% { top: 420px; animation-timing-function: linear; }
+  19.0% { top: 426px; animation-timing-function: linear; }
+  /* 20.0% { top: 420px; animation-timing-function: linear; } */
+  21.0% { top: 414px; animation-timing-function: ease-out; }
+  34.2% { top: 100px; animation-timing-function: ease-in; }
+  
+  48.6% { top: 420px; animation-timing-function: linear; }
+  49.4% { top: 424px; animation-timing-function: linear; }
+  /* 50.2% { top: 420px; animation-timing-function: linear; } */
+  51.0% { top: 416px; animation-timing-function: ease-out; }
+  60.8% { top: 220px; animation-timing-function: ease-in; }
+  
+  71.6% { top: 420px; animation-timing-function: linear; }
+  72.2% { top: 423px; animation-timing-function: linear; }
+  /* 72.8% { top: 420px; animation-timing-function: linear; } */
+  73.4% { top: 417px; animation-timing-function: ease-out; }
+  79.8% { top: 320px; animation-timing-function: ease-in; }
+  
+  87.0% { top: 420px; animation-timing-function: linear; }
+  87.4% { top: 422px; animation-timing-function: linear; }
+  /* 87.8% { top: 420px; animation-timing-function: linear; } */
+  88.2% { top: 418px; animation-timing-function: ease-out; }
+  91.2% { top: 390px; animation-timing-function: ease-in; }
+  
+  94.8% { top: 420px; animation-timing-function: linear; }
+  95.0% { top: 421px; animation-timing-function: linear; }
+  /* 95.2% { top: 420px; animation-timing-function: linear; } */
+  95.4% { top: 419px; animation-timing-function: ease-out; }
+  
+  100% { top: 420px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { top: 20px; -webkit-animation-timing-function: ease-in; }
+  
+  18.0% { top: 420px; -webkit-animation-timing-function: linear; }
+  19.0% { top: 426px; -webkit-animation-timing-function: linear; }
+  /* 20.0% { top: 420px; -webkit-animation-timing-function: linear; } */
+  21.0% { top: 414px; -webkit-animation-timing-function: ease-out; }
+  34.2% { top: 100px; -webkit-animation-timing-function: ease-in; }
+  
+  48.6% { top: 420px; -webkit-animation-timing-function: linear; }
+  49.4% { top: 424px; -webkit-animation-timing-function: linear; }
+  /* 50.2% { top: 420px; -webkit-animation-timing-function: linear; } */
+  51.0% { top: 416px; -webkit-animation-timing-function: ease-out; }
+  60.8% { top: 220px; -webkit-animation-timing-function: ease-in; }
+  
+  71.6% { top: 420px; -webkit-animation-timing-function: linear; }
+  72.2% { top: 423px; -webkit-animation-timing-function: linear; }
+  /* 72.8% { top: 420px; -webkit-animation-timing-function: linear; } */
+  73.4% { top: 417px; -webkit-animation-timing-function: ease-out; }
+  79.8% { top: 320px; -webkit-animation-timing-function: ease-in; }
+  
+  87.0% { top: 420px; -webkit-animation-timing-function: linear; }
+  87.4% { top: 422px; -webkit-animation-timing-function: linear; }
+  /* 87.8% { top: 420px; -webkit-animation-timing-function: linear; } */
+  88.2% { top: 418px; -webkit-animation-timing-function: ease-out; }
+  91.2% { top: 390px; -webkit-animation-timing-function: ease-in; }
+  
+  94.8% { top: 420px; -webkit-animation-timing-function: linear; }
+  95.0% { top: 421px; -webkit-animation-timing-function: linear; }
+  /* 95.2% { top: 420px; -webkit-animation-timing-function: linear; } */
+  95.4% { top: 419px; -webkit-animation-timing-function: ease-out; }
+  
+  100% { top: 420px; }
+}
+
+#boxY span {
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  
+  animation: flatShapeAnime 5s linear 0s infinite normal;
+  -webkit-animation: flatShapeAnime 5s linear 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* flatShapeAnime *********************************************/
+@keyframes flatShapeAnime {
+  18.0% { transform: scale(1, 1); }
+  19.0% { transform: scale(1.15, 0.85); }
+  20.0% { transform: scale(1, 1); }
+  21.0% { transform: scale(0.85, 1.15); }
+  23.0% { transform: scale(1, 1); }
+  
+  48.6% { transform: scale(1, 1); }
+  49.4% { transform: scale(1.1, 0.9); }
+  50.2% { transform: scale(1, 1); }
+  51.0% { transform: scale(0.9, 1.1); }
+  52.6% { transform: scale(1, 1); }
+  
+  71.6% { transform: scale(1, 1); }
+  72.2% { transform: scale(1.06, 0.94); }
+  72.8% { transform: scale(1, 1); }
+  73.4% { transform: scale(0.94, 1.06); }
+  74.6% { transform: scale(1, 1); }
+  
+  87.0% { transform: scale(1, 1); }
+  87.4% { transform: scale(1.03, 0.97); }
+  87.8% { transform: scale(1, 1); }
+  88.2% { transform: scale(0.97, 1.03); }
+  89.0% { transform: scale(1, 1); }
+  
+  94.8% { transform: scale(1, 1); }
+  95.0% { transform: scale(1.01, 0.99); }
+  95.2% { transform: scale(1, 1); }
+  95.4% { transform: scale(0.99, 1.01); }
+  95.8% { transform: scale(1, 1); }
+}
+@-webkit-keyframes flatShapeAnime {
+  18.0% { -webkit-transform: scale(1, 1); }
+  19.0% { -webkit-transform: scale(1.15, 0.85); }
+  20.0% { -webkit-transform: scale(1, 1); }
+  21.0% { -webkit-transform: scale(0.85, 1.15); }
+  23.0% { -webkit-transform: scale(1, 1); }
+  
+  48.6% { -webkit-transform: scale(1, 1); }
+  49.4% { -webkit-transform: scale(1.1, 0.9); }
+  50.2% { -webkit-transform: scale(1, 1); }
+  51.0% { -webkit-transform: scale(0.9, 1.1); }
+  52.6% { -webkit-transform: scale(1, 1); }
+  
+  71.6% { -webkit-transform: scale(1, 1); }
+  72.2% { -webkit-transform: scale(1.06, 0.94); }
+  72.8% { -webkit-transform: scale(1, 1); }
+  73.4% { -webkit-transform: scale(0.94, 1.06); }
+  74.6% { -webkit-transform: scale(1, 1); }
+  
+  87.0% { -webkit-transform: scale(1, 1); }
+  87.4% { -webkit-transform: scale(1.03, 0.97); }
+  87.8% { -webkit-transform: scale(1, 1); }
+  88.2% { -webkit-transform: scale(0.97, 1.03); }
+  89.0% { -webkit-transform: scale(1, 1); }
+  
+  94.8% { -webkit-transform: scale(1, 1); }
+  95.0% { -webkit-transform: scale(1.01, 0.99); }
+  95.2% { -webkit-transform: scale(1, 1); }
+  95.4% { -webkit-transform: scale(0.99, 1.01); }
+  95.8% { -webkit-transform: scale(1, 1); }
+}
+
+#boxY span img {
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  position: absolute;
+  
+  /* ボールの回転はease-outにする（空気、地面との摩擦で回転速度が落ちる）。 */
+  animation: rotateAnime 5s ease-out 0s infinite normal;
+  -webkit-animation: rotateAnime 5s ease-out 0s infinite normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* rotateAnime *********************************************/
+@keyframes rotateAnime {
+  0% { }
+  100% { transform: rotateZ(1080deg); }
+}
+@-webkit-keyframes rotateAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(1080deg); }
+}
+

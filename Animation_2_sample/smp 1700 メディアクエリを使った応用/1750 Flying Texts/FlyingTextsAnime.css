@@ -1,0 +1,421 @@
+/* FlyingTextsAnime.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #000000;;
+  position: relative;
+  overflow: hidden;
+  
+  animation: backAnime 20s linear 0s infinite alternate;
+  -webkit-animation: backAnime 20s linear 0s infinite alternate;
+}
+@keyframes backAnime {
+  0% { background-color: #000000; }
+  25% { background-color: #FF0000; }
+  50% { background-color: #00FF00; }
+  75% { background-color: #0000FF; }
+  100% { background-color: #FF00FF; }
+}
+@-webkit-keyframes backAnime {
+  0% { background-color: #000000; }
+  25% { background-color: #FF0000; }
+  50% { background-color: #00FF00; }
+  75% { background-color: #0000FF; }
+  100% { background-color: #FF00FF; }
+}
+
+/* あ ***********************************************************************/
+#char1A {
+  top: 0px; left: 50px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime1A 7s ease-in 0s infinite alternate;
+  -webkit-animation: anime1A 7s ease-in 0s infinite alternate;
+}
+@keyframes anime1A {
+  0% { left: 50px; }
+  100% { left: 620px; }
+}
+@-webkit-keyframes anime1A {
+  0% { left: 50px; }
+  100% { left: 620px; }
+}
+#char1B {
+  top: 500px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 720px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: yellow;
+  opacity: 1.0;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime1B 7s ease-out 0s infinite alternate;
+  -webkit-animation: anime1B 7s ease-out 0s infinite alternate;
+}
+@keyframes anime1B {
+  0% { top: 500px; font-size: 720px; transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); opacity: 1.0; }
+  100% { top: 0px; font-size: 12px; transform: rotateX(0deg) rotateY(360deg)
+         rotateZ(1080deg); opacity: 0.5; }
+}
+@-webkit-keyframes anime1B {
+  0% { top: 500px; font-size: 720px; -webkit-transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); opacity: 1.0; }
+  100% { top: 0px; font-size: 12px; -webkit-transform: rotateX(0deg) rotateY(360deg)
+         rotateZ(1080deg); opacity: 0.5; }
+}
+
+/* Ａ ***********************************************************************/
+#char2A {
+  top: 0px; left: 400px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime2A 5s ease-out 0s infinite alternate;
+  -webkit-animation: anime2A 5s ease-out 0s infinite alternate;
+}
+@keyframes anime2A {
+  0% { left: 400px; }
+  100% { left: -12px; }
+}
+@-webkit-keyframes anime2A {
+  0% { left: 400px; }
+  100% { left: -12px; }
+}
+#char2B {
+  top: 500px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 720px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: pink;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime2B 5s ease-out 0s infinite alternate;
+  -webkit-animation: anime2B 5s ease-out 0s infinite alternate;
+}
+@keyframes anime2B {
+  0% { top: 500px; font-size: 720px; transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); }
+  100% { top: 0px; font-size: 4px; transform: rotateX(-180deg) rotateY(0deg)
+         rotateZ(-720deg); }
+}
+@-webkit-keyframes anime2B {
+  0% { top: 500px; font-size: 720px; -webkit-transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); }
+  100% { top: 0px; font-size: 4px; -webkit-transform: rotateX(-180deg) rotateY(0deg)
+         rotateZ(-720deg); }
+}
+
+/* い ***********************************************************************/
+#char3A {
+  top: 0px; left: 0px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime3A 6s ease-out 0s infinite normal;
+  -webkit-animation: anime3A 6s ease-out 0s infinite normal;
+}
+@keyframes anime3A {
+  0% { left: 0px; }
+  100% { left: 600px; }
+}
+@-webkit-keyframes anime3A {
+  0% { left: 0px; }
+  100% { left: 600px; }
+}
+#char3B {
+  top: 0px; left: 0px;
+  width: 50px; height: 512px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 12px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: lightgreen;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime3B 6s ease-in 0s infinite normal;
+  -webkit-animation: anime3B 6s ease-in 0s infinite normal;
+}
+@keyframes anime3B {
+  0% { top: 0px; font-size: 12px; transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); }
+  100% { top: 400px; font-size: 512px; transform: rotateX(0deg) rotateY(360deg)
+         rotateZ(1080deg); }
+}
+@-webkit-keyframes anime3B {
+  0% { top: 0px; font-size: 12px; -webkit-transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); }
+  100% { top: 400px; font-size: 512px; -webkit-transform: rotateX(0deg) rotateY(360deg)
+         rotateZ(1080deg); }
+}
+
+/* Ｂ ***********************************************************************/
+#char4A {
+  top: 0px; left: 600px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime4A 8s ease-out 0s infinite normal;
+  -webkit-animation: anime4A 8s ease-out 0s infinite normal;
+}
+@keyframes anime4A {
+  0% { left: 600px; }
+  100% { left: -150px; }
+}
+@-webkit-keyframes anime4A {
+  0% { left: 600px; }
+  100% { left: -150px; }
+}
+#char4B {
+  top: -50px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 12px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: lightblue;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime4B 8s ease-out 0s infinite normal;
+  -webkit-animation: anime4B 8s ease-out 0s infinite normal;
+}
+@keyframes anime4B {
+  0% { top: -50px; font-size: 12px; transform: rotateX(0deg) rotateY(0deg)
+       rotateZ(0deg); }
+  100% { top: 350px; font-size: 256px; transform: rotateX(180deg) rotateY(180deg)
+         rotateZ(-720deg); }
+}
+@-webkit-keyframes anime4B {
+  0% { top: -50px; font-size: 12px; -webkit-transform: rotateX(0deg)
+       rotateY(0deg) rotateZ(0deg); }
+  100% { top: 350px; font-size: 256px; -webkit-transform: rotateX(180deg)
+         rotateY(180deg) rotateZ(-720deg); }
+}
+
+/* う ***********************************************************************/
+#char5A {
+  top: 0px; left: -12px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime5A 10s ease-in 0s infinite normal;
+  -webkit-animation: anime5A 10s ease-in 0s infinite normal;
+}
+@keyframes anime5A {
+  0% { left: -12px; }
+  100% { left: 600px; }
+}
+@-webkit-keyframes anime5A {
+  0% { left: -12px; }
+  100% { left: 600px; }
+}
+#char5B {
+  top: 388px; left: 0px;
+  width: 12px; height: 12px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 12px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: orange;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime5B 10s ease-in 0s infinite normal;
+  -webkit-animation: anime5B 10s ease-in 0s infinite normal;
+}
+@keyframes anime5B {
+  0% { top: 388px; width: 12px; height:12px; font-size: 12px;
+       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { top: 0px; width: 512px; height:512px; font-size: 512px;
+         transform: rotateX(0deg) rotateY(270deg) rotateZ(1080deg); }
+}
+@-webkit-keyframes anime5B {
+  0% { top: 388px; width: 12px; height:12px; font-size: 12px;
+       -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { top: 0px; width: 512px; height:512px; font-size: 512px;
+         -webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(1080deg); }
+}
+
+/* Ｃ ***********************************************************************/
+#char6A {
+  top: 0px; left: 588px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime6A 10s ease-in 0s infinite normal;
+  -webkit-animation: anime6A 10s ease-in 0s infinite normal;
+}
+@keyframes anime6A {
+  0% { left: 588px; }
+  100% { left: -400px; }
+}
+@-webkit-keyframes anime6A {
+  0% { left: 588px; }
+  100% { left: -400px; }
+}
+#char6B {
+  top: 388px; left: 0px;
+  width: 12px; height: 12px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 12px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: magenta;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime6B 10s ease-in 0s infinite normal;
+  -webkit-animation: anime6B 10s ease-in 0s infinite normal;
+}
+@keyframes anime6B {
+  0% { top: 388px; width: 12px; height:12px; font-size: 12px;
+       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 0.5; }
+  100% { top: -300px; width: 512px; height:512px; font-size: 512px;
+         transform: rotateX(360deg) rotateY(0deg) rotateZ(-2160deg); opacity: 1.0; }
+}
+@-webkit-keyframes anime6B {
+  0% { top: 388px; width: 12px; height:12px; font-size: 12px;
+       -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 0.5; }
+  100% { top: -300px; width: 512px; height:512px; font-size: 512px;
+         -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(-2160deg);
+         opacity: 1.0; }
+}
+
+/* １ ***********************************************************************/
+#char7A {
+  top: 0px; left: -400px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime7A 8s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime7A 8s ease-in-out 0s infinite alternate;
+}
+@keyframes anime7A {
+  0% { left: -400px; }
+  100% { left: 620px; }
+}
+@-webkit-keyframes anime7A {
+  0% { left: -400px; }
+  100% { left: 620px; }
+}
+#char7B {
+  top: -300px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 512px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: cyan;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime7B 8s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime7B 8s ease-in-out 0s infinite alternate;
+}
+@keyframes anime7B {
+  0% { top: -300px; width: 256px; height: 256px; font-size: 720px;
+       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { top: 420px; width: 12px; height:12px; font-size: 12px;
+         transform: rotateX(0deg) rotateY(720deg) rotateZ(720deg); }
+}
+@-webkit-keyframes anime7B {
+  0% { top: -300px; width: 256px; height: 256px; font-size: 720px;
+       -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { top: 420px; width: 12px; height:12px; font-size: 12px;
+         -webkit-transform: rotateX(0deg) rotateY(720deg) rotateZ(720deg); }
+}
+
+/* ２ ***********************************************************************/
+#char8A {
+  top: 0px; left: 620px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime8A 10s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime8A 10s ease-in-out 0s infinite alternate;
+}
+@keyframes anime8A {
+  0% { left: 620px; }
+  50% { left: -50px; }
+  100% { left: 620px; }
+}
+@-webkit-keyframes anime8A {
+  0% { left: 620px; }
+  50% { left: -50px; }
+  100% { left: 620px; }
+}
+#char8B {
+  top: -50px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 256px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: salmon;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime8B 10s ease-in 0s infinite alternate;
+  -webkit-animation: anime8B 10s ease-in 0s infinite alternate;
+}
+@keyframes anime8B {
+  0% { top: -50px; width: 256px; height: 256px; font-size: 256px;
+       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1.0; }
+  100% { top: 420px; width: 12px; height:12px; font-size: 12px;
+         transform: rotateX(360deg) rotateY(0deg) rotateZ(1440deg); opacity: 0.5; }
+}
+@-webkit-keyframes anime8B {
+  0% { top: -50px; width: 256px; height: 256px; font-size: 256px;
+       -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1.0; }
+  100% { top: 420px; width: 12px; height:12px; font-size: 12px;
+         -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(1440deg);
+         opacity: 0.5; }
+}
+
+/* ３ ***********************************************************************/
+#char9A {
+  top: 0px; left: -50px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: anime9A 10s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime9A 10s ease-in-out 0s infinite alternate;
+}
+@keyframes anime9A {
+  0% { left: -50px; }
+  50% { left: 520px; }
+  100% { left: -50px; }
+}
+@-webkit-keyframes anime9A {
+  0% { left: -50px; }
+  50% { left: 520px; }
+  100% { left: -50px; }
+}
+#char9B {
+  top: 420px; left: 0px;
+  width: 256px; height: 256px;
+  /* border: solid 1px #FFFFFF; */
+  font: bold 376px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: silver;
+  position: absolute;
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  animation: anime9B 10s ease-out 0s infinite alternate;
+  -webkit-animation: anime9B 10s ease-out 0s infinite alternate;
+}
+@keyframes anime9B {
+  0% { top: 420px; width: 256px; height: 256px; font-size: 376px;
+       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1.0; }
+  100% { top: -20px; width: 12px; height:12px; font-size: 12px;
+         transform: rotateX(0deg) rotateY(720deg) rotateZ(1080deg); opacity: 0.5; }
+}
+@-webkit-keyframes anime9B {
+  0% { top: 420px; width: 256px; height: 256px; font-size: 376px;
+       -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1.0; }
+  100% { top: -20px; width: 12px; height:12px; font-size: 12px;
+         -webkit-transform: rotateX(0deg) rotateY(720deg) rotateZ(1080deg);
+         opacity: 0.5; }
+}
+

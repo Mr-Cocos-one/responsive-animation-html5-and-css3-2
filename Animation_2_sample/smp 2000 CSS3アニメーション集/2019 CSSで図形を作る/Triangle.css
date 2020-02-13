@@ -1,0 +1,86 @@
+/* triangle.css */
+#stage {
+  width: 300px; height: 330px;
+  border: solid 1px #000000;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* ボーダーの頂点1 ************************************/
+#borderPeaks1 {
+  top: 20px; left: 20px;
+  width: 0px; height: 0px;
+  background-color: white;
+  
+  
+  border-left: solid 50px green;
+  border-right: solid 50px blue;
+  border-bottom: solid 50px orange;
+  border-top: solid 50px pink;
+  
+  position: absolute;
+}
+
+/* ボーダーの頂点2 ************************************/
+#borderPeaks2 {
+  top: 145px; left: 20px;
+  width: 0px; height: 0px;
+  background-color: white;
+  
+  
+  border-left: solid 50px green;
+  border-right: solid 50px blue;
+  border-bottom: solid 50px orange;
+  /* border-top: solid 50px pink; */
+  
+  position: absolute;
+}
+
+/* ボーダーの頂点3 ************************************/
+#borderPeaks3 {
+  top: 220px; left: 20px;
+  width: 0px; height: 0px;
+  background-color: white;
+  
+  
+  border-left: solid 50px green;
+  border-right: solid 50px blue;
+  border-bottom: solid 87px orange;
+  
+  position: absolute;
+}
+
+/* 三角形（上頂点） ************************************/
+#triangle1 {
+  top: 145px; left: 150px;
+  width: 0px; height: 0px;
+  background-color: white;
+  
+  /* border-left: solid 50px green; */
+  border-left: solid 50px transparent;
+  
+  /* border-right: solid 50px blue; */
+  border-right: solid 50px transparent;
+  
+  border-bottom: solid 50px orange;
+  
+  position: absolute;
+}
+
+/* 三角形（上頂点） ************************************/
+#triangle2 {
+  top: 220px; left: 150px;
+  width: 0px; height: 0px;
+  background-color: white;
+  
+  /* border-left: solid 50px green; */
+  border-left: solid 50px transparent;
+  
+  /* border-right: solid 50px blue; */
+  border-right: solid 50px transparent;
+  
+  border-bottom: solid 87px orange;
+  
+  position: absolute;
+}
+

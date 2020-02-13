@@ -1,0 +1,49 @@
+/* TextOverflow.css */
+#stage {
+  width: 600px; height: 220px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.test {
+  width: 200px; height: 30px;
+  border: 1px solid #000000;
+  text-align: left;
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #000000;
+  white-space:nowrap;            /* 自動改行をさせない */
+  position: absolute;
+}
+
+#ex-clip1 {
+  top: 20px; left:20px;
+  background-color: #FFFFCC;
+  
+  overflow: hidden;
+  text-overflow: clip;           /* テキストがオーバーフローするときは、カットする */
+}
+
+#ex-ellipsis1 {
+  top: 70px; left:20px;
+  background-color: #CCFFFF;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;       /* テキストがオーバーフローするときは、「･･･」を付ける */
+}
+
+#ex-clip2 {
+  top: 120px; left:20px;
+  background-color: #FFFFCC;
+  
+  text-overflow: clip;           /* テキストがオーバーフローするときは、カットする */
+}
+
+#ex-ellipsis2 {
+  top: 170px; left:20px;
+  background-color: #CCFFFF;
+  
+  text-overflow: ellipsis;       /* テキストがオーバーフローするときは、「･･･」を付ける */
+}
+

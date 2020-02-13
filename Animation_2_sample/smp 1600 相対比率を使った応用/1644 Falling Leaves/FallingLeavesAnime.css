@@ -1,0 +1,443 @@
+/* FallingLeavesAnime.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient( to bottom, #111144, #000011 30%, #000000 40%,  #000000 );
+  background-image: -webkit-linear-gradient( top, #111144, #000011 30%, #000000 40%,  #000000 );
+}
+
+#stage img {
+  width: 100%; height: 100%;
+}
+
+/*****************************************************************************
+* Falling Leaves Animation                                                   *
+*****************************************************************************/
+/* Leaf1 *****************************************************************/
+#leaf1-H {
+  top: -64px; left: 200px;
+  width: 100px; height: 64px;
+  position: absolute;
+  
+  animation: leaf1Anime1 8s linear 0s infinite normal;
+  -webkit-animation: leaf1Anime1 8s linear 0s infinite normal;
+}
+@keyframes leaf1Anime1 {
+  0% { left: 200px; animation-timing-function: ease-in-out; }
+  10% { left: 50px; animation-timing-function: ease-in-out; }
+  40% { left: 200px; animation-timing-function: ease-in-out; }
+  50% { left: 100px; animation-timing-function: ease-in-out; }
+  80% { left: 300px; animation-timing-function: ease-in-out; }
+  90% { left: 200px; animation-timing-function: ease-in-out; }
+  100% { left: 400px; }
+}
+@-webkit-keyframes leaf1Anime1 {
+  0% { left: 200px; -webkit-animation-timing-function: ease-in-out; }
+  10% { left: 50px; -webkit-animation-timing-function: ease-in-out; }
+  40% { left: 200px; -webkit-animation-timing-function: ease-in-out; }
+  50% { left: 100px; -webkit-animation-timing-function: ease-in-out; }
+  80% { left: 300px; -webkit-animation-timing-function: ease-in-out; }
+  90% { left: 200px; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 400px; }
+}
+
+#leaf1-V {
+  top: 0px; left: 0px;
+  width: 100px; height: 64px;
+  position: absolute;
+  
+  animation: leaf1Anime2 8s ease-in-out 0s infinite normal;
+  -webkit-animation: leaf1Anime2 8s ease-in-out 0s infinite normal;
+}
+@keyframes leaf1Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in-out; }
+  50% { top: 100px; animation-timing-function: ease-in; }
+  100% { top: 564px; }
+}
+@-webkit-keyframes leaf1Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  50% { top: 100px; -webkit-animation-timing-function: ease-in; }
+  100% { top: 564px; }
+}
+
+#leaf1 {
+  top: 0px; left: 0px;
+  width: 100px; height: 64px;
+  position: absolute;
+  
+  animation: leaf1Anime3 0.8s linear 0s infinite alternate;
+  -webkit-animation: leaf1Anime3 0.8s linear 0s infinite alternate;
+}
+@keyframes leaf1Anime3 {
+  0% { transform: rotateX(-80deg); animation-timing-function: ease-in-out;}
+  100% { transform: rotateZ(60deg) rotateX(80deg); }
+}
+@-webkit-keyframes leaf1Anime3 {
+  0% { -webkit-transform: rotateX(-80deg); -webkit-animation-timing-function: ease-in-out;}
+  100% { -webkit-transform: rotateZ(60deg) rotateX(80deg); }
+}
+
+/* Leaf2 *****************************************************************/
+#leaf2-H {
+  top: -92px; left: 200px;
+  width: 100px; height: 92px;
+  position: absolute;
+  
+  animation: leaf2Anime1 12s linear 2s infinite normal;
+  -webkit-animation: leaf2Anime1 12s linear 2s infinite normal;
+}
+@keyframes leaf2Anime1 {
+  0% { left: 200px; animation-timing-function: ease-in-out; }
+  25% { left: 50px; animation-timing-function: ease-in-out; }
+  50% { left: 300px; animation-timing-function: ease-in-out; }
+  75% { left: 100px; animation-timing-function: ease-in-out; }
+  100% { left: 600px; }
+}
+@-webkit-keyframes leaf2Anime1 {
+  0% { left: 200px; -webkit-animation-timing-function: ease-in-out; }
+  25% { left: 50px; -webkit-animation-timing-function: ease-in-out; }
+  50% { left: 300px; -webkit-animation-timing-function: ease-in-out; }
+  75% { left: 100px; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 600px; }
+}
+
+#leaf2-V {
+  top: 0px; left: 0px;
+  width: 100px; height: 92px;
+  position: absolute;
+  
+  animation: leaf2Anime2 12s linear 2s infinite normal;
+  -webkit-animation: leaf2Anime2 12s linear 2s infinite normal;
+}
+@keyframes leaf2Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in; }
+  20% { top: 150px; animation-timing-function: ease-in; }
+  35% { top: 200px; animation-timing-function: ease-in; }
+  50% { top: 150px;  animation-timing-function: ease-in-out; }
+  100% { top: 550px; }
+}
+@-webkit-keyframes leaf2Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  20% { top: 150px; -webkit-animation-timing-function: ease-in; }
+  35% { top: 200px; -webkit-animation-timing-function: ease-in; }
+  50% { top: 150px;  -webkit-animation-timing-function: ease-in-out; }
+  100% { top: 550px; }
+}
+
+#leaf2 {
+  top: 0px; left: 0px;
+  width: 100px; height: 92px;
+  position: absolute;
+  
+  animation: leaf2Anime3 4s linear 2s infinite normal;
+  -webkit-animation: leaf2Anime3 4s linear 2s infinite normal;
+}
+@keyframes leaf2Anime3 {
+  0% { }
+  100% { transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+}
+@-webkit-keyframes leaf2Anime3 {
+  0% { }
+  100% { -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg); }
+}
+
+/* Leaf3 *****************************************************************/
+#leaf3-H {
+  top: -100px; left: 480px;
+  width: 64px; height: 100px;
+  position: absolute;
+  
+  animation: leaf3Anime1 6s linear 1s infinite normal;
+  -webkit-animation: leaf3Anime1 6s linear 1s infinite normal;
+}
+@keyframes leaf3Anime1 {
+  0% { left: 480px; animation-timing-function: ease-in-out; }
+  30% { left: 280px; animation-timing-function: ease-in-out; }
+  60% { left: 480px; animation-timing-function: ease-in-out; }
+  100% { left: 180px; }
+}
+@-webkit-keyframes leaf3Anime1 {
+  0% { left: 480px; -webkit-animation-timing-function: ease-in-out; }
+  30% { left: 280px; -webkit-animation-timing-function: ease-in-out; }
+  60% { left: 480px; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 180px; }
+}
+
+#leaf3-V {
+  top: 0px; left: 0px;
+  width: 64px; height: 100px;
+  position: absolute;
+  
+  animation: leaf3Anime2 6s ease-in-out 1s infinite normal;
+  -webkit-animation: leaf3Anime2 6s ease-in-out 1s infinite normal;
+}
+@keyframes leaf3Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in; }
+  100% { top: 600px; }
+}
+@-webkit-keyframes leaf3Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  100% { top: 600px; }
+}
+
+#leaf3 {
+  top: 0px; left: 0px;
+  width: 64px; height: 100px;
+  position: absolute;
+  
+  transform-origin: 70% 50%;
+  -webkit-transform-origin: 70% 50%;
+  
+  animation: leaf3Anime3 1s linear 1s infinite alternate;
+  -webkit-animation: leaf3Anime3 1s linear 1s infinite alternate;
+}
+@keyframes leaf3Anime3 {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+@-webkit-keyframes leaf3Anime3 {
+  0% { -webkit-transform: rotateY(0deg); }
+  100% { -webkit-transform: rotateY(360deg); }
+}
+
+/* Leaf4 *****************************************************************/
+#leaf4-H {
+  top: -115px; left: 300px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  animation: leaf4Anime1 8s linear 2s infinite normal;
+  -webkit-animation: leaf4Anime1 8s linear 2s infinite normal;
+}
+@keyframes leaf4Anime1 {
+  0% { left: 300px; animation-timing-function: ease-in-out; }
+  50% { left: 50px; }
+  100% { left: 50px; }
+}
+@-webkit-keyframes leaf4Anime1 {
+  0% { left: 300px; -webkit-animation-timing-function: ease-in-out; }
+  50% { left: 50px; }
+  100% { left: 50px; }
+}
+
+#leaf4-V {
+  top: 0px; left: 0px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  animation: leaf4Anime2 8s ease-in-out 2s infinite normal;
+  -webkit-animation: leaf4Anime2 8s ease-in-out 2s infinite normal;
+}
+@keyframes leaf4Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in; }
+  50% { top: 650px; }
+  100% { top: 650px; }
+}
+@-webkit-keyframes leaf4Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  50% { top: 650px; }
+  100% { top: 650px; }
+}
+
+#leaf4 {
+  top: 0px; left: 0px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  transform-origin: 30% 50%;
+  -webkit-transform-origin: 30% 50%;
+  
+  animation: leaf4Anime3 1s linear 2s infinite normal;
+  -webkit-animation: leaf4Anime3 1s linear 2s infinite normal;
+}
+@keyframes leaf4Anime3 {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(-720deg); }
+}
+@-webkit-keyframes leaf4Anime3 {
+  0% { -webkit-transform: rotateY(0deg); }
+  100% { -webkit-transform: rotateY(-720deg); }
+}
+
+/* Leaf5 *****************************************************************/
+#leaf5-H {
+  top: -110px; left: 100px;
+  width: 100px; height: 110px;
+  position: absolute;
+  
+  animation: leaf5Anime1 6s linear 0s infinite normal;
+  -webkit-animation: leaf5Anime1 6s linear 0s infinite normal;
+}
+@keyframes leaf5Anime1 {
+  0% { left: 100px; animation-timing-function: ease-in-out; }
+  60% { left: 500px; animation-timing-function: ease-in-out; }
+  100% { left: 100px; }
+}
+@-webkit-keyframes leaf5Anime1 {
+  0% { left: 100px; -webkit-animation-timing-function: ease-in-out; }
+  60% { left: 500px; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 100px; }
+}
+
+#leaf5-V {
+  top: 0px; left: 0px;
+  width: 100px; height: 110px;
+  position: absolute;
+  
+  animation: leaf5Anime2 6s ease-in-out 0s infinite normal;
+  -webkit-animation: leaf5Anime2 6s ease-in-out 0s infinite normal;
+}
+@keyframes leaf5Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in; }
+  100% { top: 600px; }
+}
+@-webkit-keyframes leaf5Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  100% { top: 600px; }
+}
+
+#leaf5 {
+  top: 0px; left: 0px;
+  width: 100px; height: 110px;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  animation: leaf5Anime3 2s linear 0s infinite alternate;
+  -webkit-animation: leaf5Anime3 2s linear 0s infinite alternate;
+}
+@keyframes leaf5Anime3 {
+  0% { transform: rotateZ(0deg) rotateX(0deg);
+       animation-timing-function: ease-in-out; }
+  100% { transform: rotateZ(360deg) rotateX(180deg); }
+}
+@-webkit-keyframes leaf5Anime3 {
+  0% { -webkit-transform: rotateZ(0deg) rotateX(0deg);
+       -webkit-animation-timing-function: ease-in-out; }
+  100% { -webkit-transform: rotateZ(360deg) rotateX(180deg); }
+}
+
+/* Leaf6 *****************************************************************/
+#leaf6-H {
+  top: -100px; left: -150px;
+  width: 110px; height: 100px;
+  position: absolute;
+  
+  animation: leaf6Anime1 8s linear 2s infinite normal;
+  -webkit-animation: leaf6Anime1 8s linear 2s infinite normal;
+}
+@keyframes leaf6Anime1 {
+  0% { left: -150px; animation-timing-function: ease-in-out; }
+  30% { left: 260px; animation-timing-function: ease-in-out; }
+  50% { left: 10px; animation-timing-function: ease-in-out; }
+  100% { left: 560px; }
+}
+@-webkit-keyframes leaf6Anime1 {
+  0% { left: -150px; -webkit-animation-timing-function: ease-in-out; }
+  30% { left: 260px; -webkit-animation-timing-function: ease-in-out; }
+  50% { left: 10px; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 560px; }
+}
+
+#leaf6-V {
+  top: 0px; left: 0px;
+  width: 110px; height: 100px;
+  position: absolute;
+  
+  animation: leaf6Anime2 8s ease-in-out 2s infinite normal;
+  -webkit-animation: leaf6Anime2 8s ease-in-out 2s infinite normal;
+}
+@keyframes leaf6Anime2 {
+  0% { top: 0px; animation-timing-function: ease-in; }
+  100% { top: 700px; }
+}
+@-webkit-keyframes leaf6Anime2 {
+  0% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  100% { top: 700px; }
+}
+
+#leaf6 {
+  top: 0px; left: 0px;
+  width: 110px; height: 100px;
+  position: absolute;
+  
+  transform-origin: 80% 50%;
+  -webkit-transform-origin: 80% 50%;
+  
+  animation: leaf6Anime3 4s linear 2s infinite normal;
+  -webkit-animation: leaf6Anime3 4s linear 2s infinite normal;
+}
+@keyframes leaf6Anime3 {
+  0% { transform: rotateY(0deg) rotateX(60deg); }
+  100% { transform: rotateY(1080deg) rotateX(60deg); }
+}
+@-webkit-keyframes leaf6Anime3 {
+  0% { -webkit-transform: rotateY(0deg) rotateX(60deg); }
+  100% { -webkit-transform: rotateY(1080deg) rotateX(60deg); }
+}
+
+/* Leaf7 *****************************************************************/
+#leaf7-H {
+  top: -115px; left: 150px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  animation: leaf7Anime1 17s linear 2s infinite normal;
+  -webkit-animation: leaf7Anime1 17s linear 2s infinite normal;
+}
+@keyframes leaf7Anime1 {
+  0% { left: 150px; }
+  60% { left: 150px; animation-timing-function: ease-in-out; }
+  90% { left: 460px;; animation-timing-function: ease-in-out; }
+  100% { left: 300px; }
+}
+@-webkit-keyframes leaf7Anime1 {
+  0% { left: 150px; }
+  60% { left: 150px; -webkit-animation-timing-function: ease-in-out; }
+  90% { left: 460px;; -webkit-animation-timing-function: ease-in-out; }
+  100% { left: 300px; }
+}
+
+#leaf7-V {
+  top: 0px; left: 0px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  animation: leaf7Anime2 17s ease-in-out 2s infinite normal;
+  -webkit-animation: leaf7Anime2 17s ease-in-out 2s infinite normal;
+}
+@keyframes leaf7Anime2 {
+  0% { top: 0px; }
+  60% { top: 0px; animation-timing-function: ease-in; }
+  100% { top: 650px; }
+}
+@-webkit-keyframes leaf7Anime2 {
+  0% { top: 0px; }
+  60% { top: 0px; -webkit-animation-timing-function: ease-in; }
+  100% { top: 650px; }
+}
+
+#leaf7 {
+  top: 0px; left: 0px;
+  width: 84px; height: 114px;
+  position: absolute;
+  
+  transform-origin: 70% 60%;
+  -webkit-transform-origin: 70% 60%;
+  
+  animation: leaf7Anime3 2s linear 2s infinite normal;
+  -webkit-animation: leaf7Anime3 2s linear 2s infinite normal;
+}
+@keyframes leaf7Anime3 {
+  0% { transform: rotateY(0deg) rotateX(60deg); }
+  100% { transform: rotateY(1080deg) rotateX(60deg); }
+}
+@-webkit-keyframes leaf7Anime3 {
+  0% { -webkit-transform: rotateY(0deg) rotateX(60deg); }
+  100% { -webkit-transform: rotateY(1080deg) rotateX(60deg); }
+}
+

@@ -1,0 +1,96 @@
+/* ReflectAnime5.css */
+
+#stage {
+  width: 700px; height: 420px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+/*********************************************************************/
+/* ref-text については、-webkit-box-reflect を使用していない（拡大・縮小・傾斜が
+   できないため）。*/
+#ref-text {
+  top: 250px; left: 420px;
+  position: absolute;
+}
+#ref-text > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 230px; height: 50px;
+  position: absolute;
+  
+  text-align: center;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 66px;
+  color: lightgray;
+  
+  animation: ref3Anime1 8s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref3Anime1 8s ease-in-out 0s infinite alternate;
+}
+#ref-text > span:nth-child(2) {
+  top: 50px; left: 0px;
+  width: 230px; height: 50px;
+  position: absolute;
+  
+  text-align: center;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 60px;
+  color: lightgray;
+  
+  transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  
+  animation: ref3Anime2 8s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref3Anime2 8s ease-in-out 0s infinite alternate;
+}
+#ref-text > span:nth-child(3) {
+  top: 50px; left: 0px;
+  width: 230px; height: 50px;
+  position: absolute;
+  
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 30%,
+                                    rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0),
+                                            rgba(0, 0, 0, 0.5) 30%,
+                                            rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1));
+  
+  transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  -webkit-transform: perspective(500px) rotateX(60deg) scale(1.1, -2.5);
+  
+  animation: ref3Anime3 8s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref3Anime3 8s ease-in-out 0s infinite alternate;
+}
+
+@keyframes ref3Anime1 {
+  from { }
+  to { top: -200px; left: -350px; }
+}
+@-webkit-keyframes ref3Anime1 {
+  from { }
+  to { top: -200px; left: -350px; }
+}
+
+@keyframes ref3Anime2 {
+  from { }
+  to { top: 70px; left: -350px; opacity: 0.2; transform: perspective(500px) rotateX(60deg)
+       scale(1.5, -4.5); color: dimgray;
+       text-shadow: 1px 1px 10px dimgray, -1px 1px 10px dimgray, 1px -1px 10px dimgray, -1px -1px 10px dimgray; }
+}
+@-webkit-keyframes ref3Anime2 {
+  from { }
+  to { top: 70px; left: -350px; opacity: 0.2; -webkit-transform: perspective(500px)
+       rotateX(60deg) scale(1.5, -4.5); color: dimgray;
+       text-shadow: 1px 1px 10px dimgray, -1px 1px 10px dimgray, 1px -1px 10px dimgray, -1px -1px 10px dimgray; }
+}
+
+@keyframes ref3Anime3 {
+  from { }
+  to { top: 70px;  left: -370px; width: 270px; transform: perspective(500px) rotateX(60deg)
+       scale(1.5, -4.5); }
+}
+@-webkit-keyframes ref3Anime3 {
+  from { }
+  to { top: 70px;  left: -370px; width: 270px; -webkit-transform: perspective(500px) rotateX(60deg)
+       scale(1.5, -4.5); }
+}
+

@@ -1,0 +1,94 @@
+/* 3DCubeAnime1.css */
+
+#stage {
+  width: 500px; height: 500px;
+  background-color: black;
+  position: relative;
+  
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  
+  perspective-origin: 50% 5%;
+  -webkit-perspective-origin: 50% 5%;
+}
+
+#cube {
+  top: 150px; left: 150px;
+  position: absolute;
+  
+  /* text-align: center;
+  font: bold 160px Verdana;
+  line-height: 180px; */
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  transform-origin: 100px 100px;
+  -webkit-transform-origin: 100px 100px;
+  
+  animation: goRoundAnime 30s linear 0s infinite normal;
+  -webkit-animation: goRoundAnime 30s linear 0s infinite normal;
+}
+@keyframes goRoundAnime {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(720deg) rotateY(-360deg); }
+}
+@-webkit-keyframes goRoundAnime {
+  0% { -webkit-transform: rotateX(0deg) rotateY(0deg); }
+  100% { -webkit-transform: rotateX(720deg) rotateY(-360deg); }
+}
+
+#cube > span {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  position: absolute;
+  opacity: 0.8;
+  
+  text-align: center;
+  font: bold 160px Verdana;
+  line-height: 180px;
+}
+
+#cube > span:nth-child(1) {
+  background-color: yellow;
+  color: red;
+  
+  transform: rotateY(-0deg) translateZ(100px);
+  -webkit-transform: rotateY(-0deg) translateZ(100px);
+}
+#cube > span:nth-child(2) {
+  background-color: blue;
+  color: blueviolet;
+  
+  transform: rotateY(-90deg) translateZ(100px);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+#cube > span:nth-child(3) {
+  background-color: orange;
+  color: blue;
+  
+  transform: rotateY(-180deg) translateZ(100px);
+  -webkit-transform: rotateY(-180deg) translateZ(100px);
+}
+#cube > span:nth-child(4) {
+  background-color: green;
+  color: orange;
+  
+  transform: rotateY(-270deg) translateZ(100px);
+  -webkit-transform: rotateY(-270deg) translateZ(100px);
+}
+#cube > span:nth-child(5) {
+  background-color: blueviolet;
+  color: green;
+  
+  transform: rotateX(90deg) translateZ(100px);
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+#cube > span:nth-child(6) {
+  background-color: red;
+  color: yellow;
+  
+  transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+  -webkit-transform: rotateX(90deg) rotateY(180deg) translateZ(100px);
+}
+

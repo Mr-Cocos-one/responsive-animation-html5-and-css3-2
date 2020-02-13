@@ -1,0 +1,85 @@
+/* NaviButton03-T.css */
+
+#menu-box {
+  margin: 10px;
+  width: 574px; height: 56px;
+  position: relative;
+}
+
+#menu-box table {
+  width: 574px; height: 52px;
+  border-collapse: collapse;        /* tableのボーダーが全て重なる。 */
+  border: 2px solid #999999;        /* tableを使用しているのでlist-style-type: none;の指定は不要。 */
+}
+
+#menu-box td {                      /* ボタンの四角形 */
+  width: 190px; height: 50px;
+  background-color: #99FF99;
+  border: 1px solid #999999;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box td:hover {                /* ボタンhover時にボタンの色を変える。 */
+  background-color: #66CC66;
+}
+
+#menu-box td a {                    /* ボタンのテキスト */
+  text-decoration: none;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #3333FF;
+  text-shadow: 2px 2px 2px #666666;
+  line-height: 50px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden;
+  outline: none;
+  
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+#menu-box td:hover a {              /* ボタンhover時にボタンのテキストの色を変える。 */
+  color: #FF0000;
+  text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 590px;
+  margin: 0px;
+  float: left;
+}
+
+#content_inner {
+  width: 590px;
+  margin: 0px;
+}
+#sidebar {
+  width: 200px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 200px;
+  height: 300px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

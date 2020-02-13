@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SlidePhotoGallery</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="SlidePhotoGallery.css">
+  </head>
+  <body>
+    <p>■Animationで12枚の画像をスライドさせる。hoverで拡大表示、コメント表示させる。</p>
+    <div id="stage">
+      <span id="galleryTitle">Photo Gallery</span>
+      <div id="carouselArea">
+        <div id="slide1">
+          <div class="image-container cntnr01" id="image11">
+            <div class="imageA" id="image11A">
+              <img src="images/DSC00007L.jpg" alt="picture1">
+              <div class="num1">1</div>
+            </div>
+            <div class="imageB" id="image11B">
+              <img src="images/DSC00007L.jpg" alt="picture1">
+              <div class="com1">≪&nbsp;1&nbsp;≫</div>
+              <div class="com2">秋も深まった公園の紅葉。数年前までは真っ赤に
+                 染まった紅葉（もみじ）が見られましたが、今は赤く染まらず、暗赤色が多くなりました。<br>
+                 恥ずかしさで頬に赤く紅葉（もみじ）を散らした女の子もいつの間にかいなくなってしまい
+                 ました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr02" id="image12">
+            <div class="imageA" id="image12A">
+              <img src="images/DSC00015L.jpg" alt="picture2">
+              <div class="num1">2</div>
+            </div>
+            <div class="imageB" id="image12B">
+              <img src="images/DSC00015L.jpg" alt="picture2">
+              <div class="com1">≪&nbsp;2&nbsp;≫</div>
+              <div class="com2">姉と弟でしょうか。公園の入り口に飾られている
+                 ところから、子供たちに仲良く遊んで欲しいという願いが込められた像なのでしょう。<br>
+                 たまに訪れると、母と子、父と子がにぎやかに遊んでいて、こちらも楽しくなってきます。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr03" id="image13">
+            <div class="imageA" id="image13A">
+              <img src="images/DSC00095L.jpg" alt="picture3">
+              <div class="num1">3</div>
+            </div>
+            <div class="imageB" id="image13B">
+              <img src="images/DSC00095L.jpg" alt="picture3">
+              <div class="com1">≪&nbsp;3&nbsp;≫</div>
+              <div class="com2">白い桜です。短い花の命を燃え尽くそうと、
+                 ひしめき合って咲いています。<br>その迫力に圧倒されて、いつのまにかカメラを向けている
+                 自分に気付き、思わず“がんばれ”と声を掛けてしまうのです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr04" id="image14">
+            <div class="imageA" id="image14A">
+              <img src="images/DSC00027L.jpg" alt="picture4">
+              <div class="num1">4</div>
+            </div>
+            <div class="imageB" id="image14B">
+              <img src="images/DSC00027L.jpg" alt="picture4">
+              <div class="com1">≪&nbsp;4&nbsp;≫</div>
+              <div class="com2">街のスパゲッティ屋の壁に描かれたイラストです。
+                 洒落たことをすると感心しながら、さぞスパゲッティも美味しいのだろうと想像してしまいます。<br>
+                 いつか入ろうと思いながら月日が経ってしまいました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr05" id="image15">
+            <div class="imageA" id="image15A">
+              <img src="images/DSC00092L.jpg" alt="picture5">
+              <div class="num1">5</div>
+            </div>
+            <div class="imageB" id="image15B">
+              <img src="images/DSC00092L.jpg" alt="picture5">
+              <div class="com1">≪&nbsp;5&nbsp;≫</div>
+              <div class="com2">多摩御陵入り口の稜南橋です。ここから少し行くと
+                 御陵（武蔵稜墓地）の車返しがあり、そこからは徒歩となります。玉砂利が敷き詰められた見事な
+                 北山杉の並木をしばらく行くと、多摩御陵（大正天皇の墓地）と武蔵野御陵（昭和天皇の墓地）が
+                 あります。巨大です。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr06" id="image16">
+            <div class="imageA" id="image16A">
+              <img src="images/DSC00131L.jpg" alt="picture6">
+              <div class="num1">6</div>
+            </div>
+            <div class="imageB" id="image16B">
+              <img src="images/DSC00131L.jpg" alt="picture6">
+              <div class="com1">≪&nbsp;6&nbsp;≫</div>
+              <div class="com2">ふだんは気にも留めない小川のせせらぎに、ふいと
+                 気が付くと自然の営みが感じられたりします。じっと見ていると水しぶきと泡達が生まれては消え、
+                 また生まれては消え、尽きることがありません。<br>なぜか気分もリフレッシュします。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr07" id="image17">
+            <div class="imageA" id="image17A">
+              <img src="images/DSC00149L.jpg" alt="picture7">
+              <div class="num1">7</div>
+            </div>
+            <div class="imageB" id="image17B">
+              <img src="images/DSC00149L.jpg" alt="picture7">
+              <div class="com1">≪&nbsp;7&nbsp;≫</div>
+              <div class="com2">鯉のぼりから連想されるのは「鯉の滝登り」。実際に
+                 滝を登る鯉は見たことがないけれど、日本画などで見た記憶があります。<br>子供の立身出世を
+                 願って、庶民が「鯉の滝登り」の図柄をヒントに、鯉の形をした吹流しに願いを託して「鯉のぼり」
+                 を作ったのだそうです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr08" id="image18">
+            <div class="imageA" id="image18A">
+              <img src="images/DSC00203L.jpg" alt="picture8">
+              <div class="num1">8</div>
+            </div>
+            <div class="imageB" id="image18B">
+              <img src="images/DSC00203L.jpg" alt="picture8">
+              <div class="com1">≪&nbsp;8&nbsp;≫</div>
+              <div class="com2">春に花を咲かせた桜並木は、夏になると深緑の
+                 シェードとなります。強烈な日差しを遮り、行きかう人々にしばしの清涼を与えてくれます。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr09" id="image19">
+            <div class="imageA" id="image19A">
+              <img src="images/DSC00198L.jpg" alt="picture9">
+              <div class="num1">9</div>
+            </div>
+            <div class="imageB" id="image19B">
+              <img src="images/DSC00198L.jpg" alt="picture9">
+              <div class="com1">≪&nbsp;9&nbsp;≫</div>
+              <div class="com2">子供たちが作った鯉のぼりです。それぞれ違った
+                 図柄の鯉のぼりが楽しめます。<br>大人になっても、何事にもこの自由な感覚を持ち続けていって
+                 ほしいものです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr10" id="image1A">
+            <div class="imageA" id="image1AA">
+              <img src="images/DSC00088L.jpg" alt="pictureA">
+              <div class="num1">10</div>
+            </div>
+            <div class="imageB" id="image1AB">
+              <img src="images/DSC00088L.jpg" alt="pictureA">
+              <div class="com1">≪&nbsp;10&nbsp;≫</div>
+              <div class="com2">桜の散りはじめた頃です。辺りは花吹雪が舞い、
+                 地面は花びらの絨毯と化します。<br>「また来年も咲いてくれよ。」と声をかけて通り過ぎる
+                 のです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr11" id="image1B">
+            <div class="imageA" id="image1BA">
+              <img src="images/DSC00178L.jpg" alt="pictureB">
+              <div class="num1">11</div>
+            </div>
+            <div class="imageB" id="image1BB">
+              <img src="images/DSC00178L.jpg" alt="pictureB">
+              <div class="com1">≪&nbsp;11&nbsp;≫</div>
+              <div class="com2">小川に敷き詰められた石です。幾何学模様の
+                 美しさに、思わずカメラを向けました。<br>「石が並んでいるな。」としか見ていなかった
+                 ものが、突然、美しいものに見えた喜びがありました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr12" id="image1C">
+            <div class="imageA" id="image1CA">
+              <img src="images/DSC00189L.jpg" alt="pictureC">
+              <div class="num1">12</div>
+            </div>
+            <div class="imageB" id="image1CB">
+              <img src="images/DSC00189L.jpg" alt="pictureC">
+              <div class="com1">≪&nbsp;12&nbsp;≫</div>
+              <div class="com2">鯉のぼりが我先にと天に登ろうとしています。
+                 現代社会の縮図です。<br>「我先に登ろう。」はいいことですが、「ほかの鯉を蹴落して先に
+                 登ろう。」というのはいただけません。</div>
+            </div>
+          </div>
+        </div>
+        <div id="slide2">
+          <div class="image-container cntnr01" id="image21">
+            <div class="imageA" id="image21A">
+              <img src="images/DSC00007L.jpg" alt="picture1">
+              <div class="num1">1</div>
+            </div>
+            <div class="imageB" id="image21B">
+              <img src="images/DSC00007L.jpg" alt="picture1">
+              <div class="com1">≪&nbsp;1&nbsp;≫</div>
+              <div class="com2">秋も深まった公園の紅葉。数年前までは真っ赤に
+                 染まった紅葉（もみじ）が見られましたが、今は赤く染まらず、暗赤色が多くなりました。<br>
+                 恥ずかしさで頬に赤く紅葉（もみじ）を散らした女の子もいつの間にかいなくなってしまい
+                 ました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr02" id="image22">
+            <div class="imageA" id="image22A">
+              <img src="images/DSC00015L.jpg" alt="picture2">
+              <div class="num1">2</div>
+            </div>
+            <div class="imageB" id="image22B">
+              <img src="images/DSC00015L.jpg" alt="picture2">
+              <div class="com1">≪&nbsp;2&nbsp;≫</div>
+              <div class="com2">姉と弟でしょうか。公園の入り口に飾られている
+                 ところから、子供たちに仲良く遊んで欲しいという願いが込められた像なのでしょう。<br>
+                 たまに訪れると、母と子、父と子がにぎやかに遊んでいて、こちらも楽しくなってきます。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr03" id="image23">
+            <div class="imageA" id="image23A">
+              <img src="images/DSC00095L.jpg" alt="picture3">
+              <div class="num1">3</div>
+            </div>
+            <div class="imageB" id="image23B">
+              <img src="images/DSC00095L.jpg" alt="picture3">
+              <div class="com1">≪&nbsp;3&nbsp;≫</div>
+              <div class="com2">白い桜です。短い花の命を燃え尽くそうと、
+                 ひしめき合って咲いています。<br>その迫力に圧倒されて、いつのまにかカメラを向けている
+                 自分に気付き、思わず“がんばれ”と声を掛けてしまうのです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr04" id="image24">
+            <div class="imageA" id="image24A">
+              <img src="images/DSC00027L.jpg" alt="picture4">
+              <div class="num1">4</div>
+            </div>
+            <div class="imageB" id="image24B">
+              <img src="images/DSC00027L.jpg" alt="picture4">
+              <div class="com1">≪&nbsp;4&nbsp;≫</div>
+              <div class="com2">街のスパゲッティ屋の壁に描かれたイラストです。
+                 洒落たことをすると感心しながら、さぞスパゲッティも美味しいのだろうと想像してしまいます。<br>
+                 いつか入ろうと思いながら月日が経ってしまいました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr05" id="image25">
+            <div class="imageA" id="image25A">
+              <img src="images/DSC00092L.jpg" alt="picture5">
+              <div class="num1">5</div>
+            </div>
+            <div class="imageB" id="image25B">
+              <img src="images/DSC00092L.jpg" alt="picture5">
+              <div class="com1">≪&nbsp;5&nbsp;≫</div>
+              <div class="com2">多摩御陵入り口の稜南橋です。ここから少し行くと
+                 御陵（武蔵稜墓地）の車返しがあり、そこからは徒歩となります。玉砂利が敷き詰められた見事な
+                 北山杉の並木をしばらく行くと、多摩御陵（大正天皇の墓地）と武蔵野御陵（昭和天皇の墓地）が
+                 あります。巨大です。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr06" id="image26">
+            <div class="imageA" id="image26A">
+              <img src="images/DSC00131L.jpg" alt="picture6">
+              <div class="num1">6</div>
+            </div>
+            <div class="imageB" id="image26B">
+              <img src="images/DSC00131L.jpg" alt="picture6">
+              <div class="com1">≪&nbsp;6&nbsp;≫</div>
+              <div class="com2">ふだんは気にも留めない小川のせせらぎに、ふいと
+                 気が付くと自然の営みが感じられたりします。じっと見ていると水しぶきと泡達が生まれては消え、
+                 また生まれては消え、尽きることがありません。<br>なぜか気分もリフレッシュします。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr07" id="image27">
+            <div class="imageA" id="image27A">
+              <img src="images/DSC00149L.jpg" alt="picture7">
+              <div class="num1">7</div>
+            </div>
+            <div class="imageB" id="image27B">
+              <img src="images/DSC00149L.jpg" alt="picture7">
+              <div class="com1">≪&nbsp;7&nbsp;≫</div>
+              <div class="com2">鯉のぼりから連想されるのは「鯉の滝登り」。実際に
+                 滝を登る鯉は見たことがないけれど、日本画などで見た記憶があります。<br>子供の立身出世を
+                 願って、庶民が「鯉の滝登り」の図柄をヒントに、鯉の形をした吹流しに願いを託して「鯉のぼり」
+                 を作ったのだそうです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr08" id="image28">
+            <div class="imageA" id="image28A">
+              <img src="images/DSC00203L.jpg" alt="picture8">
+              <div class="num1">8</div>
+            </div>
+            <div class="imageB" id="image28B">
+              <img src="images/DSC00203L.jpg" alt="picture8">
+              <div class="com1">≪&nbsp;8&nbsp;≫</div>
+              <div class="com2">春に花を咲かせた桜並木は、夏になると深緑の
+                 シェードとなります。強烈な日差しを遮り、行きかう人々にしばしの清涼を与えてくれます。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr09" id="image29">
+            <div class="imageA" id="image29A">
+              <img src="images/DSC00198L.jpg" alt="picture9">
+              <div class="num1">9</div>
+            </div>
+            <div class="imageB" id="image29B">
+              <img src="images/DSC00198L.jpg" alt="picture9">
+              <div class="com1">≪&nbsp;9&nbsp;≫</div>
+              <div class="com2">子供たちが作った鯉のぼりです。それぞれ違った
+                 図柄の鯉のぼりが楽しめます。<br>大人になっても、何事にもこの自由な感覚を持ち続けていって
+                 ほしいものです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr10" id="image2A">
+            <div class="imageA" id="image2AA">
+              <img src="images/DSC00088L.jpg" alt="pictureA">
+              <div class="num1">10</div>
+            </div>
+            <div class="imageB" id="image2AB">
+              <img src="images/DSC00088L.jpg" alt="pictureA">
+              <div class="com1">≪&nbsp;10&nbsp;≫</div>
+              <div class="com2">桜の散りはじめた頃です。辺りは花吹雪が舞い、
+                 地面は花びらの絨毯と化します。<br>「また来年も咲いてくれよ。」と声をかけて通り過ぎる
+                 のです。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr11" id="image2B">
+            <div class="imageA" id="image2BA">
+              <img src="images/DSC00178L.jpg" alt="pictureB">
+              <div class="num1">11</div>
+            </div>
+            <div class="imageB" id="image2BB">
+              <img src="images/DSC00178L.jpg" alt="pictureB">
+              <div class="com1">≪&nbsp;11&nbsp;≫</div>
+              <div class="com2">小川に敷き詰められた石です。幾何学模様の
+                 美しさに、思わずカメラを向けました。<br>「石が並んでいるな。」としか見ていなかった
+                 ものが、突然、美しいものに見えた喜びがありました。</div>
+            </div>
+          </div>
+          <div class="image-container cntnr12" id="image2C">
+            <div class="imageA" id="image2CA">
+              <img src="images/DSC00189L.jpg" alt="pictureC">
+              <div class="num1">12</div>
+            </div>
+            <div class="imageB" id="image2CB">
+              <img src="images/DSC00189L.jpg" alt="pictureC">
+              <div class="com1">≪&nbsp;12&nbsp;≫</div>
+              <div class="com2">鯉のぼりが我先にと天に登ろうとしています。
+                 現代社会の縮図です。<br>「我先に登ろう。」はいいことですが、「ほかの鯉を蹴落して先に
+                 登ろう。」というのはいただけません。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

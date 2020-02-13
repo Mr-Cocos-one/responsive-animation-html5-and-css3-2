@@ -1,0 +1,156 @@
+/* NaviButton04B.css */
+
+#menu-box {
+  margin: 10px 0px 10px 30px;
+  width: 727px; height: 52px;       /* widthはulの幅+ボーダーの幅、heightはulの高さ+ボーダーの幅 */
+  position: relative;
+}
+
+#menu-box #L-End {                  /* リンクボタンバーの左端 */
+  margin: 0px; padding: 0px;
+  width: 60px; height: 50px;
+  border: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-radius: 50% 0% 0% 50%;
+  background-color: gold;           /* グラデーションの機能がない場合の背景色 */
+  float: left;
+  /* 金属風のグラデーションをつける  */
+  background-image: repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                               rgba( 255, 255, 128, 0.4 ) 20% ),
+                    repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                               goldenrod 60%, darkgoldenrod 100% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                                       rgba( 255, 255, 128, 0.4 ) 20% ),
+                    -webkit-repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                                       goldenrod 60%, darkgoldenrod 100% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  /* 輝きと影をつける  */
+  box-shadow: 2px 4px 8px rgba(255, 255, 204, 1) inset, 
+              -1px -1px 8px rgba(0, 0, 0, 0.8) inset,
+              -1px -1px 1px rgba(0, 0, 0, 0.8) inset;
+}
+#menu-box #R-End {                  /* リンクボタンバーの右端 */
+  margin: 0px; padding: 0px;
+  width: 60px; height: 50px;
+  border: 1px solid #666666;
+  border-left: none;
+  border-radius: 0% 50% 50% 0%;
+  background-color: gold;           /* グラデーションの機能がない場合の背景色 */
+  float: left;
+  /* 金属風のグラデーションをつける  */
+  background-image: repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                               rgba( 255, 255, 128, 0.4 ) 20% ),
+                    repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                               goldenrod 60%, darkgoldenrod 100% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                                       rgba( 255, 255, 128, 0.4 ) 20% ),
+                    -webkit-repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                                       goldenrod 60%, darkgoldenrod 100% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  /* 輝きと影をつける  */
+  box-shadow: 2px 4px 8px rgba(255, 255, 204, 1) inset, 
+              -1px -1px 8px rgba(0, 0, 0, 0.8) inset,
+              -1px -1px 1px rgba(0, 0, 0, 0.8) inset;
+}
+
+#menu-box ul {
+  margin: 0px; padding: 0px;        /* この指定がないと、marginとpaddingの余白が自動的に採られてしまう。 */
+  width: 604px; height: 50px;       /* widthは（liの幅+ボーダーの幅）* 3、heightはliの高さ */
+  border: 1px solid #666666;
+  border-right: none;
+  border-left: none;
+  list-style-type: none;
+  float: left;
+}
+
+#menu-box li {                      /* ボタンの四角形 */
+  width: 150px; height: 50px;
+  border-right: 1px solid #666666;
+  float: left;
+  background-color: gold;           /* グラデーションの機能がない場合の背景色 */
+  
+  /* 金属風のグラデーションをつける  */
+  background-image: repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                               rgba( 255, 255, 128, 0.4 ) 20% ),
+                    repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                               goldenrod 60%, darkgoldenrod 100% );
+  background-image: -webkit-repeating-linear-gradient( rgba( 255, 255, 128, 0.1 ) 10%,
+                                                       rgba( 255, 255, 128, 0.4 ) 20% ),
+                    -webkit-repeating-linear-gradient( gold 0%, goldenrod 40%,
+                                                       goldenrod 60%, darkgoldenrod 100% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  /* 輝きと影をつける  */
+  box-shadow: 2px 4px 8px rgba(255, 255, 204, 1) inset,
+              -1px -1px 8px rgba(0, 0, 0, 0.8) inset,
+              -1px -1px 1px rgba(0, 0, 0, 0.8) inset;
+}
+#menu-box li:hover {                /* ボタンhover時にボタンが押し込まれたような影をつける。 */
+  background-color: goldenrod;      /* グラデーションの機能がない場合の背景色 */
+  box-shadow:  1px 1px 6px rgba(0, 0, 0, 0.8) inset, -1px 1px 2px rgba(0, 0, 0, 0.4) inset,
+               -1px -1px 8px rgba(0, 0, 0, 0.6) inset, 1px -1px 2px rgba(0, 0, 0, 0.8) inset,
+               4px 5px 8px rgba(255, 255, 204, 1) inset,  -1px -1px 1px rgba(0, 0, 0, 0.6) inset;
+  background-position: 2px 2px;
+}
+
+#menu-box li a {                    /* ボタンのテキスト */
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro",Verdana;
+  color: #FF3333;
+  /* text-shadowを利用して、浮き出た文字のように見せる */
+  text-shadow: -2px -2px 3px #FFFF99, 2px 2px 2px #333333;
+  line-height: 50px;
+  display: block;
+  
+  /* Firefoxの時の枠線を消す */
+  overflow: hidden;
+  outline: none;
+}
+#menu-box li:hover a {                /* ボタンhover時にボタンが押し込まれたようにテキストをズラす。 */
+  transform: translate(1px, 1px);
+  -webkit-transform: translate(1px, 1px);
+}
+
+/* Ｗｅｂページレイアウト ***************************************/
+#container {
+  width: 800px;
+  margin: auto;
+  border-left: solid 1px #AAAAAA;
+  border-right: solid 1px #AAAAAA;
+}
+#head {
+  border-bottom: solid 1px #AAAAAA;
+}
+#navibar {
+  border-bottom: solid 1px #AAAAAA;
+}
+#content {
+  width: 590px;
+  margin: 0px;
+  float: left;
+}
+#content_inner {
+  width: 590px;
+  margin: 0px;
+}
+#sidebar {
+  width: 200px;
+  margin: 0px;
+  float: left;
+  border-right: solid 1px #AAAAAA;
+}
+#side_inner {
+  width: 200px;
+  height: 250px;
+  margin: 0px;
+}
+#foot {
+  clear: both;
+  border-top: solid 1px #AAAAAA;
+}
+

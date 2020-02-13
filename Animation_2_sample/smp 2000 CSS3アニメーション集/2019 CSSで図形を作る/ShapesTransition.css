@@ -1,0 +1,237 @@
+/* ShapesScaleTEST.css */
+
+#stage {
+  width: 600px; height: 350px;
+  border: solid 1px #000000;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #CCCCCC;
+  text-align: center;
+  color: #CCCCCC;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+  
+  border-radius: 10px;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+#button:hover {
+  background-color: #EEEEEE;
+  color: #999999;
+}
+
+/***************************************************************************/
+#pentagon {          /* 五角形アニメーション */
+  top: 90px; left: -247px;
+  width: 105px; height: 105px;
+  position: absolute;
+  
+  transition: 3s linear;
+  -webkit-transition: 3s linear;
+}
+
+#button:hover div#pentagon {
+  left: 195px;
+  transform: scale(2.0, 2.0) rotateZ(720deg);
+  -webkit-transform: scale(2.0, 2.0) rotateZ(720deg);
+}
+
+#pentagon-top-rim {
+  top: 0px; left: 0px;
+  border-left: solid 52px transparent;
+  border-right: solid 52px transparent;
+  border-bottom: solid 38px #0000FF;
+  position: absolute;
+}
+#pentagon-bottom-rim {
+  top: 38px; left: 0px;
+  border-left: solid 21px transparent;
+  border-right: solid 21px transparent;
+  border-top: solid 60px #0000FF;
+  width: 62px; height: 0px;
+  position: absolute;
+}
+#pentagon-top {
+  top: 2px; left: 2px;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-bottom: solid 37px #87CEFA;
+  position: absolute;
+}
+#pentagon-bottom {
+  top: 38px; left: 2px;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+  border-top: solid 58px #87CEFA;
+  width: 60px; height: 0px;
+  position: absolute;
+}
+
+/***************************************************************************/
+#fivePeaksStar {       /* 星（５頂点）アニメーション */
+  top: 220px; left: 240px;
+  width: 105px; height: 105px;
+  position: absolute;
+  
+  transition: 3s linear;
+  -webkit-transition: 3s linear;
+}
+
+#button:hover div#fivePeaksStar {
+  top: 40px; left: -140px;
+  transform: scale(3.0, 2.0) rotateZ(-1080deg);
+  -webkit-transform: scale(3.0, 2.0) rotateZ(-1080deg);
+}
+
+#fivePeaksStar-back {
+  top: 39px; left: 3px;
+  width: 0px; height: 0px;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-top: solid 36px #FF6699;
+  position: absolute;
+}
+#fivePeaksStar-back-rim {
+  top: 38px; left: 0px;
+  width: 0px; height: 0px;
+  border-left: solid 53px transparent;
+  border-right: solid 53px transparent;
+  border-top: solid 38px #FF0000;
+  position: absolute;
+}
+#fivePeaksStar-middle {
+  top: 38px; left: 3px;
+  width: 0px; height: 0px;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-top: solid 36px #FF6699;
+  transform: rotateZ(72deg);
+  -webkit-transform: rotateZ(72deg);
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  position: absolute;
+}
+#fivePeaksStar-middle-rim {
+  top: 37px; left: 0px;
+  width: 0px; height: 0px;
+  border-left: solid 53px transparent;
+  border-right: solid 53px transparent;
+  border-top: solid 38px #FF0000;
+  transform: rotateZ(72deg);
+  -webkit-transform: rotateZ(72deg);
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  position: absolute;
+}
+#fivePeaksStar-front {
+  top: 36px; left: 5px;
+  width: 0px; height: 0px;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-top: solid 36px #FF6699;
+  transform: rotateZ(-72deg);
+  -webkit-transform: rotateZ(-72deg);
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  position: absolute;
+}
+#fivePeaksStar-front-rim {
+  top: 35px; left: 2px;
+  width: 0px; height: 0px;
+  border-left: solid 53px transparent;
+  border-right: solid 53px transparent;
+  border-top: solid 38px #FF0000;
+  transform: rotateZ(-72deg);
+  -webkit-transform: rotateZ(-72deg);
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  position: absolute;
+}
+#fivePeaksStar-fill-top {
+  top: 39px; left: 33px;
+  border-left: solid 6px transparent;
+  border-right: solid 6px transparent;
+  border-bottom: solid 21px #FF6699;
+  width: 30px; height: 0px;
+  position: absolute;
+}
+#fivePeaksStar-fill-bottom {
+  top: 60px; left: 33px;
+  border-left: solid 21px transparent;
+  border-right: solid 21px transparent;
+  border-top: solid 16px #FF6699;
+  position: absolute;
+}
+
+/***************************************************************************/
+#clover {           /* 四葉のクローバーアニメーション */
+  top: 0px; left: 256px;
+  width: 88px; height:88px;
+  position: absolute;
+  
+  transition: 3s linear;
+  -webkit-transition: 3s linear;
+}
+
+#button:hover div#clover {
+  top: 250px; left: -265px;
+  transform: scale(0.5, 0.5) rotateZ(-3600deg);
+  -webkit-transform: scale(0.5, 0.5) rotateZ(-3600deg);
+}
+
+#clover-top {
+  top: 0px; left: 0px;
+  width: 40px; height: 40px;
+  background-color: #66CC66;
+  border: solid 2px #009933;
+  border-radius: 22px 22px 0px 22px;
+  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+  transform: skewX(10deg) rotateZ(5deg);
+  -webkit-transform: skewX(10deg) rotateZ(5deg);
+  position: absolute;
+}
+#clover-right {
+  top: 0px; left: 42px;
+  width: 40px; height: 40px;
+  background-color: #66CC66;
+  border: solid 2px #009933;
+  border-radius: 22px 22px 22px 0px;
+  transform-origin: bottom left;
+  -webkit-transform-origin: bottom left;
+  transform: skewX(-10deg) rotateZ(-5deg);
+  -webkit-transform: skewX(-10deg) rotateZ(-5deg);
+  position: absolute;
+}
+#clover-bottom {
+  top: 42px; left: 42px;
+  width: 40px; height: 40px;
+  background-color: #66CC66;
+  border: solid 2px #009933;
+  border-radius: 0px 22px 22px 22px;
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform: skewX(10deg) rotateZ(5deg);
+  -webkit-transform: skewX(10deg) rotateZ(5deg);
+  position: absolute;
+}
+#clover-left {
+  top: 42px; left: 0px;
+  width: 40px; height: 40px;
+  background-color: #66CC66;
+  border: solid 2px #009933;
+  border-radius: 22px 0px 22px 22px;
+  transform-origin: top right;
+  -webkit-transform-origin: top right;
+  transform: skewX(-10deg) rotateZ(-5deg);
+  -webkit-transform: skewX(-10deg) rotateZ(-5deg);
+  position: absolute;
+}
+

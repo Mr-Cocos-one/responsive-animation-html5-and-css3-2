@@ -1,0 +1,134 @@
+/* ReflectAnime2.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+/*******************************************************************************
+ * div                                                                         *
+ ******************************************************************************/
+#wrap {
+  top: 180px; left: 210px;
+  position: absolute;
+}
+
+/*******************************************************************************
+ * image                                                                       *
+ ******************************************************************************/
+#wrap img {
+  width: 180px; height: 135px;
+  border-radius: 20px;
+  position: absolute;
+}
+#wrap img:nth-of-type(1) {
+  top: -137px; left: 0px;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+}
+@keyframes ref1Anime {
+  from { }
+  to { top: -197px; }
+}
+@-webkit-keyframes ref1Anime {
+  from { }
+  to { top: -197px; }
+}
+
+#wrap img:nth-of-type(2) {
+  top: 0px; left: 182px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+  -webkit-animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+}
+@keyframes ref2Anime {
+  from { }
+  to { left: 242px; }
+}
+@-webkit-keyframes ref2Anime {
+  from { }
+  to { left: 242px; }
+}
+
+#wrap img:nth-of-type(3) {
+  top: 137px; left: 0px;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+  -webkit-animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+}
+@keyframes ref3Anime {
+  from { }
+  to { top: 197px; }
+}
+@-webkit-keyframes ref3Anime {
+  from { }
+  to { top: 197px; }
+}
+
+#wrap img:nth-of-type(4) {
+  top: 0px; left: -182px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+  -webkit-animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+}
+@keyframes ref4Anime {
+  from { }
+  to { left: -242px; }
+}
+@-webkit-keyframes ref4Anime {
+  from { }
+  to { left: -242px; }
+}
+
+#wrap > img:nth-of-type(5) {
+  top: 0px; left: 0px;
+  position: absolute;
+}
+
+/*******************************************************************************
+ * span                                                                        *
+ ******************************************************************************/
+#wrap span {
+  width: 180px; height: 135px;
+  border-radius: 20px;
+  position: absolute;
+}
+#wrap span:nth-of-type(1) {
+  top: -137px; left: 0px;
+  background-image: radial-gradient(circle at 50% -50%, black, black 60%, transparent);
+  background-image: -webkit-radial-gradient(50% -50%, circle, black,
+                                                         black 60%, transparent);
+  animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: ref1Anime 5s ease-in-out 0s infinite alternate;
+}
+#wrap span:nth-of-type(2) {
+  top: 0px; left: 182px;
+  background-image: radial-gradient(circle at 150% 50%, black, black 60%, transparent);
+  background-image: -webkit-radial-gradient(150% 50%, circle, black,
+                                                         black 60%, transparent);
+  animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+  -webkit-animation: ref2Anime 5s ease-in-out 2.5s infinite alternate;
+}
+#wrap span:nth-of-type(3) {
+  top: 137px; left: 0px;
+  background-image: radial-gradient(circle at 50% 150%, black, black 60%, transparent);
+  background-image: -webkit-radial-gradient(50% 150%, circle, black,
+                                                         black 60%, transparent);
+  animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+  -webkit-animation: ref3Anime 5s ease-in-out 5s infinite alternate;
+}
+#wrap span:nth-of-type(4) {
+  top: 0px; left: -182px;
+  background-image: radial-gradient(circle at -50% 50%, black, black 60%, transparent);
+  background-image: -webkit-radial-gradient(-50% 50%, circle, black,
+                                                         black 60%, transparent);
+  animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+  -webkit-animation: ref4Anime 5s ease-in-out 7.5s infinite alternate;
+}
+
