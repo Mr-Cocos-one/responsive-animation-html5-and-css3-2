@@ -1,4 +1,5 @@
 # responsive-animation-html5-and-css3-2
+「HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト 別冊版」
 "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet -Additional edition-."
 
 これは、書籍「HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト」の別冊です。書籍に収録しきれなかった高度なHTML5+CSS3アニメーションやその他技術情報を別冊にまとめたものです。
