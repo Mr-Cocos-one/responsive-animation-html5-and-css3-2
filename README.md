@@ -14,7 +14,7 @@
 
 This is a separate volume of the book "HTML5 + CSS3 Responsive Animation for PC, Smartphone & Tablet Site". A collection of advanced HTML5 + CSS3 animations and other technical information that could not be included in the book.
 
-This separate volume "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet -Additional edition-" can be purchased on Amazon. (https://www.amazon.co.jp/dp/B07V9L9PDQ)
+This separate volume "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet -Additional edition-" can be purchased on Amazon. (https://www.amazon.com/Responsive-animation-smartphone-Additional-Japanese-ebook/dp/B07V9L9PDQ)
 
 The book "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet" explains how to run HTML5 + CSS3 animation in the responsive Web, which has recently become mainstream. Many interesting animation samples are also posted.
 (https://github.com/Mr-Cocos-one/responsive-animation-html5-and-css3-1)
